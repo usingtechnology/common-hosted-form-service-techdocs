@@ -44,7 +44,7 @@ The documentation files are stored in the `/docs` directory of this repository. 
     CODE-OF-CONDUCT.md         - Code of Conduct
     CONTRIBUTING.md            - Contributing Guidelines
     LICENSE                    - License
-    mkdocs.yml                 - Documentation definintion, including nav
+    mkdocs.yml                 - Documentation definition, including left nav
 
 <!--
 ## Getting Started
