@@ -1,7 +1,7 @@
 [Home](.) > [CHEFS Components](CHEFS-Components) > [Form Builder Components](Form-Builder-Components) > **Advanced Data**
 ***
 
-| ![image](https://user-images.githubusercontent.com/87393930/233499960-de7d2c9b-a3ad-43c8-90f7-cee8e64a4094.png) | Advanced data components are fields that manipulate the way Data is presented, saved, and organized. |
+| ![image](images/advanced_data.png) | Advanced data components are fields that manipulate the way Data is presented, saved, and organized. |
 |----------|----------|
 
 * [Hidden](#hidden)    
@@ -16,7 +16,7 @@
 
 The Hidden component is more of an open-ended tool to be used within the form or application.  While there is no front-end widget or display for hidden components, the component will be visible within the form builder. The Hidden component can handle behind-the-scenes calculations or logic needed to facilitate more advanced workflows on your form or application.
 
-![hidden](https://user-images.githubusercontent.com/87393930/234123253-654810eb-afc4-4e6b-b0d3-2c794af75127.png)
+![hidden](images/hidden_component.png)
 
 
 ## Container
@@ -24,14 +24,14 @@ The Hidden component is more of an open-ended tool to be used within the form or
 
 A Container is a wrapper around a set of fields, similar to a Field Set. What makes the Container unique is the way the data is stored. The fields inside the Container are put into an object with the container key. This is useful for creating more complex objects and data sets within your form.
 
-![Container](https://user-images.githubusercontent.com/87393930/234123313-b5ecb1b1-3ae8-42d9-9aef-aeba9d1013e0.png)
+![Container](images/container.png)
 
 ## Data Map
 **[Back to top](#top)**
 
 A Data Map component allows users to create key/value pairs. Both the key and the value fields can get the values while filling out the form. New pairs can be added to the form by the 'Add Another' button and removed by the 'X' (Remove Row) button.
 
-![Data map](https://user-images.githubusercontent.com/87393930/234123413-d3c83bf4-b385-4183-a7b3-061761badd97.png)
+![Data map](images/data_map.png)
 
 ## Data Grid
 **[Back to top](#top)**
@@ -75,14 +75,14 @@ If you require a high volume of columns in your Data Grid, we suggest that you o
 
 The Edit Grid replicates a table-like structure when it comes to the capture and display of form data. Users can add multiple components inside the Edit Grid. Additionally, any number of grids can be added within a form, which is especially useful when needing the ability to add or duplicate multiple fieldsets. There is also flexibility in how the Edit Grid data rows are saved and displayed to the end user.
 
-![Edit grid](https://user-images.githubusercontent.com/87393930/234123478-cad550b4-a2ff-4aeb-9fce-d9a88c1bd2fc.png)
+![Edit grid](images/edit_grid.png)
 
 ## Tree
 **[Back to top](#top)**
 
 A Tree component is very similar to the Edit Grid component. It replicates a table-like, hierarchical structure when it comes to the capture and display of form data. However, in comparison with the Edit Grid, the Tree component creates a tree-like pattern where users can create a number of data branches. There is only one top-level data entry - a root data entry, which is followed by level 1 data branches, which then are followed by level 2 data branches, and so on. Each level is shaded differently to easily decipher the different relationships.
 
-![Tree](https://user-images.githubusercontent.com/87393930/234123517-602143a5-3758-4c66-b60a-cf3b37a8b63e.png)
+![Tree](images/tree.png)
 
 **[Back to top](#top)**
 

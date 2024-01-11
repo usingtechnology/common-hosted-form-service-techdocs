@@ -1,7 +1,7 @@
 [Home](.) > **CHEFS Capabilities** 
 ***
 
-![Group 1735](https://user-images.githubusercontent.com/87393930/235493287-5923223d-3695-4b86-8a78-36fb34424a0f.png)
+![img](images/capabilities-icon.png)
 
   * [Functionalities](CHEFS-Functionalities)
   * [Integrations](Integrations)

@@ -1,6 +1,6 @@
 #### Table of Contents
 
-* [Home](index)
+* [Home](Home)
 
 * [About CHEFS](About-CHEFS)
 
