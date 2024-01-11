@@ -1,4 +1,4 @@
-[Home](.) > **CHEFS Capabilities** 
+[Home](index) > **CHEFS Capabilities** 
 ***
 
 ![img](images/capabilities-icon.png)
