@@ -5,7 +5,7 @@
 * [Business Name Search](#business-name-search)
 * [BC Address](#bc-address)
 
-![image](https://user-images.githubusercontent.com/87393930/233500001-d4a44298-b7ce-4282-80b4-4cab26999e34.png)
+![image](images/bc-gov.png)
 
 ## File Upload
 **[Back to top](#top)**
@@ -34,7 +34,7 @@ Files uploaded via a CHEFS form are saved to a designated space in **Object stor
 
 The "Business Name Search" auto-complete feature is a useful component that allows you to quickly find organizations by their name, business number, or BC Registries ID. The auto-complete feature helps save time and effort by eliminating the need to type out the full name or number of the organization you are searching for. Instead, you can select the suggested match from the drop-down list and find the organization you are looking for in seconds.
 
-![Business name search](https://user-images.githubusercontent.com/87393930/233700840-e2321100-4238-4166-a2c6-1015b9e37107.png)
+![Business name search](images/bc-business.png)
 
 ## BC Address
 **[Back to top](#top)**
@@ -43,9 +43,9 @@ The BC Address auto-complete component is a preconfigured feature designed to he
 
 This is a preconfigured component. Please note that users can only change the 'Params' details as indicated in the following image. Please visit this link for more information: [Geocoder Developer Toolkit](https://bcgov.github.io/ols-devkit/examples/address_autocomplete.html)
 
-![image](https://user-images.githubusercontent.com/87393930/233701194-23fa8000-0724-41af-bdc6-c810ef2f84ab.png)
+![image](images/bc-address.png)
 
-![image](https://user-images.githubusercontent.com/87393930/233701390-9216fb67-b90c-4120-aa10-ed0a4354f0fe.png)
+![image](images/bc-address-preview.png)
 
 
 **[Back to top](#top)**

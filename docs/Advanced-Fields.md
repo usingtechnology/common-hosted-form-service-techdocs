@@ -1,7 +1,7 @@
 [Home](.) > [CHEFS Components](CHEFS-Components) > [Form Builder Components](Form-Builder-Components) > **Advanced Fields**
 ***
 
-| ![image](https://github.com/bcgov/common-hosted-form-service/assets/87393930/f66e916a-a618-41cc-b81d-9929e71a1a7c) | Advanced Fields in form builders are an extension of Basic Fields, specifically designed to cater to more complex requirements. They offer additional features, functionality, or customization options beyond what the Basic Components provide |
+| ![image](images/advanced-fields.png) | Advanced Fields in form builders are an extension of Basic Fields, specifically designed to cater to more complex requirements. They offer additional features, functionality, or customization options beyond what the Basic Components provide |
 |----------|----------|
 
 **Page content:**
@@ -33,7 +33,7 @@
 
 The Text/Images input field is a versatile option for entering short and general text. It provides rules and validations to manage and format the information based on specific requirements. It also offers additional features like multiple masks, label hiding, word/character counters, spellcheck, and disabled mode for added functionality.
 
-![image](https://github.com/bcgov/common-hosted-form-service/assets/87393930/7e77c659-6448-400c-9628-98708c53e50e)
+![image](images/advanced-text.png)
  
 
 ## Email
@@ -41,7 +41,7 @@ The Text/Images input field is a versatile option for entering short and general
 
 The Email component is a string field that carries special input validation ensuring the entered data is in a valid email format. A valid email address consists of an email prefix and an email domain, both in acceptable formats.
 
-![image](https://github.com/bcgov/common-hosted-form-service/assets/87393930/1c385c1f-a783-43b7-895c-6cb0c33d45e4)
+![image](images/advanced-email.png)
 
 
 ## Text Area
@@ -61,7 +61,7 @@ In addition to the basic functionality, the Text Area offers several advanced fe
 * Table View: It can be displayed in a table format.
 * Modal Edit: It can be edited within a modal window.
 
-![image](https://github.com/bcgov/common-hosted-form-service/assets/87393930/66d997ac-5863-4816-b5e7-c629b68ee421)
+![image](images/advanced-text-area.png)
 
 
 ## Url
@@ -74,7 +74,7 @@ Similar to the Email field, the URL component is a string field that carries spe
 
 Use a Number field whenever a field should be limited to a number value type. There are options to set thousands separators,  decimal places, and decimal requirements.
 
-![image](https://github.com/bcgov/common-hosted-form-service/assets/87393930/95098716-eb56-4a7c-871b-4cb30209c07a)
+![image](images/advanced-number.png)
 
 
 ## Phone Number
@@ -86,7 +86,7 @@ The Phone Number field carries an input mask to force the user to enter the fiel
 **[Back to top](#top)**
 
 The Tag component draws attention to or categorizes elements on your form. Multiple tags can be added to one Tag field.
-![image](https://github.com/bcgov/common-hosted-form-service/assets/87393930/2946cefd-e1e3-4081-ab2a-cd417d43be82)
+![image](images/advanced-tags.png)
 
 
 ## Address
@@ -123,7 +123,7 @@ Custom: Provides settings to integrate your own custom map provider.
 
 The password field has the same options as a text field component. It differs from a text field in that its HTML <input> type will be password instead of text. This will cause the field to display hidden input symbols instead of the entered value.
 
-![image](https://github.com/bcgov/common-hosted-form-service/assets/87393930/ecffd80c-0b2c-4127-a395-6e978fa926cc)
+![image](images/advanced-password.png)
 
 
 ## Date Time
@@ -234,14 +234,14 @@ Select - User will select a value relative to the field.
 
 </details>
 
-![image](https://github.com/bcgov/common-hosted-form-service/assets/87393930/1adcca57-97b1-4007-b528-b664ca2a89e5)
+![image](images/advanced-day.png)
 
 
 ## Time
 **[Back to top](#top)**
 
 The stand-alone time field allows for manual input or can be replaced with a time selector widget for easier selection.
-![image](https://github.com/bcgov/common-hosted-form-service/assets/87393930/bb376c7e-b036-4226-9d68-dc6d61e2b17c)
+![image](images/advanced-time.png)
 
 
 ## Select Boxes
@@ -267,7 +267,7 @@ When setting the option value, use only Strings or Numeric values.
   
 </details>
 
-![image](https://github.com/bcgov/common-hosted-form-service/assets/87393930/f25060a2-04ed-429b-bf4b-672bef8ce3fb)
+![image](images/advanced-select-boxes.png)
 
 
 
@@ -343,7 +343,7 @@ Choices.js options: A raw JSON object to use as options for the Select component
   
 </details>
 
-![image](https://github.com/bcgov/common-hosted-form-service/assets/87393930/e6af8fe4-5640-4325-b8a1-afae269dc02c)
+![image](images/advanced-select.png)
 
 
 
@@ -353,7 +353,7 @@ Choices.js options: A raw JSON object to use as options for the Select component
 
 Use the Currency component when a field should display currency amounts on the field. This component holds a numeric input mask that allows two decimal values and automatically adds commas as a user inputs a currency amount. The type of currency can also be selected which will change the prefix currency symbol.
 
-![image](https://github.com/bcgov/common-hosted-form-service/assets/87393930/49bb8d76-53d6-4438-9a33-22dbc3c3102b)
+![image](images/advanced-currency.png)
 
 
 ## Radio
@@ -364,7 +364,7 @@ The radio component is a field that allows users to select a single option from 
   <summary><strong>Unique Settings</strong></summary>
   
  Values - Set the options that can be picked for this component. Label is the front-end identifier and the Value is the backend identifier for the option. 
-![image](https://github.com/bcgov/common-hosted-form-service/assets/87393930/0747b47e-9955-4aeb-85f6-3f136c93b3e4)
+![image](images/advanced-radio.png)
 
 
 When setting the option value, use only Strings or Numeric values. 
@@ -441,7 +441,7 @@ The Survey component works similarly to the radio. Instead of one question, user
 **Tooltip:** Add a tooltip to any of the Questions or Values to help better communicate with your users. 
 </details>
 
-![image](https://github.com/bcgov/common-hosted-form-service/assets/87393930/572b5fca-ad67-4aa5-bd72-1b3391e19c34)
+![image](images/advanced-survey.png)
 
 
 ## Signature
@@ -452,7 +452,7 @@ The Signature component allows the end-user to digitally sign a signature pad wi
 
 
 
-![image](https://github.com/bcgov/common-hosted-form-service/assets/87393930/cb60bfaa-493f-4504-842e-aea21fe404c6)
+![image](images/advanced-signature.png)
 
 
 ***
