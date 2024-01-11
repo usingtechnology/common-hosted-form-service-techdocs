@@ -44,7 +44,7 @@ CHEFS has a Security Threat and Risk Assessment (STRA) Statement of Acceptable R
 <details>
   <summary><strong>Product development</strong></summary>
 
-Review our [product roadmap](product-roadmap) to see what features are upcoming for CHEFS.
+Review our [product roadmap](Product-Roadmap) to see what features are upcoming for CHEFS.
 
 If you or your team is interested in contributing to the project, you can fork our code base and contribute new features. For more details, please see the [CHEFS ReadMe](https://github.com/bcgov/common-hosted-form-service/blob/master/README.md) to host your own.
 
