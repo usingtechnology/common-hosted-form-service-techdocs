@@ -5,7 +5,7 @@
 
 * [Form Builder Components](Form-Builder-Components) 
 * [Custom Components](Custom-Components)
-* [Custom](Custom Components)
+* [Custom](Custom-Components.md)
 * [Examples of CHEFS forms and features](Examples-of-CHEFS-forms-and-features)
 
 
