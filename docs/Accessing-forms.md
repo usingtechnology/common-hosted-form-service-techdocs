@@ -7,18 +7,11 @@ On this page:
 
 ## To set form access
 
-You can choose from three levels of access for your form – **Public**, **Log-in Required**, and **Specific Team Members** (Figure 1).
+You can choose from three levels of access for your form – **Public**, **Log-in Required**, and **Specific Team Members**.
 
 Each option comes with its own set of considerations.
-<figure>
-    <figcaption style="text-align:center;">
-        <small>Figure 1: Select from three levels of form access</small>
-    </figcaption>
-    <p style="text-align:center;">
-        <img src="images/chefs-form-access-fig1.png" width="350" height="305" alt="Select Team Management">
-    </p>
-</figure>
-<p>&nbsp;</p>
+
+[img](images/chefs-form-access-fig1.png)
 
 **Public (anonymous)**
 
@@ -52,30 +45,14 @@ To invite team members:
 
 1. Click **My Forms**.
 2. From your list of forms, click **Manage** for the form you want to update.
-3. Click **Team Management** (Figure 2) on the **Manage Form** page.
+3. Click **Team Management** on the **Manage Form** page.
 
-<figure>
-    <figcaption style="text-align:center;">
-        <small>Figure 2: Select <strong>Team Management</strong></small>
-    </figcaption>
-    <p style="text-align:center;">
-        <img src="images/chefs-form-access-fig2.png" style="width:100%; border:1px solid #000;" alt="Select Team Management">
-    </p>
-</figure>
-<p>&nbsp;</p>
+[img](images/chefs-form-access-fig2.png)
 
 
-4. Under **Team Management**, check the box (Figure 3) in the **Submitter** column for any user in the table you want to have access.
+4. Under **Team Management**, check the box in the **Submitter** column for any user in the table you want to have access.
 
-<figure>
-    <figcaption style="text-align:center;">
-        <small>Figure 3: Choose <strong>Submitter</strong> to limit form access to specific team members</small>
-    </figcaption>
-    <p style="text-align:center;">
-        <img src="images/chefs-form-access-fig3.png" style="width:100%" alt="Choose Submitter to limit form access to specific team members">
-    </p>
-</figure>
-<p>&nbsp;</p>
+[img](images/chefs-form-access-fig3.png)
 
 > **Note**: If there is no one on your team list, you will need to add them. [Learn how to add a user to your team](/bcgov/common-hosted-form-service/wiki/Managing-admin-teams#adding-a-new-team-member).
 
@@ -88,17 +65,9 @@ To set the access for a new form:
 To update access to an existing form:
 1.	Click **My Forms**.
 2.	From your list of forms, click **Manage** for the form you want to update.
-3.	Click **Edit** (Figure 3) in the **Form Settings** header.
+3.	Click **Edit** in the **Form Settings** header.
 
-<figure>
-    <figcaption style="text-align:center;">
-        <small>Figure 4: Click <strong>Edit</strong> to modify a saved form</small>
-    </figcaption>
-    <p style="text-align:center;">
-        <img src="images/chefs-form-access-fig4.png" style="width:100%" alt="Click Edit to modify a saved form">
-    </p>
-</figure>
-<p>&nbsp;</p>
+[img](images/chefs-form-access-fig4.png)
 
 4.	In the **Form Access** section under **Form Settings**, choose the new access level you want to use.
 5.	Click **Update** to accept the change.
