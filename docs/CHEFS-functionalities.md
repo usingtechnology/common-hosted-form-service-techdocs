@@ -7,7 +7,7 @@
 
 ## Working with submissions
 * [Printing from a browser](Printing-from-a-browser)
-* [Download a submission with custom format (CDOGS)](Download-a-submission-with-custom-format-(CDOGS))
+* [Download a submission with custom format (CDOGS)](../Download-a-submission-with-custom-format-(CDOGS))
 * [Copy an existing submission](Copy-an-existing-submission)
 * [Restoring a deleted submission](Restoring-a-deleted-submission)
 * [Allow multiple draft upload](Allow-multiple-draft-upload)
