@@ -1,4 +1,4 @@
-[Home](.) > [Developer](Developer) > [Contributors](Contributors) > **Forking Repository**
+[Home](index) > [Developer](Developer) > [Contributors](Contributors) > **Forking Repository**
 ***
 
 ## Forking Repository
@@ -17,7 +17,7 @@ Note: The options below are suggestions on how Forminator partners can fork CHEF
 
 ### First Option:
 
-![image](https://github.com/bcgov/common-hosted-form-service/assets/87393930/ff4da4f3-aac5-40c5-8f84-5d37e8e25e2e)
+![image](images/forking1.png)
 
 * Create a fork of CHEFS repository into the Ministry's Github.[Git Branching and Pull Request Workflow](https://bcdevex.atlassian.net/wiki/spaces/CCP/pages/963117057) 
 
@@ -48,7 +48,7 @@ git push
 
 ### Second Option:
 
-![image](https://github.com/bcgov/common-hosted-form-service/assets/87393930/7b95fc22-eafa-4294-aa13-205c3caf852c)
+![image](images/forking2.png)
 
 
 * Create a fork of CHEFS repository into the individual developer's Github. 
@@ -91,7 +91,7 @@ git pull origin
 
 ### Third Option
 
-![image](https://github.com/bcgov/common-hosted-form-service/assets/87393930/3782b91d-1f24-4970-9d15-66d56fdfe6d1)
+![image](images/forking3.png)
 
 * Create a fork of CHEFS repository into the individual developer's Github. 
 

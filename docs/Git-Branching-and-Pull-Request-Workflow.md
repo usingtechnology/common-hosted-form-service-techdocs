@@ -1,11 +1,11 @@
-[Home](.) > [Developer](Developer) > [Contributors](Contributors) > **Git Branching and Pull Request Workflow**
+[Home](index) > [Developer](Developer) > [Contributors](Contributors) > **Git Branching and Pull Request Workflow**
 ***
 
-![image](https://user-images.githubusercontent.com/87393930/236027850-e5d681fc-126a-47d5-b6d4-286a4c6991c6.png)
+![image](images/coming-soon.png)
 
 ## Creating and Merging Pull Requests from partners
 
-![image](https://github.com/bcgov/common-hosted-form-service/assets/87393930/6e522377-22cb-4224-b109-c06a355d20a0)
+![image](images/git-branching.png)
 
 * Create a PR from the forked CHEFS Repository to the CHEFS master branch. Check out a more detailed guide on creating from a forked repository https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork0
 
