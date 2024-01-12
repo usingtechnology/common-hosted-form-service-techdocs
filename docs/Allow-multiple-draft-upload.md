@@ -32,6 +32,10 @@ When you modify the JSON template file for a basic form that has only two text f
 
 In this JSON template, there are three Draft submissions. See the video below to know how to upload a JSON template. Once you upload JSON it will process the file and submit all the draft submissions collected from the JSON template file.
 
-![video](videos/multi-draft-upload.mp4)
+<video width="320" height="240" controls>
+  <source src="videos/multi-draft-upload.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 
 **[Back to top](#top)**
