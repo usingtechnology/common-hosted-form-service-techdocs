@@ -1,4 +1,4 @@
-[Home](.) > [CHEFS Capabilities](CHEFS-Capabilities) > [Integrations](Integrations) > **Excel Power Query Integration**
+[Home](index) > [CHEFS Capabilities](CHEFS-Capabilities) > [Integrations](Integrations) > **Excel Power Query Integration**
 ***
 
 ## Excel Integration 
