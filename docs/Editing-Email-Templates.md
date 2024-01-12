@@ -1,4 +1,4 @@
-[Home](.) > [CHEFS Capabilities](CHEFS-Capabilities) > [CHEFS Functionalities](CHEFS-functionalities) > **Editing Email Templates**
+[Home](index) > [CHEFS Capabilities](CHEFS-Capabilities) > [CHEFS Functionalities](CHEFS-functionalities) > **Editing Email Templates**
 ***
 
 > **EXPERIMENTAL**
@@ -17,26 +17,26 @@ This email can be requested by the form submitter after form submission.
 
 After the user submits the form, the successful submission page has a link to "**EMAIL A RECEIPT OF THIS SUBMISSION**":
 
-![image](https://github.com/bcgov/common-hosted-form-service/assets/35532993/66b1bc15-48d6-41e4-a1c1-b2051398f8f2)
+![image](images/eet1.png)
 
 The email sent to the user contains a Subject, Title, and Body:
 
-![image](https://github.com/bcgov/common-hosted-form-service/assets/35532993/8678e3ac-0429-4f60-a328-cedec2ac9fdd)
+![image](images/eet2.png)
 
 There is a button on the Form Management page to edit the email template:
 
-![image](https://github.com/bcgov/common-hosted-form-service/assets/35532993/472c7f16-d5e7-4d75-a225-64c1049c46b3)
+![image](images/eet3.png)
 
 The default templates for Subject, Title, and Body are displayed and can be edited:
 
-![image](https://github.com/bcgov/common-hosted-form-service/assets/35532993/9f2aca34-1b43-4c64-a212-c9f86f64d5c3)
+![image](images/eet4.png)
 
 Mustache syntax can be used to add the following fields to the templates:
 - `form.name`: the "Name" of the form.
 - `form.description`: the "Description" of the form.
 
-![image](https://github.com/bcgov/common-hosted-form-service/assets/35532993/957479f4-7886-4d51-a9b4-80cff0bb54c4)
+![image](images/eet5.png)
 
 All following emails for submission confirmation will use the new templates:
 
-![image](https://github.com/bcgov/common-hosted-form-service/assets/35532993/2b83c5cf-44d1-4966-bdda-f0640784702b)
+![image](images/eet6.png)

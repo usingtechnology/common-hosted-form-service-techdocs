@@ -9,17 +9,17 @@ Not directly in the way you describe it, however there is a way to effectively a
 
 ### Process   
 1. The first person to launch the form will start the filling out the form and save the draft. This will then display the team button. Click that to display the Manage Team Members pop up.
-![save Draft open Manage Team Members](https://github.com/bcgov/common-hosted-form-service/assets/25111805/a63c3a84-f49e-4b77-b1ab-55d7feb5e4aa)  
+![save Draft open Manage Team Members](images/cst1.png)  
 
 2. Add another person to your "submission team". Start by selecting the group to search within (IDIR, Business BCEID, or Basic BCeID). Then enter a name, email or username. If you are searching within for BCeID person, you have to type out the full email or username before it will show up.
-![select Group search User](https://github.com/bcgov/common-hosted-form-service/assets/25111805/1255f5b6-4deb-4c47-a5d0-55e90ada2b0d)  
+![select Group search User](images/cst2.png)  
 
 ### Editing the submission  
 Only one team member at a time can made edits. Once each person is done, they need to click save.  
 The other submitter will need to reopen the form from the original link they got when they were invited to the team, or they can also see the saved draft submission in a list of all previous submissions.  
-![view All My Submissions](https://github.com/bcgov/common-hosted-form-service/assets/25111805/c5f48fb5-12a3-4fbb-ba5c-8a4027d3bc07)   
+![view All My Submissions](images/cst3.png)   
 If you relaunch a new version of that form there is a button to click to get to page.  
-![viewAllMySubmissions2](https://github.com/bcgov/common-hosted-form-service/assets/25111805/72d55e7a-8b44-4b00-b2a6-4911122598e4)  
+![viewAllMySubmissions2](images/cst4.png)  
 
 ### Submitting the form  
 Only the person who clicks the submit button will be listed as the submitter. However, each person who contributed will have their edits stored in the draft history.  If you had a field that you wanted to autopopulate with a username, email address or full Name, then you need that person to login and be the one to submit the form. If you started completing the form it would have your name in those fields, but if you save it and add another person to the submitter team, then they would load up the form and those values would change to their information.  
