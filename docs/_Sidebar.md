@@ -7,7 +7,7 @@
 * [Roadmap](Product-Roadmap)
 
 * [CHEFS Capabilities](CHEFS-Capabilities)
-  * [Functionalities](CHEFS-Functionalities)
+  * [Functionalities](CHEFS-functionalities)
   * [Integrations](Integrations)
   * [Accessibility](Accessibility)
   * [Form Management](Form-Management)

@@ -3,7 +3,7 @@
 
 ![img](images/capabilities-icon.png)
 
-  * [Functionalities](CHEFS-Functionalities)
+  * [Functionalities](CHEFS-functionalities)
   * [Integrations](Integrations)
   * [Accessibility](Accessibility) 
   * [Form Management](Form-Management) 
