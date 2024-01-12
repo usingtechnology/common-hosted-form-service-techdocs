@@ -1,4 +1,4 @@
-[Home](.) > [CHEFS Components](CHEFS-Components) > [Custom Components](Custom-components) > **Styles**
+[Home](index) > [CHEFS Components](CHEFS-Components) > [Custom Components](Custom-components) > **Styles**
 ***
 
 ## Working Examples

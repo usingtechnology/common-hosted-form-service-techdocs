@@ -1,4 +1,4 @@
-[Home](.) > [CHEFS Capabilities](CHEFS-Capabilities) > **Data Management**
+[Home](index) > [CHEFS Capabilities](CHEFS-Capabilities) > **Data Management**
 ***
 
 Learn more about some of your options for accessing and managing data through CHEFS

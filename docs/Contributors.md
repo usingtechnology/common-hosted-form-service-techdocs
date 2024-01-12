@@ -1,4 +1,4 @@
-[Home](.) > [Developer](Developer) > **Contributors**
+[Home](index) > [Developer](Developer) > **Contributors**
 ***
 
 * [Local CHEFS Instance Setup](Local-CHEFS-Instance-Setup)

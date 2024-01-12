@@ -1,4 +1,4 @@
-[Home](.) > [CHEFS Components](CHEFS-Components) > **Custom Components** 
+[Home](index) > [CHEFS Components](CHEFS-Components) > **Custom Components** 
 ***
 
 ## Navigation  
@@ -12,7 +12,7 @@
 - [Conditional Show and Hide](Conditional-forms-fields)  
 - [Autopopulating Select field Dropdown Menus (experimental)](Autopopulating-Dropdown-Menus)
 - [Dynamic Select Lists (experimental)](Dynamic-Select-Lists)  
-- [Calculating values with Dates (experimental)](Calculating-values-with-Dates)  
+- [Calculating values with Dates (experimental)](Calculating-Values-with-Dates)  
 - [Custom Default Value (experimental)](Custom-Default-Value)
 - [Custom Validation](Custom-Validation)  
 

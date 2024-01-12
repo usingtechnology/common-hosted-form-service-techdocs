@@ -1,4 +1,4 @@
-[Home](.) > [CHEFS Capabilities](CHEFS-Capabilities) > **CHEFS functionalities**
+[Home](index) > [CHEFS Capabilities](CHEFS-Capabilities) > **CHEFS functionalities**
 ***
 
 ## Working with forms

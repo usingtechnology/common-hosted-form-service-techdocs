@@ -1,4 +1,4 @@
-[Home](.) > [CHEFS Components](CHEFS-Components) > [Custom Components](Custom-components) > **Custom Validation**
+[Home](index) > [CHEFS Components](CHEFS-Components) > [Custom Components](Custom-components) > **Custom Validation**
 ***
 
 ### Get started
@@ -14,7 +14,7 @@ if (!val.isValid() || val.format('YYYY') === '0000') {
   valid = 'Please, enter the valid date';
 }
 ```
-![Common Hosted Forms Service 2023-10-23 15-53-26](https://github.com/bcgov/common-hosted-form-service/assets/127142437/843b7c48-bf15-40a1-ac2d-8f3a842fb65c)
+![img](images/custom-validation.png)
 
 This way we validate if user enter incorrect `Day` for example `e2, -2, +2` or leaves `Year` box empty
 
