@@ -1,4 +1,4 @@
-[Home](.) > [CHEFS Capabilities](CHEFS-Capabilities) > [Form Management](Form-Management) > **Accessing forms**
+[Home](index) > [CHEFS Capabilities](CHEFS-Capabilities) > [Form Management](Form-Management) > **Accessing forms**
 ***
 
 On this page:
@@ -11,9 +11,12 @@ You can choose from three levels of access for your form – **Public**, **Log-i
 
 Each option comes with its own set of considerations.
 <figure>
-<figcaption><p align="center"><small>Figure 1: Select from three levels of form access</small></p>
-</figcaption>
-    <p align="center"><img src="images/chefs-form-access-fig1.png" width="350" height="305" alt="Select Team Management"></p>
+    <figcaption style="text-align:center;">
+        <small>Figure 1: Select from three levels of form access</small>
+    </figcaption>
+    <p style="text-align:center;">
+        <img src="images/chefs-form-access-fig1.png" width="350" height="305" alt="Select Team Management">
+    </p>
 </figure>
 <p>&nbsp;</p>
 

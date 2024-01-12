@@ -1,4 +1,4 @@
-[Home](.) > [CHEFS Capabilities](CHEFS-Capabilities) > **Accessibility** 
+[Home](index) > [CHEFS Capabilities](CHEFS-Capabilities) > **Accessibility** 
 ***  
 ## Our Approach 
 Accessibility is important because it empowers everyone to use the forms you'll build with CHEFS. It ensures equal access and inclusion, enabling individuals to use forms on an equal footing. By making forms accessible, such as providing clear instructions and appropriate labels, we empower people to fully engage and participate. Accessibility not only benefits all users but also improves their experience and ensures compliance with accessibility standards. It fosters an inclusive environment where everyone can confidently and independently interact with CHEFS forms.  
@@ -35,6 +35,6 @@ The form components used in CHEFS already include accessibility features. [ARIA]
 
 As an example, the Vox screen reader for the Chrome browser will read this component:
 
-![image](https://github.com/bcgov/common-hosted-form-service/assets/35532993/9efc6897-ee4e-437e-9eb5-4ee88157c137)
+![image](images/accessibility.png)
 
 as _"This is the label. This is the tooltip. This is the description. Within: This is the placeholder. Edit text"_. Note that the user does not need to hover, etc, to “pop up” the tooltip to have it read out.
