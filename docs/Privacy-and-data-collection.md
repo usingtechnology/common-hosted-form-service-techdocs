@@ -21,7 +21,7 @@ If you want to use CHEFS as a survey tool and anonymity is a requirement, you ne
 
 To set your form responses to anonymous, open the "Manage Form" page and click "Public" under "Form Access."
 
-[img](images/privacy-surveys.png)
+![img](images/privacy-surveys.png)
 
 ## Data storage
 **[Back to top](#top)**

@@ -9,7 +9,7 @@
 <details>
   <summary><strong>Getting started and support</strong></summary>
 
-To start creating forms, you can [watch a series of short videos](https://www.youtube.com/playlist?list=PL9CV_8JBQHirsQAShw45PZeU1CkU88Q53) on how to build your first form, or follow our [Quick start guide](Quick-Start-Guide). For more advanced questions CHEFS, please review our:
+To start creating forms, you can [watch a series of short videos](https://www.youtube.com/playlist?list=PL9CV_8JBQHirsQAShw45PZeU1CkU88Q53) on how to build your first form, or follow our [Quick start guide](Quick-start-guide). For more advanced questions CHEFS, please review our:
 
 - [Creating forms](Creating-forms) - learn about some of the different features in CHEFS
 - [Training Video](https://www.youtube.com/watch?v=Wf432lBjcTA) - Watch an hour-long tutorial on how to use CHEFS. Note: We have updated CHEFS since May 2021. Follow our [Product roadmap](Product-Roadmap) to stay up-to-date on all feature updates.
