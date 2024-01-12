@@ -53,19 +53,27 @@ To invite team members:
 1. Click **My Forms**.
 2. From your list of forms, click **Manage** for the form you want to update.
 3. Click **Team Management** (Figure 2) on the **Manage Form** page.
+
 <figure>
-<figcaption><p align="center"><small>Figure 2: Select <strong>Team Management</strong></small></p>
-</figcaption>
-    <kbd><img src="images/chefs-form-access-fig2.png" style="width:100%; border:1px solid #000;" alt="Select Team Management"></kbd>
+    <figcaption style="text-align:center;">
+        <small>Figure 2: Select <strong>Team Management</strong></small>
+    </figcaption>
+    <p style="text-align:center;">
+        <img src="images/chefs-form-access-fig2.png" style="width:100%; border:1px solid #000;" alt="Select Team Management">
+    </p>
 </figure>
 <p>&nbsp;</p>
+
 
 4. Under **Team Management**, check the box (Figure 3) in the **Submitter** column for any user in the table you want to have access.
 
 <figure>
-<figcaption><p align="center"><small>Figure 3: Choose <strong>Submitter</strong> to limit form access to a specific team members</small></p>
-</figcaption>
-    <kbd><img src="images/chefs-form-access-fig3.png" style="width:100%" alt="Choose Submitter to limit form access to a specific team members"></kbd>
+    <figcaption style="text-align:center;">
+        <small>Figure 3: Choose <strong>Submitter</strong> to limit form access to specific team members</small>
+    </figcaption>
+    <p style="text-align:center;">
+        <img src="images/chefs-form-access-fig3.png" style="width:100%" alt="Choose Submitter to limit form access to specific team members">
+    </p>
 </figure>
 <p>&nbsp;</p>
 
@@ -83,9 +91,12 @@ To update access to an existing form:
 3.	Click **Edit** (Figure 3) in the **Form Settings** header.
 
 <figure>
-<figcaption><p align="center"><small>Figure 4: Click <strong>Edit</strong> to modify a saved form</small></p>
-</figcaption>
-    <kbd><img src="images/chefs-form-access-fig4.png" style="width:100%" alt="Click Edit to modify a saved form"></kbd>
+    <figcaption style="text-align:center;">
+        <small>Figure 4: Click <strong>Edit</strong> to modify a saved form</small>
+    </figcaption>
+    <p style="text-align:center;">
+        <img src="images/chefs-form-access-fig4.png" style="width:100%" alt="Click Edit to modify a saved form">
+    </p>
 </figure>
 <p>&nbsp;</p>
 
