@@ -16,7 +16,7 @@
 
 * [CHEFS Components](CHEFS-Components)
   * [Form Builder Components](Form-Builder-Components)
-  * [Custom Components](Custom-Components)
+  * [Custom Components](Custom-components)
   * [Examples of CHEFS forms and features](Examples-of-CHEFS-forms-and-features)
 
 * [Developer](Developer)

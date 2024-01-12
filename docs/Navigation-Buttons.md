@@ -1,4 +1,4 @@
-[Home](.) > [CHEFS Components](CHEFS-Components) > [Custom Components](Custom-components) > **Navigation Buttons**
+[Home](index) > [CHEFS Components](CHEFS-Components) > [Custom Components](Custom-components) > **Navigation Buttons**
 ***
 
 ## Examples
@@ -13,19 +13,19 @@
 
 Navigation ability can be added to your forms using the 'Tabs' component and programming 'Button' components to switch those tabs.
 
-![nav1](https://user-images.githubusercontent.com/91633223/203415099-cc0d93df-4a37-4261-90e8-4b6b25d2626e.png)
+![nav1](images/nav1.png)
 
-![nav2](https://user-images.githubusercontent.com/91633223/203415103-e29d6ae4-f009-4936-bbb5-d5def4f9c4cd.png)
+![nav2](images/nav2.png)
 
 **Step 1**: Add a 'Tabs' component to the form and customize the tabs based on your requirements. Go to the API tab and change the name of your Tabs component to `tabs`. If you want name it something else you can, but in steps 4 and 5 you will need to change the example code to reflect what you named your Tabs component.
 
-![nav3](https://user-images.githubusercontent.com/91633223/203415241-980110ae-4be5-4e5d-946a-93e15d1e84d5.png)
+![nav3](images/nav3.png)
 
 **Step 2**: Add two 'Button' components that will switch the tabs back and forth. In this case, they are named 'Previous' with an API name of 'previous', and 'Next' with an API name of 'next'.
 
 **Step 3**: Click on the Settings (gear) icon for each button, and select the 'Custom' option from the 'Action' dropdown in the 'Display' tab.
 
-![nav4](https://user-images.githubusercontent.com/91633223/203415419-572e347d-10c4-4512-bdaa-6e3a1d442092.png)
+![nav4](images/nav4.png)
 
 **Step 4**: Add the following code in the 'Button Custom Logic' section for the 'Previous' button. 
 
@@ -37,7 +37,7 @@ tab.setTab(newIndex);
 window.scrollTo(0, 0);
 ```
 
-![nav5](https://user-images.githubusercontent.com/91633223/203415546-b9e5223f-7c3e-44ef-a857-19fffc4baef0.png)
+![nav5](images/nav5.png)
 
 <!-- and set the 'Previous' button to be disabled by default, since we always start on the first tab. -->
 

@@ -1,4 +1,4 @@
-[Home](.) > [CHEFS Components](CHEFS-Components) > [Custom Components](Custom-components) > **Advanced Progress Bar**
+[Home](index) > [CHEFS Components](CHEFS-Components) > [Custom Components](Custom-components) > **Advanced Progress Bar**
 ***
 
 ## Examples
@@ -28,13 +28,13 @@ A custom progress bar can be added to the form to enhance the user experience an
 
 This Progress Bar is designed to work with Tab Component, and with the Next and Previous Buttons
 
-![ap1](https://user-images.githubusercontent.com/91633223/204036758-601b0034-ea20-439f-972d-b86285fa895a.png)
+![ap1](images/apb1.png)
 
 **Step 1**: Start by dragging an ‘HTML Component’ into the form builder.
 
 **Step 2**: change the ‘HTML tag’ field from `p` to `div`, and in the ‘Display’ tag enter a unique and custom class name in the ‘CSS Class'. In this screenshot, we used `healthStepper`
 
-![ec495eda-f81c-423b-82f7-6f4a025ad090](https://user-images.githubusercontent.com/91633223/204038147-e5687a6f-7716-4a88-89bb-b4dfe3d8fada.png)
+![ap2](images/apb2.png)
 
 **Step 3**: Copy the following code into the ‘Content’ section
 
@@ -60,31 +60,31 @@ This Progress Bar is designed to work with Tab Component, and with the Next and 
 </ol>
 ```
 
-![ap3](https://user-images.githubusercontent.com/91633223/204038227-78443077-4ccd-4d8f-94f1-f1a2c5126b66.png)
+![ap3](images/apb3.png)
 
 **Step 4**: Click on the ‘Logic’ tab and click on the ‘Add Logic’ button
 
-![ap4](https://user-images.githubusercontent.com/91633223/204038257-8064e91c-5e24-4430-82e4-f6fd64a8b216.png)
+![ap4](images/apb4.png)
 
 **Step 5**: Enter any name as the 'Logic Name'
 
-![ap5](https://user-images.githubusercontent.com/91633223/204038439-3a6bad17-4151-4517-b90f-130caea4c2a4.png)
+![ap5](images/apb5.png)
 
 **Step 6**: In ‘Trigger' section, click on ‘Type’ dropdown menu, and select 'Javascript’
 
-![ap6](https://user-images.githubusercontent.com/91633223/204038526-9562753f-f4a2-40e2-935c-eddde572e2a0.png)
+![ap6](images/apb6.png)
 
 **Step 7**: Click “Add Action“ button
 
-![ap7](https://user-images.githubusercontent.com/91633223/204038579-7b9dd430-f113-4991-90e7-f38a95a59928.png)
+![ap7](images/apb7.png)
 
 **Step 8**: Enter any name in “Action Name“
 
-![ap8](https://user-images.githubusercontent.com/91633223/204038629-8968be71-3852-436e-ac67-7aa611ce961c.png)
+![ap8](images/apb8.png)
 
 **Step 9**: In ‘Trigger' section, click on ‘Type’ dropdown menu, and select 'Javascript’
 
-![ap9](https://user-images.githubusercontent.com/91633223/204038654-6da31308-b428-4f14-bc6f-f4147c7baa6b.png)
+![ap9](images/apb9.png)
 
 **Step 10**: Copy the following code into the ‘Text Area’ section
 
@@ -103,7 +103,7 @@ if (!document.getElementById(cssId))
 }
 ```
 
-![ap10](https://user-images.githubusercontent.com/91633223/204038753-ae1f72f5-b643-4576-85f2-668f5dec9ec6.png)
+![ap10](images/apb10.png)
 
 **Step 11**: Click on ‘Save Logic’ and then ‘Save’ the component.
 
@@ -111,31 +111,31 @@ if (!document.getElementById(cssId))
 
 **Step 13**: Enter a unique name in the label field. 
 
-![ap11](https://user-images.githubusercontent.com/91633223/204038808-e397aee9-906d-4ab3-b15d-3e54c7817dee.png)
+![ap11](images/apb13.png)
 
 **Step 14**: Add as many tabs as you want and details for each tab added
 
-![ap12](https://user-images.githubusercontent.com/91633223/204038857-ed3daa9f-5f19-4a0a-af18-b1cdbd10f51c.png)
+![ap12](images/apb14.png)
 
 **Step 15**: Under the ‘Logic’ tab, click on the ‘Add Logic’ button and add any ‘Logic Name’
 
-![ap13](https://user-images.githubusercontent.com/91633223/204038880-051feea0-a4d1-43de-8da6-0feaf1f98fd7.png)
+![ap13](images/apb15.png)
 
 **Step 16**: Under 'Logic Name', enter any name. Under ‘Trigger', select ‘Type’ dropdown menu, and select 'Event’
 
-![ap14](https://user-images.githubusercontent.com/91633223/204038968-1bf0432b-6a7b-49a0-b644-e987b249f0de.png)
+![ap14](images/apb16.png)
 
 **Step 17**: enter “change“ in the “Event Name“ field and click on “Add Action“ button
 
-![ap15](https://user-images.githubusercontent.com/91633223/204039004-1d79024b-fb63-47ca-9f69-25a53ec0d6cd.png)
+![ap15](images/apb17.png)
 
 **Step 18**: Click on the “Add Action“ Button
 
-![ap16](https://user-images.githubusercontent.com/91633223/204039028-2e383337-3542-464e-81b5-67af2d0a2259.png)
+![ap16](images/apb18.png)
 
 **Step 19**: enter any name in the “Action Name“ field, select the “Type“ dropdown menu, and select the “Custom Action“
 
-![ap17](https://user-images.githubusercontent.com/91633223/204039058-907b29f1-a6b3-439b-9a8d-18239f047ad2.png)
+![ap17](images/apb19.png)
 
 **Step 20**: paste the following code into the “Custom Action (Javascript)“ field
 
@@ -197,7 +197,7 @@ function validateFacilityInformationTabComponents() {
 }
 ```
 
-![ap18](https://user-images.githubusercontent.com/91633223/204039128-02c813c2-96ed-411c-9c5d-3afd465e0a6e.png)
+![ap18](images/apb20.png)
 
 > **Note**
 
@@ -230,7 +230,7 @@ function validateFacilityInformationTabComponents() {
 
 **Step 21**: Drag the button component to the builder, and change the label to “Next“. Under “Action“, click the dropdown and change select “Custom“
 
-![ap19](https://user-images.githubusercontent.com/91633223/204052448-b8a9fe3d-e9c3-4efc-adef-35ad52b8b8e3.png)
+![ap19](images/apb21.png)
 
 **Step 22**: Copy the following code into “Button Custom Logic“ field
 
@@ -269,7 +269,7 @@ function validateFacilityInformationTabComponents() {
 }
 ```
 
-![ap20](https://user-images.githubusercontent.com/91633223/204052521-50dcdf1b-ec0c-4f17-82f7-bd524ac7c5b1.png)
+![ap20](images/apb22.png)
 
 
 > **Note**
@@ -288,7 +288,7 @@ function validateFacilityInformationTabComponents() {
 
 **Step 23**: Drag a button component to the builder, and change the label to “Previous“. Under “Action“, click the dropdown and change select “Custom“
 
-![a21](https://user-images.githubusercontent.com/91633223/204052841-c20c6ce8-e8f1-4590-8954-509cb3887ff5.png)
+![a21](images/apb23.png)
 
 **Step 24**: Copy the following code into “Button Custom Logic“ field
 
@@ -306,7 +306,7 @@ progressStepper[(index-1)].classList.remove('completed');
 tab.setTab((index-1));
 ```
 
-![a22](https://user-images.githubusercontent.com/91633223/204052933-d84f6398-6a5f-437c-b17a-30401f9b34fc.png)
+![a22](images/apb24.png)
 
 > **Note**
 
@@ -328,13 +328,13 @@ tab.setTab((index-1));
 
 This Progress Bar is designed to work with any layout component and with the Next and Previous Buttons. Its functionality has been developed almost similarly to Formio Wizard.  You switch between each layout using the Previous and Next buttons. It uses the `hide` attribute of each layout by setting it to true or false and using the triggerRedraw function to redraw the component to the screen.
 
-![ap2](https://user-images.githubusercontent.com/91633223/204036962-61c5845e-366f-4caf-8a6b-99b8e9f12196.png)
+![ap2](images/apbb1.png)
 
 **Step 1**: Start by dragging an ‘HTML Component’ into the form builder.
 
 **Step 2**: change the ‘HTML tag’ field from `p` to `div`, and in the ‘Display’ tag enter a unique and custom class name in the ‘CSS Class. In this screenshot, we used `healthStepper`
 
-![a23](https://user-images.githubusercontent.com/91633223/204053468-2ef2e7ed-1bb5-46a3-96fc-c49e5f89cf37.png)
+![a23](images/apbb2.png)
 
 **Step 3**: Copy the following code into the ‘Content’ section
 
@@ -360,31 +360,31 @@ This Progress Bar is designed to work with any layout component and with the Nex
 </ol>
 ```
 
-![a24](https://user-images.githubusercontent.com/91633223/204053515-fa3cd7cb-2b0d-4d61-8d53-198a883923f0.png)
+![a24](images/apbb3.png)
 
 **Step 4**: Click on the ‘Logic’ tab and click on the ‘Add Logic’ button
 
-![a25](https://user-images.githubusercontent.com/91633223/204053555-c9b82ef6-ae57-4076-9e7e-a1dc688d5fdf.png)
+![a25](images/apbb4.png)
 
 **Step 5**: Enter any Logic Name
 
-![a26](https://user-images.githubusercontent.com/91633223/204053608-d68a81b5-5b78-4191-9318-61b20e95bb2d.png)
+![a26](images/apbb5.png)
 
 **Step 6**: In ‘Trigger' section, click on ‘Type’ dropdown menu, and select 'Javascript’
 
-![a27](https://user-images.githubusercontent.com/91633223/204053654-6976e3b1-cbc8-49a3-926e-570b6288e964.png)
+![a27](images/apbb6.png)
 
 **Step 7**: Click “Add Action“ button
 
-![a28](https://user-images.githubusercontent.com/91633223/204053682-29b5643c-9fe3-45f6-be9a-ae8d4cecbb31.png)
+![a28](images/apbb7.png)
 
 **Step 8**: Enter any name in “Action Name“
 
-![a29](https://user-images.githubusercontent.com/91633223/204053714-a573e58f-ddcf-4e15-a79d-db713a183649.png)
+![a29](images/apbb8.png)
 
 **Step 9**: In ‘Trigger' section, click on ‘Type’ dropdown menu, and select 'Javascript’
 
-![a30](https://user-images.githubusercontent.com/91633223/204053739-74b81fcc-7bdf-4846-bed6-144fe7dff321.png)
+![a30](images/apbb9.png)
 
 **Step 10**: Copy the following code into the ‘Text Area’ section
 
@@ -403,7 +403,7 @@ if (!document.getElementById(cssId))
 }
 ```
 
-![a31](https://user-images.githubusercontent.com/91633223/204053781-b1e0dac4-c89a-4314-b310-c54835f10fad.png)
+![a31](images/apbb10.png)
 
 **Step 11**: Click on ‘Save Logic’ and then ‘Save’ the component.
 
@@ -411,7 +411,7 @@ if (!document.getElementById(cssId))
 
 **Step 13**: Drag a button component to the builder, and change the label to “Previous“. Under “Action“, click the dropdown and change select “Custom“
 
-![a32](https://user-images.githubusercontent.com/91633223/204053849-7fa2a0ef-d2f5-471d-a0c2-ee3e12732f5e.png)
+![a32](images/apbb13.png)
 
 **Step 14**: Copy the following code into “Button Custom Logic“ field
 
@@ -472,11 +472,11 @@ function progressClassName(index){
 }
 ```
 
-![a33](https://user-images.githubusercontent.com/91633223/204053911-33ed0e35-cf6b-4f56-93a9-8ebe52534feb.png)
+![a33](images/apbb14.png)
 
 **Step 15**: Drag a button component to the builder, and change the label to “Next“. Under “Action“, click the dropdown and change select “Custom“
 
-![a34](https://user-images.githubusercontent.com/91633223/204053949-37e7a5da-41e7-4716-b848-c0443b34aabd.png)
+![a34](images/apbb15.png)
 
 **Step 16**: Copy the following code into “Button Custom Logic“ field
 
@@ -534,7 +534,7 @@ function validateFacilityInformationTabComponents() {
 }
 ```
 
-![a35](https://user-images.githubusercontent.com/91633223/204054012-abb31309-ecf4-4ae5-bd3f-61e622b18f8c.png)
+![a35](images/apbb16.png)
 
 > **Note**
 

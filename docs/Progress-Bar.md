@@ -14,15 +14,15 @@
 
 A custom progress bar can be added to the form to enhance the user experience and indicate the remaining steps within the form.
 
-![p1](https://user-images.githubusercontent.com/91633223/203417832-0615f5b3-2397-4e70-8278-03b6c9601f58.png)
+![p1](images/prog1.png)
 
-![p2](https://user-images.githubusercontent.com/91633223/203417845-3f1cb1e1-ee00-4af8-9715-8866f5e669aa.png)
+![p2](images/prog2.png)
 
 **Step 1**: Add an 'HTML Element' component from the 'Advanced Layout' into the form builder.
 
 **Step 2**: Edit the 'HTML Tag' field from `p` to `div` in the 'Display' tab and change the 'CSS Class' to `stepper`.
 
-![p3](https://user-images.githubusercontent.com/91633223/203417949-b9f48b8d-e836-4a54-98b6-0d83ecdbd680.png)
+![p3](images/prog3.png)
 
 **Step 3**: Copy the following code into the 'Content' section (creates 4 tabs):
 
@@ -51,11 +51,11 @@ A custom progress bar can be added to the form to enhance the user experience an
 </ul>
 ```
 
-![p4](https://user-images.githubusercontent.com/91633223/203418007-efffd162-dd90-4af1-8186-b78835b383d4.png)
+![p4](images/prog4.png)
 
 **Step 4**: Navigate to the 'Logic' tab and click on the 'Add Logic' button.
 
-![p6](https://user-images.githubusercontent.com/91633223/203418666-01e1f048-e10b-4b2a-afa2-c6358f8521f9.png)
+![p5](images/prog5.png)
 
 **Step 5**: Enter `stepper` as the 'Logic Name' and select the 'Javascript' type from the 'Trigger' dropdown.
 
@@ -76,7 +76,7 @@ if (!document.getElementById(cssId)) {
 }
 ```
 
-![p5](https://user-images.githubusercontent.com/91633223/203418143-39596438-0c2e-456c-b805-b8a0d66c9b68.png)
+![p7](images/prog7.png)
 
 **Step 7**: Click on 'Save Logic' and then 'Save' the component.
 
@@ -84,23 +84,23 @@ if (!document.getElementById(cssId)) {
 
 **Step 9**: Under the Display settings, enter `progressStepper` in the 'Custom CSS Class'.
 
-![p8](https://user-images.githubusercontent.com/91633223/203418893-b25062a6-4b76-4c54-9576-36e07ae267e3.png)
+![p7](images/prog8.png)
 
 **Step 10**: Under the 'Logic' tab, click on the 'Add Logic' button and add any 'Logic Name':
 
-![p9](https://user-images.githubusercontent.com/91633223/203418946-c662d8f4-4552-47c7-9ea2-a639cd724019.png)
+![p9](images/prog9.png)
 
 **Step 11**: In the 'Trigger' section, select the 'Event' type from the dropdown.
 
 **Step 12**: Enter `change` as the 'Event Name'.
 
-![p10](https://user-images.githubusercontent.com/91633223/203419008-9b600c08-7774-4e1b-bad3-0461337e2ef0.png)
+![p10](images/prog10.png)
 
 **Step 13**: Click on the 'Add Action' button, and enter any 'Action Name'.
 
 **Step 14**: Select 'Custom Action' from the 'Type' dropdown.
 
-![p11](https://user-images.githubusercontent.com/91633223/203419054-f9fae6f8-776f-4c09-93c7-762d71bed5f6.png)
+![p11](images/prog11.png)
 
 **Step 15**: Enter the following code in the 'Custom Action (Javascript)' field:
 
@@ -137,7 +137,7 @@ function rightOfIndex(index, endIndex) {
 }
 ```
 
-![p12](https://user-images.githubusercontent.com/91633223/203419121-2e5287c4-1428-4bba-bca3-f6a2535a36ab.png)
+![p12](images/prog12.png)
 
 **Step 16**: Click on the 'Save Action' and 'Save Logic' buttons, and then 'Save' the component.
 
@@ -188,7 +188,7 @@ window.scrollTo(0, 0);
 ---
 ### Troubleshooting Validation Error
 
-![p13](https://user-images.githubusercontent.com/91633223/203419297-c4d934a0-f7e7-4964-9dd1-dcfa1aca7c5a.png)
+![p13](images/prog13.png)
 
 
 In case of a validation error like the image above, change the code for the ‘Next’ button to match:
