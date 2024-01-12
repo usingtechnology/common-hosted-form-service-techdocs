@@ -1,4 +1,4 @@
-[Home](.) > [Developer](Developer) > [DevOps](DevOps) > **Helpful Kibana Queries**
+[Home](index) > [Developer](Developer) > [DevOps](DevOps) > **Helpful Kibana Queries**
 ***
 
 The OpenShift Container Platform offers a Kibana interface for viewing the previous week of logs. Queries can be saved in Kibana so that they can be easily opened when needed.

@@ -1,4 +1,4 @@
-[Home](.) > [Developer](Developer) > [DevOps](DevOps) > **Helpful Database Queries**
+[Home](index) > [Developer](Developer) > [DevOps](DevOps) > **Helpful Database Queries**
 ***
 
 Sometimes it's necessary to run queries against the database to help solve a problem. Be sure to port-forward from a replica (read-only) database pod so that:

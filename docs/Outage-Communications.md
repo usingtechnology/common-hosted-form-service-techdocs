@@ -1,4 +1,4 @@
-[Home](.) > [Developer](Developer) > [DevOps](DevOps) > **Outage Communications**
+[Home](index) > [Developer](Developer) > [DevOps](DevOps) > **Outage Communications**
 ***
 
 CHEFS is designed to be highly available without outages during CHEFS software deployments as well as during OpenShift cluster upgrades. However, there are rare occasions when CHEFS does have outages:

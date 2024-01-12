@@ -1,4 +1,4 @@
-[Home](.) > [Developer](Developer) > [DevOps](DevOps) > **Database Troubleshooting**
+[Home](index) > [Developer](Developer) > [DevOps](DevOps) > **Database Troubleshooting**
 ***
 
 CHEFS uses the PostgreSQL database with high availability provided by Patroni. As CHEFS users increase the database grows both in size and the number of queries that it has to process. The queries must be very efficient, otherwise they will become a bottleneck, the load on the database will grow until it reaches the CPU limit, and then API calls will begin to fail.
