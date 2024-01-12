@@ -1,7 +1,7 @@
-[Home](.) > [CHEFS Capabilities](CHEFS-Capabilities) > [Form Management](Form-Management) > **Sharing a submission**
+[Home](index) > [CHEFS Capabilities](CHEFS-Capabilities) > [Form Management](Form-Management) > **Sharing a submission**
 ***
 
-![image](https://user-images.githubusercontent.com/87393930/235733786-f9b9ac58-08bc-42b7-8f9b-1028ee123451.png)
+![image](images/update_needed.png)
 
 
 This feature allows a group of people to fill in a submission.

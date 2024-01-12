@@ -1,4 +1,4 @@
-[Home](.) > [CHEFS Capabilities](CHEFS-Capabilities) > [Data Management](Data-Management) > **Privacy and data collection**
+[Home](index) > [CHEFS Capabilities](CHEFS-Capabilities) > [Data Management](Data-Management) > **Privacy and data collection**
 ***
 
 * [Privacy](#Privacy)
@@ -20,7 +20,8 @@ We recommend that program areas that create forms complete a Privacy Impact Asse
 If you want to use CHEFS as a survey tool and anonymity is a requirement, you need to set your form to "Public." Requiring a user to log in will connect their answers to their username. 
 
 To set your form responses to anonymous, open the "Manage Form" page and click "Public" under "Form Access."
-<p><img src="images/privacy-surveys.png" alt="Setting your form as public" /></p>
+
+[img](images/privacy-surveys.png)
 
 ## Data storage
 **[Back to top](#top)**
