@@ -11,7 +11,7 @@ You can choose from three levels of access for your form – **Public**, **Log-i
 
 Each option comes with its own set of considerations.
 
-[img](images/chefs-form-access-fig1.png)
+![img](images/chefs-form-access-fig1.png)
 
 **Public (anonymous)**
 
@@ -47,12 +47,12 @@ To invite team members:
 2. From your list of forms, click **Manage** for the form you want to update.
 3. Click **Team Management** on the **Manage Form** page.
 
-[img](images/chefs-form-access-fig2.png)
+![img](images/chefs-form-access-fig2.png)
 
 
 4. Under **Team Management**, check the box in the **Submitter** column for any user in the table you want to have access.
 
-[img](images/chefs-form-access-fig3.png)
+![img](images/chefs-form-access-fig3.png)
 
 > **Note**: If there is no one on your team list, you will need to add them. [Learn how to add a user to your team](/bcgov/common-hosted-form-service/wiki/Managing-admin-teams#adding-a-new-team-member).
 
@@ -67,7 +67,7 @@ To update access to an existing form:
 2.	From your list of forms, click **Manage** for the form you want to update.
 3.	Click **Edit** in the **Form Settings** header.
 
-[img](images/chefs-form-access-fig4.png)
+![img](images/chefs-form-access-fig4.png)
 
 4.	In the **Form Access** section under **Form Settings**, choose the new access level you want to use.
 5.	Click **Update** to accept the change.

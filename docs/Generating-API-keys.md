@@ -1,4 +1,4 @@
-[Home](.) > [CHEFS Capabilities](CHEFS-Capabilities) > [Data Management](Data-Management) > **Generating API keys**
+[Home](index) > [CHEFS Capabilities](CHEFS-Capabilities) > [Data Management](Data-Management) > **Generating API keys**
 ***
 
 
