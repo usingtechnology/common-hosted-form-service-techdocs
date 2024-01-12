@@ -7,6 +7,7 @@
 
 ## Working with submissions
 * [Printing from a browser](Printing-from-a-browser)
+<!-- Techdocs automatically added /CHEFS-functionalities to the URL path below hence the ../ -->
 * [Download a submission with custom format (CDOGS)](../Download-a-submission-with-custom-format-%28CDOGS%29)
 * [Copy an existing submission](Copy-an-existing-submission)
 * [Restoring a deleted submission](Restoring-a-deleted-submission)

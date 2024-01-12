@@ -1,4 +1,4 @@
-[Home](.) > [CHEFS Capabilities](CHEFS-Capabilities) > [CHEFS functionalities](CHEFS-functionalities) > **Allow multiple draft upload**
+[Home](index) > [CHEFS Capabilities](CHEFS-Capabilities) > [CHEFS functionalities](CHEFS-functionalities) > **Allow multiple draft upload**
 ***
 
 This new feature allows you to upload your draft submissions using the User Interface by simply providing a JSON file. Each object in this JSON file serves as a separate draft submission. You can download a Form-specific JSON file, also known as a Template file, and modify it to add multiple submissions as objects. So, you can easily submit multiple drafts with just one file upload!
@@ -32,8 +32,8 @@ When you modify the JSON template file for a basic form that has only two text f
 
 In this JSON template, there are three Draft submissions. See the video below to know how to upload a JSON template. Once you upload JSON it will process the file and submit all the draft submissions collected from the JSON template file.
 
-<video width="320" height="240" controls>
-  <source src="videos/multi-draft-upload.mp4" type="video/mp4">
+<video width="640" height="480" controls>
+  <source src="videos/multi-draft-upload.mp4">
   Your browser does not support the video tag.
 </video>
 
