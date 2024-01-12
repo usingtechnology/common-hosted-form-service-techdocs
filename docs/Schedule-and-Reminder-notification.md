@@ -1,4 +1,4 @@
-[Home](.) > [CHEFS Capabilities](CHEFS-Capabilities) > [CHEFS functionalities](CHEFS-functionalities) > **Schedule and Reminder notification**
+[Home](index) > [CHEFS Capabilities](CHEFS-Capabilities) > [CHEFS functionalities](CHEFS-functionalities) > **Schedule and Reminder notification**
 ***
 
 
@@ -13,13 +13,13 @@ One thing to remember is that this feature can only be available to the forms th
 
 By enabling this radio box **"Keep open until manually unpublished**" the form submission will normally work, the only limit a form designer can use is to select an "Open submissions date," so basically form will be open on a specific date and will be available until the form get unpublished manually.
 
-![image](https://user-images.githubusercontent.com/87393930/228070850-0a3e995b-0d44-4d9f-8185-96476a8fc8ad.png)
+![image](images/sr1.png)
 
 
 **"Schedule a closing date"** is another option where the form designer can select a specific closing date for a form submission. Selecting the Open and Close date form will open submissions for a specific selected period only. Plus, the form designer can allow end users to submit the form with a Grace period. To do so, the Form designer can use the "Allow late submissions" option and choose a specific interval.
 Upon closing a form, the Form designer can set a custom message for the end user as well. That can be seen on the front end once the form gets closed for a specific period. This feature can be used by clicking on the "Set custom closing message" checkbox.
 
-![image](https://user-images.githubusercontent.com/87393930/228072100-ea2cafa9-51b8-44a8-b3f6-77d5691d1004.png)
+![image](images/sr2.png)
 
 
 
@@ -27,7 +27,7 @@ Last option"**Set up submission period**" will act similarly to the previous one
 One advanced feature here is to set up a Repeat period, Where a Form Designer can set up a form availability repeatedly. By means, the form designer can select a particular repetition to occur for the current form by inputting a positive number in the very first input box that says "Every" as a placeholder, then using the second drop box to select a period, and the last thing using an End date when the repetition should end.
 Upon closing a form, the Form designer can set a custom message for the end user as well. That can be seen on the frontend once the form gets close for a specific period. This feature can be used by clicking on the "Set custom closing message" checkbox.
 
-![image](https://user-images.githubusercontent.com/87393930/228071730-1f26536f-cc92-476f-8b1f-892f9d8224f7.png)
+![image](images/sr3.png)
 
 ## Reminder Notifications
 **[Back to top](#top)**
@@ -48,6 +48,6 @@ When the form has a start and end date or a repeat period, we send three emails,
 
 It is a moment when a form is open for submission, containing a start date and an end date. There are two types of periods. A simple one includes only a start and end date. The second one also has a start and end date but repeats according to an interval. 
 
-![image](https://user-images.githubusercontent.com/87393930/228076441-5696820c-79de-43b7-9316-a9e9b55f15de.png)
+![image](images/sr4)
 
 **[Back to top](#top)**

@@ -11,7 +11,7 @@
 * [Copy an existing submission](Copy-an-existing-submission)
 * [Restoring a deleted submission](Restoring-a-deleted-submission)
 * [Allow multiple draft upload](Allow-multiple-draft-upload)
-* [Multiple people filling out a form together](creating-submission-team)
+* [Multiple people filling out a form together](Creating-Submission-Team)
 
 ## Notifications
 * [CHEFS Notifications and Reminders](CHEFS-Notifications-and-Reminders)
