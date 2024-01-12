@@ -8,7 +8,7 @@
 
 ## Form Logic and Automation
 - [Address with Latitude and Longitude](Address-with-Lat-Long): Address search and autocomplete with autopopulated lat and long 
-- [Calculated values (experimental)](Calculated-values)  
+- [Calculated values (experimental)](Calculated-Values)  
 - [Conditional Show and Hide](Conditional-forms-fields)  
 - [Autopopulating Select field Dropdown Menus (experimental)](Autopopulating-Dropdown-Menus)
 - [Dynamic Select Lists (experimental)](Dynamic-Select-Lists)  
