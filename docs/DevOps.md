@@ -1,4 +1,4 @@
-[Home](.) > [Developer](Developer) > **DevOps**
+[Home](index) > [Developer](Developer) > **DevOps**
 ***
 
 Use the following pages to help you when doing DevOps for the CHEFS application.

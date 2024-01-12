@@ -1,4 +1,4 @@
-[Home](.) > [About CHEFS](About-CHEFS) > **SoAR and Compliance**
+[Home](index) > [About CHEFS](About-CHEFS) > **SoAR and Compliance**
 ***
 
 # SoAR and Compliance Procedures

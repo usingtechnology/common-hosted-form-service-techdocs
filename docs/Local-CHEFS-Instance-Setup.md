@@ -1,4 +1,4 @@
-[Home](.) > [Developer](Developer) > [Contributors](Contributors) > **Local CHEFS Instance Setup**
+[Home](index) > [Developer](Developer) > [Contributors](Contributors) > **Local CHEFS Instance Setup**
 ***
 
 This document will help developers looking to install CHEFS on their local machines for testing and development. Following this documentation will set up an isolated sandbox CHEFS instance for investigation and research prior to preparing pull requests or code commits. 

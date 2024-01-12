@@ -1,4 +1,4 @@
-[Home](.) > [Developer](Developer) > **Form.io**
+[Home](index) > [Developer](Developer) > **Form.io**
 ***
 
 * [Form.io validation](Form.io-validation)

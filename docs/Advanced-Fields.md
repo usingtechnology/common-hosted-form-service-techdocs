@@ -1,4 +1,4 @@
-[Home](.) > [CHEFS Components](CHEFS-Components) > [Form Builder Components](Form-Builder-Components) > **Advanced Fields**
+[Home](index) > [CHEFS Components](CHEFS-Components) > [Form Builder Components](Form-Builder-Components) > **Advanced Fields**
 ***
 
 | ![image](images/advanced-fields.png) | Advanced Fields in form builders are an extension of Basic Fields, specifically designed to cater to more complex requirements. They offer additional features, functionality, or customization options beyond what the Basic Components provide |
@@ -376,7 +376,7 @@ Options Label Position: Determines the position of the option label relative to 
 Inline Layout: Displays the option values horizontally
 </details>
 
-![image](https://github.com/bcgov/common-hosted-form-service/assets/87393930/5436bff6-90f1-4241-9adc-8e04a9412787)
+![image](images/advanced-radio.png)
 
 
 

@@ -1,4 +1,4 @@
-[Home](.) > [CHEFS Components](CHEFS-Components) > [Custom Components](Custom-components) > **Autopopulating Dropdown Menus**
+[Home](index) > [CHEFS Components](CHEFS-Components) > [Custom Components](Custom-components) > **Autopopulating Dropdown Menus**
 ***
 
 ## Examples
@@ -37,7 +37,7 @@ This example uses JSON data from a BCGov github repo called [Ministry Org Names]
 | Enable Static Search| your choice    | checked                    |   
 
 For all other values use the defaults. If done correctly, the preview window will now show the JSON data in the select list drop-down.  
-![Screenshot 2023-07-10 at 11 35 34 AM](https://github.com/bcgov/common-hosted-form-service/assets/25111805/2236c1be-a2da-4e61-b752-a503ef544520)
+![img](images/auto-dropdown.png)
 
 ## Option 2 - Autopopulate a "Sector Name" Select field with the full list of sectors  
 ### Using a URL to a raw JSON file as the source for your "select" component dropdown menu values

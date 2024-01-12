@@ -1,3 +1,4 @@
+<!-- This documentation provides a guide on how to design forms for the use cases mentioned below. It can be improved upon. The videos have not been migrated as they were not downloadable and this documentation is not referenced anywhere. -->
 **Note:** Nested grids (Components) such as Edit Grid, Data Grid, Container, etc., in your form will be converted to rows of data in submissions. 
 
 Template 1: When exporting your submission to CSV and you want these rows to be extracted (flattened) into multi rows in CSV, use this template. This template will backfill empty spaces in each row. See the video below:

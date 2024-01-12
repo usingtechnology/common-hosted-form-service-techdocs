@@ -1,4 +1,4 @@
-[Home](.) > [CHEFS Capabilities](CHEFS-Capabilities) > **Form Multilanguage**
+[Home](index) > [CHEFS Capabilities](CHEFS-Capabilities) > **Form Multilanguage**
 ***
 
 ## Internationalization
@@ -38,7 +38,7 @@
 <summary>Example</summary>
 The example below shows the CHEFS homepage in the English language, and after the language switch to the French language, it shows looks like in the French Language.
 
-![An example of text translated to French](https://github.com/bcgov/common-hosted-form-service/assets/14250649/a0f26b6c-ff16-4e93-be81-bcd8c5e9bdb4)
+![An example of text translated to French](images/fm-french.png)
 
 </details>
 
@@ -312,9 +312,9 @@ if(data.preventRedraw==="false") {
 <details>
 <summary>Example Screenshots</summary>
 
-![image of the form in design view](https://github.com/bcgov/common-hosted-form-service/assets/14250649/5d1c152a-6c80-4df1-b5db-ad8ebea20a43)
-![image of the published form in English](https://github.com/bcgov/common-hosted-form-service/assets/14250649/67e9d076-a1ee-4c1b-bb4d-ad069ef69e01)
-![image of the published form in French](https://github.com/bcgov/common-hosted-form-service/assets/14250649/d79f4273-a32d-4067-b2b4-1ec685212426)
+![image of the form in design view](images/fm1.png)
+![image of the published form in English](images/fm2.png)
+![image of the published form in French](images/fm3.png)
 </details>
 
 ## Languages Translation Model

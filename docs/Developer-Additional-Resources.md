@@ -1,4 +1,4 @@
-[Home](.) > [Developer](Developer) > **Developer Additional Resources**
+[Home](index) > [Developer](Developer) > **Developer Additional Resources**
 ***
 
 # Common Services API Access

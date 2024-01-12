@@ -1,4 +1,4 @@
-[Home](.) > [CHEFS Components](CHEFS-Components) > [Form Builder Components](Form-Builder-Components) > **Advanced Data**
+[Home](index) > [CHEFS Components](CHEFS-Components) > [Form Builder Components](Form-Builder-Components) > **Advanced Data**
 ***
 
 | ![image](images/advanced_data.png) | Advanced data components are fields that manipulate the way Data is presented, saved, and organized. |

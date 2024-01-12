@@ -1,4 +1,4 @@
-[Home](.) > **About CHEFS**
+[Home](index) > **About CHEFS**
 
 ---
 
@@ -96,4 +96,4 @@ You also can reach out to the CHEFS team directly at [submit.digital@gov.bc.ca](
 
 Take a tour of CHEFS to see it in action. **(Youtube)**
 
-[![](https://github.com/bcgov/common-hosted-form-service/assets/87393930/ec61578b-4b21-41a4-bb69-743ccf3d7ad4)](https://youtu.be/obOhyYusMjM)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/obOhyYusMjM?si=HEnwSYnd48BWTio8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
