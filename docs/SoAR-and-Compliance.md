@@ -21,7 +21,6 @@ CHEFS is on a two week sprint schedule, and this review happens every second spr
 - The SSO CSS app in the `My Teams` tab must only contain current users in the `CoCo Team`
 <!--
 #### TODO:
-- revoke access to GH service account
 - api.gov.bc.ca
 - Discord?
 - Confluence/JIRA
@@ -39,8 +38,8 @@ The SoAR section "Assessment", subsection "Vulnerability Management" states:
 CHEFS is on a two week sprint schedule, and this review happens before every sprint planning meeting. In [Red Hat ACS](https://acs.developer.gov.bc.ca) ensure that the top item in the `Images most at risk` has a JIRA item created for it. If not, create a JIRA item in the Backlog using the template:
 
 - _Type_: Task
-- _Title_: ACS Image most at risk: **<IMAGE_NAME>**
-- _Description_:<br>The Red Hat Advanced Cluster Security (ACS) application has identified the image **<IMAGE_NAME>** as being most at risk. To satisfy the requirements outlined in the Security Threat and Risk Assessment's (STRA) Statement of Acceptable Risks (SoAR), this image must be updated to resolve fixable vulnerabilities (or mitigated in some other way, if updating the image is not possible).
+- _Title_: ACS Image most at risk: **[IMAGE_NAME]**
+- _Description_:<br>The Red Hat Advanced Cluster Security (ACS) application has identified the image **[IMAGE_NAME]** as being most at risk. To satisfy the requirements outlined in the Security Threat and Risk Assessment's (STRA) Statement of Acceptable Risks (SoAR), this image must be updated to resolve fixable vulnerabilities (or mitigated in some other way, if updating the image is not possible).
 - _Epic Link_: CHEFS DevOps
 
 Update the log at the end of this page to show that this step has been completed.
@@ -56,9 +55,9 @@ The SoAR section "Assessment", subsection "Vulnerability Management" states:
 CHEFS is on a two week sprint schedule, and this review happens before every sprint planning meeting. In the `common-hosted-form-service` GitHub repository check the `Security` > `Dependabot` alerts. Create a JIRA item in the Backlog for new alerts using the template:
 
 - _Type_: Task
-- _Title_: Dependabot Vulnerability Alert for **<PACKAGE_NAME>** in **<MANIFEST_DIR>**
-- _Description_:<br>The GitHub Dependabot process has created an alert for the **<PACKAGE_NAME>** dependency. To satisfy the requirements outlined in the Security Threat and Risk Assessment's (STRA) Statement of Acceptable Risks (SoAR), this vulnerability must be handled by updating the package version (or mitigated in some other way, if updating the package is not possible).<br>
-  ht<workaround>tps://gi</workaround>thub.com/bcgov/common-hosted-form-service/security/dependabot/**<DEPENDABOT_ID>**
+- _Title_: Dependabot Vulnerability Alert for **[PACKAGE_NAME]** in **[MANIFEST_DIR]**
+- _Description_:<br>The GitHub Dependabot process has created an alert for the **[PACKAGE_NAME]** dependency. To satisfy the requirements outlined in the Security Threat and Risk Assessment's (STRA) Statement of Acceptable Risks (SoAR), this vulnerability must be handled by updating the package version (or mitigated in some other way, if updating the package is not possible).<br>
+  ht<workaround>tps://gi</workaround>thub.com/bcgov/common-hosted-form-service/security/dependabot/**[DEPENDABOT_ID]**
 - _Epic Link_: CHEFS DevOps
 
 Update the log at the end of this page to show that this step has been completed.
@@ -76,9 +75,9 @@ The ZAP scan vulnerabilities were remediated, and the GitHub Actions now run the
 CHEFS is on a two week sprint schedule, and this review happens before every sprint planning meeting. In the `common-hosted-form-service` GitHub repository open the `Issue` called `ZAP Full Scan Report`. At the bottom of the issue follow the link to retrieve the `zap_scan` artifact. Create a JIRA item in the Backlog for new alerts using the template:
 
 - _Type_: Task
-- _Title_: OWASP ZAP Scan Vulnerability **<VULNERABILITY_NAME>**
-- _Description_:<br>The OWASP Zap Scan process has identified a **<VULNERABILITY_RISK_LEVEL>** risk level vulnerability:<br>
-  \> **<VULNERABILITY_DESCRIPTION>**<br>
+- _Title_: OWASP ZAP Scan Vulnerability **[VULNERABILITY_NAME]**
+- _Description_:<br>The OWASP Zap Scan process has identified a **[VULNERABILITY_RISK_LEVEL]** risk level vulnerability:<br>
+  \> **[VULNERABILITY_DESCRIPTION]**<br>
   To satisfy the requirements outlined in the Security Threat and Risk Assessment's (STRA) Statement of Acceptable Risks (SoAR), this vulnerability must be remediated.
 - _Epic Link_: CHEFS DevOps
 
