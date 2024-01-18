@@ -4,7 +4,7 @@ metadata:
   name: "chefs-techdocs"
   description: "CHEFS Technical Documentation"
   annotations:
-    github.com/project-slug: bcgov/common-hosted-form-service-techdocs
+    github.com/project-slug: bcgov/common-hosted-form-service
     backstage.io/techdocs-ref: dir:.
 spec:
   type: documentation
