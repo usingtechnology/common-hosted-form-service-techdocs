@@ -3,20 +3,20 @@ Follow this guide if you want to learn how to quickly get started building forms
 > Are you building your first form?
 > You can now watch our [**video series**](https://www.youtube.com/playlist?list=PL9CV_8JBQHirsQAShw45PZeU1CkU88Q53) on how to get started.
 
-**On this page:**
+<!-- **On this page:**
 * [Form settings](#form-settings)
 * [Form structure](#form-structure)
-* [Basic and advanced components](#Basic-and-advanced-components)
-* [Text field](#Text-field)
-* [Select list](#Select-list)
-* [Column layout](#Column-layout)
+* [Basic and advanced components](#basic-and-advanced-components)
+* [Text field](#text-field)
+* [Select list](#select-list)
+* [Column layout](#column-layout)
 * [Checkbox group](#Checkbox-group)
 * [Panel layout](#Panel-layout)
 * [Static content](#static-content)
 * [B.C. Government components](#bc-government-components)
 * [Save your design](#Save-your-design)
 * [Managing versions](#Managing-versions)
-* [Share your form](#Share-your-form)
+* [Share your form](#Share-your-form) -->
 
 ![Sample Form](images/sample_form.png) 
 
