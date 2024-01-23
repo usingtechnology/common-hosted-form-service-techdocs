@@ -4,12 +4,12 @@
 | ![image](images/advanced_data.png) | Advanced data components are fields that manipulate the way Data is presented, saved, and organized. |
 |----------|----------|
 
-* [Hidden](#hidden)    
+<!-- * [Hidden](#hidden)    
 * [Container](#container)
 * [Data Map](#data-map)
 * [Data Grid](#data-grid)
 * [Edit Grid](#edit-grid)
-* [Tree](#tree)
+* [Tree](#tree) -->
 
 ## Hidden
 <!-- **[Back to top](#top)** -->
