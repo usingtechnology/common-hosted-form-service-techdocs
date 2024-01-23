@@ -341,13 +341,13 @@ The languages translated were those with higher populations in BC. For the CHEFS
    | Simplified Chinese (zh)    | Google & DeepL |  No              |
    | Traditional Chinese (zhTW) | Google & DeepL |  No              |
 
-<details>
+<!-- <details>
 <summary> Demo </summary>
 
 > Download this example file and [import](Importing-and-exporting-form-designs) it into your design<br>
 > [example__multilangrtlsupport_schema.json](examples/example_multilangrtlsupport_schema.json)
 
-</details>
+</details> -->
 
 ***
 [Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

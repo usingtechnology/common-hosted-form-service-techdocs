@@ -5,8 +5,8 @@
 > Try a working example<br>
 > [View example](https://submit.digital.gov.bc.ca/app/form/submit?f=3897ab9e-b9f2-43d5-ab95-3d1344c1516e)
 
-> Download this example file and [import](Importing-and-exporting-form-designs) it into your design<br>
-> [example_tooltip_for_text_images_component_schema.json](examples/example_tooltip_for_text_images_component_schema.json)
+<!-- > Download this example file and [import](Importing-and-exporting-form-designs) it into your design<br>
+> [example_tooltip_for_text_images_component_schema.json](examples/example_tooltip_for_text_images_component_schema.json) -->
 ***
 
 ## Tooltip (Tutorial)
