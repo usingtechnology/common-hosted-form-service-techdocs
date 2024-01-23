@@ -18,7 +18,7 @@ Then in the "Download Options" window, click on "BROWSER PRINT."
 ## Printing to a template
 
 If you want to print your submission result with special formatting, you can use the "CDOGS Template" option. 
-* [Learn about how to integrate our Common Document Generation Service with CHEFS](https://github.com/bcgov/common-hosted-form-service/wiki/CDOGS-Template-Upload)
+* [Learn about how to integrate our Common Document Generation Service with CHEFS](CDOGS-Template-Upload)
 
 ### Saving to a PDF
 If you wish to save the submission as a PDF, you can do this through the same browser printing method. Note that if you have any custom PDF generation driver software installed (such as Adobe), this could interfere with the look of the result.

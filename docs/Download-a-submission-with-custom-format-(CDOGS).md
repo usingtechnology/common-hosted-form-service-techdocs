@@ -1,8 +1,8 @@
 [Home](index) > [CHEFS Capabilities](CHEFS-Capabilities) > [CHEFS functionalities](CHEFS-functionalities) > **Download a submission with custom format (CDOGS)**
 ***
-
+<!-- 
 * [Formatting a submission](#Formatting-a-submission)
-* [Creating a CDOGS template](#Creating-a-CDOGS-template)
+* [Creating a CDOGS template](#Creating-a-CDOGS-template) -->
 
 ## Formatting a submission
 

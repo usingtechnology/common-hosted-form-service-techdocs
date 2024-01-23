@@ -35,7 +35,7 @@ The teams that develop and support the CHEFS software are funded through the OCI
 * Priority bug fixes for all [CHEFS Capabilities](CHEFS-Capabilities) that are not listed as experimental
 * Restoration of the system to operation if there’s unplanned downtime
      * Downtime is an interruption in which you experience a reduction in the existing quality of service or an event that will impact the existing service   
-     * The CHEFS service is setup for [High Availability](https://github.com/bcgov/common-hosted-form-service/wiki/Architecture-&-State-Management#high-availability), notwithstanding; unplanned downtime will trigger automated alarms to the CHEFS Team  
+     * The CHEFS service is setup for [High Availability](Architecture-&-State-Management), notwithstanding; unplanned downtime will trigger automated alarms to the CHEFS Team  
 * Support your use of CHEFS, including requests submitted through our MS Teams channel or via email:  
 
 (a) Non-urgent requests: We are working towards having shorter response times, usually in 1-2 business days, Monday to Friday between 9am-5pm Pacific Time  

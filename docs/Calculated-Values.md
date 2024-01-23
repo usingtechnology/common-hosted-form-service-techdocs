@@ -11,14 +11,14 @@ Use the advanced field of the control you wish to populate with a calculated val
 > [View example](https://submit.digital.gov.bc.ca/app/form/submit?f=081d9df3-b601-461b-99e7-a26a46331b0c)
 
 > Download this example file and [import](Importing-and-exporting-form-designs) it into your design<br>
-> [example_calculated_values_schema.json](examples/example__calculated_values_schema.json)
+> [example_calculated_values_schema.json](./examples/example__calculated_values_schema.json)
 ***
 
 ## Calculated Values (Tutorial)
 
-**On the page:**
+<!-- **On the page:**
 * [Data](#data)
-* [Calculated Values](#calculated-values) 
+* [Calculated Values](#calculated-values)  -->
 
 ## Data
 <!-- **[Back to top](#top)** -->

@@ -26,7 +26,7 @@ The command to run is  ``` export NODE_OPTIONS=--openssl-legacy-provider ```
 
 An IDIR account is required to access CHEFS. 
 
-Request an SSO Integration from the [Common Hosted Single Sign-on (CSS)](https://bcgov.github.io/sso-requests) page in order to obtain a resource and secret that will be used for authentication when building CHEFS. View the [detailed documentation](https://github.com/bcgov/common-hosted-form-service/wiki/Pathfinder-SSO-client) about requesting the Pathfinder SSO integration. 
+Request an SSO Integration from the [Common Hosted Single Sign-on (CSS)](https://bcgov.github.io/sso-requests) page in order to obtain a resource and secret that will be used for authentication when building CHEFS. View the [detailed documentation](Pathfinder-SSO-client) about requesting the Pathfinder SSO integration. 
 
 Ensure that [Docker](https://www.docker.com/get-started/) is installed on your local machine. Using Docker allows for a quick CHEFS build on your local machine however this is not how the production environment is hosted. 
 

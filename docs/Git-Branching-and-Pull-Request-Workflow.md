@@ -1,7 +1,7 @@
 [Home](index) > [Developer](Developer) > [Contributors](Contributors) > **Git Branching and Pull Request Workflow**
 ***
 
-![image](images/coming-soon.png)
+<!-- ![image](images/coming-soon.png) -->
 
 ## Creating and Merging Pull Requests from partners
 

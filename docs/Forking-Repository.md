@@ -19,7 +19,7 @@ Note: The options below are suggestions on how Forminator partners can fork CHEF
 
 ![image](images/forking1.png)
 
-* Create a fork of CHEFS repository into the Ministry's Github.[Git Branching and Pull Request Workflow](https://bcdevex.atlassian.net/wiki/spaces/CCP/pages/963117057) 
+* Create a fork of CHEFS repository into the Ministry's Github. [Git Branching and Pull Request Workflow](Git-Branching-and-Pull-Request-Workflow) 
 
 * Clone forked repo.
 
@@ -53,7 +53,7 @@ git push
 
 * Create a fork of CHEFS repository into the individual developer's Github. 
 
-[Git Branching and Pull Request Workflow](https://bcdevex.atlassian.net/wiki/spaces/CCP/pages/963117057) 
+[Git Branching and Pull Request Workflow](Git-Branching-and-Pull-Request-Workflow) 
 
 * Create a feature|bug fix branch.
 
@@ -95,7 +95,7 @@ git pull origin
 
 * Create a fork of CHEFS repository into the individual developer's Github. 
 
-[Git Branching and Pull Request Workflow](https://bcdevex.atlassian.net/wiki/spaces/CCP/pages/963117057) 
+[Git Branching and Pull Request Workflow](Git-Branching-and-Pull-Request-Workflow) 
 
 * Create a feature|bug fix branch.
 

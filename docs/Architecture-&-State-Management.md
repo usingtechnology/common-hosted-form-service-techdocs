@@ -1,6 +1,6 @@
 [Home](index) > [CHEFS Capabilities](CHEFS-Capabilities) > **Architecture & State Management**
 ***
-**Architecture**
+<!-- **Architecture**
 - [Infrastructure](#infrastructure)
 - [Database Structure](#database-structure)
 - [Code Design](#code-design)
@@ -13,7 +13,7 @@
   - [Submitted](#submitted)
   - [Assigned](#assigned)
   - [Revising](#revising)
-  - [Completed](#completed)
+  - [Completed](#completed) -->
 
 ## Infrastructure
 <!-- **[Back to top](#top)** -->
