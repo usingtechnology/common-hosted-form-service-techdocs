@@ -3,9 +3,9 @@
 
 Workflows and statuses allow you to communicate with your clients and administrative team to complete a CHEFS submissions.
 
-**On this page:**
+<!-- **On this page:**
 * [How to enable workflows](#How-to-enable-workflows)
-* [Using workflows](#Using-workflows)
+* [Using workflows](#Using-workflows) -->
 
 ## How to enable workflows
 

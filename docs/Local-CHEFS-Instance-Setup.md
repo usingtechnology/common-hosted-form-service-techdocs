@@ -3,10 +3,10 @@
 
 This document will help developers looking to install CHEFS on their local machines for testing and development. Following this documentation will set up an isolated sandbox CHEFS instance for investigation and research prior to preparing pull requests or code commits. 
 
-**On this page:**
+<!-- **On this page:**
 * [Prerequisites](#prerequisites)
 * [Setup](#setup)
-* [Build](#build)
+* [Build](#build) -->
 
 
 # Prerequisites

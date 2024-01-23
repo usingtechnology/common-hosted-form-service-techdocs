@@ -1,10 +1,10 @@
 You can create multiple rows of data to create a set of Data points.
 Use the Data Grid Component in the Form Builder to start creating new rows.
 
-On this page:
+<!-- On this page:
 * [Data grids](#data-grids)
 * [Tips](#tips)
-* [Examples](#examples)
+* [Examples](#examples) -->
 
 ## Data Grids
 

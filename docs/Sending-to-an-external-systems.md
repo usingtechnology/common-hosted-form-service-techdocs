@@ -5,10 +5,10 @@ CHEFS forms can be used to save data into the CHEFS backend by default, but can 
 
 >Note: this functionality can only be used for open (unsecured) API endpoints. Never put secure credentials in a form control, as a user would be able to inspect their browser and access those credentials
 
-**On this page:**
+<!-- **On this page:**
 * [Modify button behaviour](#modify-button-behaviour)
 * [Set POST options](#Set-POST-options)
-* [Post](#Post)
+* [Post](#Post) -->
 
 
 ## Modify button behaviour

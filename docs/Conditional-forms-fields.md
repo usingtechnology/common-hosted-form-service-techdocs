@@ -16,9 +16,9 @@
 You can show or hide components based on choices a user makes while filling out a form.
 This can be done by using simple fields or advanced JavaScript logic.
 
-On this page
+<!-- On this page
 * [Simple conditional logic](#Simple-conditional-logic)
-* [Advanced conditional logic](#Advanced-conditional-logic)
+* [Advanced conditional logic](#Advanced-conditional-logic) -->
 
 
 

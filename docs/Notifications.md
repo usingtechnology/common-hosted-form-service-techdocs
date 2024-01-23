@@ -1,6 +1,6 @@
-On this page:
+<!-- On this page:
 * [Sending form submission to an email](#Sending-form-submissions-to-an-email)
-* [Enabling email notifications](#enabling-email-notifications)
+* [Enabling email notifications](#enabling-email-notifications) -->
 
 
 ## Sending form submission to an email

@@ -4,11 +4,11 @@
 
 Connect your 3rd party applications with CHEFS to give it access to any of your form's data through our [documented CHEFS API specifications](https://submit.digital.gov.bc.ca/app/api/v1/docs).
 
-**On this page:**
+<!-- **On this page:**
 * [How to generate and regenerate an API key](Generating-API-Keys#how-to-generate-and-regenerate-an-api-key)
 * [How to make a call to the CHEFS API](Generating-API-Keys#how-to-make-a-call-to-the-chefs-api)
 * [Which API endpoints can be called?](Generating-API-Keys#which-api-endpoints-can-be-called)
-* [How to handle API Rate Limiting](Generating-API-Keys#how-to-handle-api-rate-limiting)
+* [How to handle API Rate Limiting](Generating-API-Keys#how-to-handle-api-rate-limiting) -->
 
 ## How to generate and regenerate an API key
 

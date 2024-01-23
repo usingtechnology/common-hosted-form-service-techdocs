@@ -6,9 +6,9 @@
 
 This feature allows a group of people to fill in a submission.
 
-**On this page:**
+<!-- **On this page:**
 * [Enable submission sharing in the form settings](#Enable-submission-sharing-in-the-form-settings)
-* [How to share a submission](#How-to-share-a-submission)
+* [How to share a submission](#How-to-share-a-submission) -->
 
 ## Enable submission sharing in the form settings
 To enable shared submissions, the form owner must select the check box for "Enable submitters of this form to Save and Edit Draft submissions" in the form's settings.

@@ -1,9 +1,9 @@
 [Home](index) > [CHEFS Capabilities](CHEFS-Capabilities) > [Form Management](Form-Management) > **Accessing forms**
 ***
 
-On this page:
+<!-- On this page:
 - [To set form access](#to-set-form-access)
-- [To use Log in Required with BCeID](#to-use-log-in-required-with-bceid)
+- [To use Log in Required with BCeID](#to-use-log-in-required-with-bceid) -->
 
 ## To set form access
 

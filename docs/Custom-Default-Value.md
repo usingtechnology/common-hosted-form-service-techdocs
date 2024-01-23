@@ -22,10 +22,10 @@ Custom Default Values are only available on Advanced Fields.
 ***
 
 ## Custom Default Value (Tutorial)
-
+<!-- 
 On this page:
 * [Getting the Current User's Email](#Getting-the-Current-User's-Email)
-* [Tips](#Tips)
+* [Tips](#Tips) -->
 
 ## Getting the Current User's Email
 <!-- **[Back to top](#top)** -->

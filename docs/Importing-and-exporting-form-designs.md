@@ -4,9 +4,9 @@
 
 Learn how to import a template into the form designer.
 
-On this page:
+<!-- On this page:
 * [Import a form design](#import-a-form-design)
-* [Export a form design](#export-a-form-design)
+* [Export a form design](#export-a-form-design) -->
 
 At the top of the form designer there are tools to help save and manage the form. You may import a form design or export a design to save on your computer. The file is JSON format.
 
