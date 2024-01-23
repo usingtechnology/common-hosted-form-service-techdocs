@@ -30,14 +30,14 @@ As you can see, there are two comments on the last screenshot. One is to downloa
 When you modify the JSON template file for a basic form that has only two text fields i.e. First name and Last Name, then the Jason file may look like this.
 ![image](images/multi4.png)
 
-In this JSON template, there are three Draft submissions. See the video below to know how to upload a JSON template. Once you upload JSON it will process the file and submit all the draft submissions collected from the JSON template file.
+In this JSON template, there are three Draft submissions. Once you upload the JSON it will process the file and submit all the draft submissions collected from the JSON template file.
 
-<video width="640" height="480" controls>
+<!-- <video width="640" height="480" controls>
   <source src="videos/multi-draft-upload.mp4">
   Your browser does not support the video tag.
 </video>
 
-![video](./videos/multi-draft-upload.mp4)
+![video](./videos/multi-draft-upload.mp4) -->
 
 <!-- **[Back to top](#top)** -->
 
