@@ -13,4 +13,7 @@ CHEFS requires single sign on authentication which is done through the Pathfinde
 Once your SSO integration request is approved, you’ll have the ability to download a JSON file containing your client id and secret labeled as ***resource*** and ***secret***.
 
 
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
+
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

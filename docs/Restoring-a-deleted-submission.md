@@ -14,4 +14,7 @@ Once you've found the submission you want to restore, simply click the restore b
 ![img](images/restore3.jpeg)
 <img width="741" alt="img" src="images/restore4.png">
 
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
+
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

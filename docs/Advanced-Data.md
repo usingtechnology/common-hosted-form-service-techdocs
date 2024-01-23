@@ -12,7 +12,7 @@
 * [Tree](#tree)
 
 ## Hidden
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 The Hidden component is more of an open-ended tool to be used within the form or application.  While there is no front-end widget or display for hidden components, the component will be visible within the form builder. The Hidden component can handle behind-the-scenes calculations or logic needed to facilitate more advanced workflows on your form or application.
 
@@ -20,21 +20,21 @@ The Hidden component is more of an open-ended tool to be used within the form or
 
 
 ## Container
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 A Container is a wrapper around a set of fields, similar to a Field Set. What makes the Container unique is the way the data is stored. The fields inside the Container are put into an object with the container key. This is useful for creating more complex objects and data sets within your form.
 
 ![Container](images/container.png)
 
 ## Data Map
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 A Data Map component allows users to create key/value pairs. Both the key and the value fields can get the values while filling out the form. New pairs can be added to the form by the 'Add Another' button and removed by the 'X' (Remove Row) button.
 
 ![Data map](images/data_map.png)
 
 ## Data Grid
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 Data Grids allow users to add a grouping of components on a line item grid. Users can then add multiple rows of the component grouping inside the Data Grid. Additionally, any number of grids can be added within a form, which is especially useful when needing the ability to add or duplicate multiple fieldsets.
 
@@ -71,20 +71,20 @@ If you require a high volume of columns in your Data Grid, we suggest that you o
 
 
 ## Edit Grid
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 The Edit Grid replicates a table-like structure when it comes to the capture and display of form data. Users can add multiple components inside the Edit Grid. Additionally, any number of grids can be added within a form, which is especially useful when needing the ability to add or duplicate multiple fieldsets. There is also flexibility in how the Edit Grid data rows are saved and displayed to the end user.
 
 ![Edit grid](images/edit_grid.png)
 
 ## Tree
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 A Tree component is very similar to the Edit Grid component. It replicates a table-like, hierarchical structure when it comes to the capture and display of form data. However, in comparison with the Edit Grid, the Tree component creates a tree-like pattern where users can create a number of data branches. There is only one top-level data entry - a root data entry, which is followed by level 1 data branches, which then are followed by level 2 data branches, and so on. Each level is shaded differently to easily decipher the different relationships.
 
 ![Tree](images/tree.png)
 
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 ***
 - [Basic Layout](Basic-Layout) 
@@ -93,3 +93,6 @@ A Tree component is very similar to the Edit Grid component. It replicates a tab
 - [Advanced Fields](Advanced-Fields) 
 - **Advanced Data**
 - [BC Government](BC-Government)
+
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

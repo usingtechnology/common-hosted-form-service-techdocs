@@ -166,7 +166,8 @@ There should be a block that looks like:
 
 Make sure that your clientSecret is the one found in the chefs client under the Credentials tab. The serverUrl should be the host your keycloak is listening on.
 
-
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)
 
 
 

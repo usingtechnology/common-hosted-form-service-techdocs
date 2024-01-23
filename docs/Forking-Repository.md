@@ -115,7 +115,8 @@ git push
 
 * Create PR from the feature branch to the main CHEFS Repository master branch.
 
-
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)
 
 
 

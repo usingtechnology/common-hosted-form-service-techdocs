@@ -72,3 +72,6 @@ Any staff member may transition a submission in `Revising` state to either anoth
 The `Completed` status indicates that a submission has been fully processed. While a submission is in assigned state, only staff users are able to manipulate the submission, by virtue of staff being a member of the form's team. Staff users are implicitly granted `submission_read` and `submission_update` permissions for all submissions for the form they are associated with.
 
 Any staff member may transition a submission in `Completed` state to either another `Assigned` or `Revising` statuses. While Completed is intended to be a terminal state, these transitions are permitted in the event a staff member performed a transition incorrectly and needs to undo the action.
+
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

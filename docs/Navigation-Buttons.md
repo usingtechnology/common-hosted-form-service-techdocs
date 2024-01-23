@@ -64,4 +64,7 @@ window.scrollTo(0, 0);
 
 Or you can change you tab group name to match the code `tabs`.
 
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
+
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

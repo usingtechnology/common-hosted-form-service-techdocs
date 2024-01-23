@@ -23,7 +23,7 @@ On this page
 
 
 ## Simple Conditional Logic
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 ### Select List
 Drag and drop a `Select List` component into the designer and add some values on the `Data` tab. Ensure one has the value "other".
@@ -46,7 +46,7 @@ When you choose "other" from the select list, the "Other" form field will appear
 Conditional logic **does not work** in the form designer view, you must save the form and view it.
 
 ## Advanced Conditional Logic
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 ### JavaScript
 You can place JavaScript on the Conditional tab in advanced form components to show or hide elements. Here is an example of logic to show or hide a component from choices made in 2 other form fields.
@@ -59,5 +59,7 @@ The "data" variable is the form data object which includes all of the form field
 
 The checkbox component will return a `true` or `false`. There is no need to compare it to a value.
 
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

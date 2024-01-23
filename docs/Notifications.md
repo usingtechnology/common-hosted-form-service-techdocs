@@ -23,3 +23,6 @@ To create a notification when a user submits a form:
 <li>In the text field below the checkbox, you can place the email of any user(s) you want to receive a notification when there is a submission<br>
 <img src="images/notifications-after-submission.png" width="300" height="212" alt="Add team members to the notification list"></li>
 </ol>
+
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

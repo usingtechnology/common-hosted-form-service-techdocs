@@ -64,4 +64,7 @@ makeRequest(url)
 
 Add your own url for your API request and process the response within the .then() block.
 
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
+
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

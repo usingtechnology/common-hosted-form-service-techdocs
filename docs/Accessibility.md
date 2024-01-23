@@ -38,3 +38,6 @@ As an example, the Vox screen reader for the Chrome browser will read this compo
 ![image](images/accessibility.png)
 
 as _"This is the label. This is the tooltip. This is the description. Within: This is the placeholder. Edit text"_. Note that the user does not need to hover, etc, to “pop up” the tooltip to have it read out.
+
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

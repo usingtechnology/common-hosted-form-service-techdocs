@@ -5,7 +5,7 @@
 Calculated values allows you to create fields that get filled in for you based on what the user inputs elsewhere.
 Use the advanced field of the control you wish to populate with a calculated value.
 
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 > Try a working example<br>
 > [View example](https://submit.digital.gov.bc.ca/app/form/submit?f=081d9df3-b601-461b-99e7-a26a46331b0c)
@@ -21,7 +21,7 @@ Use the advanced field of the control you wish to populate with a calculated val
 * [Calculated Values](#calculated-values) 
 
 ## Data
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 To designate which data values for a selection should be used for calculated values in other fields, use the Data tab.
 
@@ -33,7 +33,7 @@ Drag and drop a `Select List` component into the designer and add some values on
 ![](images/conditional_select_list.png) 
 
 ## Calculated Values
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 ### JavaScript
 On the field you wish to display the calculated value, navigate to the `Data` tab.
@@ -54,4 +54,7 @@ You can use this section to create complex calculated values using JavaScript, b
 If you need to know the field name for a field you wish to base a calculated value on, look at the API tab and the Property Name box for the name.
 
 ![](images/conditional_property_name.png)
+
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)
 

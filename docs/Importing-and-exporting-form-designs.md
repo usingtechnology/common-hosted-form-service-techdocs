@@ -13,7 +13,7 @@ At the top of the form designer there are tools to help save and manage the form
 ![](images/import_export_tools.png)
 
 ## Import a form design
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 To import an example form, or one of your own exported forms:
 
@@ -24,7 +24,7 @@ To import an example form, or one of your own exported forms:
 The imported form will load into the designer. **Be careful**, the imported form will **replace** anything you've started so you may want to import into a newly created form.
 
 ## Export a form design
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 To export a form:
 
@@ -32,3 +32,6 @@ To export a form:
 2. Save the JSON file to your computer
 
 Exporting forms is a great way to copy an existing design or share it with others.
+
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

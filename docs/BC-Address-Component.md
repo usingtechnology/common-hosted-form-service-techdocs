@@ -15,3 +15,6 @@ This is a preconfigured component. Please note that users can only change the 'P
 BC Address component in preview mode: 
 
 ![bc3](images/bc-add3.png)
+
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

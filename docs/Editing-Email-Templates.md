@@ -40,3 +40,6 @@ Mustache syntax can be used to add the following fields to the templates:
 All following emails for submission confirmation will use the new templates:
 
 ![image](images/eet6.png)
+
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

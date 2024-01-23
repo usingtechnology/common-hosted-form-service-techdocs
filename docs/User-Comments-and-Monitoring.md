@@ -30,3 +30,6 @@ Everything reported by users or by automated systems will be used in our sprint 
 <!--|CodeQL|Unknown!!! TBD!|Automated||||-->
 
 The CHEFS team members who "own" the channels have a goal of responding as quickly as possible, and hopefully within the same day.
+
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

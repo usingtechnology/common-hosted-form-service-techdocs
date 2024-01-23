@@ -28,7 +28,7 @@ On this page:
 * [Tips](#Tips)
 
 ## Getting the Current User's Email
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 To setup a form field which will default to the currently logged in user's email address, start by dragging over a new `Advanced Fields > @ Email` form field
 
@@ -51,7 +51,7 @@ To make sure all custom defaults are loaded properly you can open your form prev
 ![](images/custom_default_form_preview.png)
 
 ## Tips
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 For further insight into what is available from the variables in the table - an easy way is by entering
 
@@ -59,4 +59,5 @@ For further insight into what is available from the variables in the table - an 
 value = JSON.stringify(token);
 ```
 
-
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

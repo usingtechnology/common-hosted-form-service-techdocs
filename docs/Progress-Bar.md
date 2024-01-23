@@ -244,4 +244,7 @@ function rightOfIndex(index, endIndex) {
 }
 ```
 
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
+
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

@@ -15,3 +15,6 @@ The ‘Preview’ button will preview the form as a submitter would see it, and 
 ![side4](images/sm4.png)
 
 If a user clicks ‘Cancel’, they will automatically be redirected to the form builder page where they can continue working on the form. 
+
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

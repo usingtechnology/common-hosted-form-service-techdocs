@@ -24,7 +24,7 @@ Team members' email addresses must be manually added to the appropriate field to
 
 
 ## Submission Confirmation for Submitters
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 After successfully submitting a form, submitters have the option to send themselves a confirmation email that serves as a receipt for their records. This option becomes available after the user submits the form.
 
@@ -36,7 +36,7 @@ After successfully submitting a form, submitters have the option to send themsel
 
 
 ## Status Change Notifications
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 Email notifications will be sent whenever the Reviewer changes the status of a submission. The specific notifications depend on the status change:
 
@@ -73,7 +73,7 @@ After selecting the reviewer, the recipient will receive the following email not
 
 
 ## Draft Invitation for Team Members
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 The submitter can invite other team members to collaborate on the form draft. To add members, the submitter should click on the team members icon located in the top right corner after saving the initial draft.
 
@@ -86,3 +86,5 @@ If the submitter chooses to remove an added member, CHEFS will notify that membe
 
 ![image](images/noti8.png)
 
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

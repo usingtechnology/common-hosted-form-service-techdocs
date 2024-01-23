@@ -25,3 +25,6 @@ We have created some examples of features you might want to use in your forms. F
 |[Calculations in a Data Grid example](https://submit.digital.gov.bc.ca/app/form/submit?f=66c7918f-aa60-4095-8dfb-36b3002b4d47)|[example__calculations_in_datagrid_schema.json](examples/example__calculations_in_datagrid_schema.json)|
 |[Calculations in Data Grid with dates and time](https://submit.digital.gov.bc.ca/app/form/submit?f=66c7918f-aa60-4095-8dfb-36b3002b4d47)|[example__calculations_in_data_grid_schema.json](example__calculations_in_data_grid_schema.json)|
 |[Tabs controlled with Navigation Buttons](https://submit.digital.gov.bc.ca/app/form/submit?f=3fe31d91-a802-44a4-8215-03110af26470)|[example_navigation_buttons_schema.json](examples/example_navigation_buttons_schema.json)|
+
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

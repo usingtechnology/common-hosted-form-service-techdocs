@@ -13,3 +13,6 @@ Template 3: When exporting your submission to CSV and you want a single row for 
 **Note:**  If you have any of these components: Data Map, Address, BCGeoAddress, and Tree, do not use templates 1-3
 
 Template 4: This template works with Data Map, Address, BCGeoAddress, and Tree components, but you can't use this template if you have a hiding of component logic in your form.
+
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

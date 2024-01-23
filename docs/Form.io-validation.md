@@ -32,3 +32,6 @@ For the validation section  all constraint  work except  JSONLogic Validation
 For Conditional section nothing works, the API does not react on any code.
 
 And for the logic section only simple logic works
+
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

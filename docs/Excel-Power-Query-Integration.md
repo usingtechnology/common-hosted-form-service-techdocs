@@ -55,3 +55,6 @@ You will need this information about your form:
 ![excelPowerQuery14](images/ex14.png)  
 * Refresh data on demand, or review Connection Properties to set a refresh schedule   
 ![excelPowerQuery15](images/ex15.png)  
+
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

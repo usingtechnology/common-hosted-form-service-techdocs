@@ -18,3 +18,6 @@
 ## Notifications
 * [CHEFS Notifications and Reminders](CHEFS-Notifications-and-Reminders)
 * [Editing Email Templates](Editing-Email-Templates) (Experimental)
+
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

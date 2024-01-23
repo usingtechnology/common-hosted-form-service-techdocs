@@ -21,3 +21,6 @@ Always follow these steps:
 * Give third-party users a unique API key (not the one you use)
 * Use two factor authentication
 * Follow instructions for [Generating an API](Generating-API-Keys#how-to-generate-and-regenerate-an-api-key) 
+
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

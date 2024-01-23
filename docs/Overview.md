@@ -25,3 +25,6 @@ Please see the project [Product Roadmap](Product-Roadmap) for more details.
 
 We hope other teams will want to fork our code base and contribute with new features.
 For more details of the technology stack used as well as instructions on how to deploy on OpenShift, please see the [ReadMe pages](https://github.com/bcgov/common-hosted-form-service/blob/master/README.md).
+
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

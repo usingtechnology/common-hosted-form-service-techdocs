@@ -349,6 +349,6 @@ The languages translated were those with higher populations in BC. For the CHEFS
 
 </details>
 
-
-
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)
 

@@ -20,6 +20,7 @@
 - [Tooltip for Text Images Component (experimental)](Tooltip-for-Text-Images-Component)  
 - [Styles (experimental)](Styles)  
  
- 
+ ***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)
 
 

@@ -16,3 +16,6 @@ Now Submitters can see a new action button under My Submissions table called “
 
 ![image](images/ces3.png)
 By clicking on that Icon user will be redirected to the New page where all the existing values from the older submission are auto-populated to the form.
+
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

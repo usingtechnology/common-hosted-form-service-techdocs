@@ -10,3 +10,5 @@ Learn more about some of your options for accessing and managing data through CH
 * [Offline mode](Offline-mode)
 * [Sending to external systems](Sending-to-an-external-systems)
 
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

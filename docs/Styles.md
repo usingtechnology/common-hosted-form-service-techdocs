@@ -36,14 +36,14 @@ You can either paste examples directly into the `content` field or into the `HTM
 You'll find some components built into simple and advanced fields like Panel. Other options are also available in components like adding prefix and suffix to input groups.
 
 ### Utilities
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 Experiment with [Bootstrap Utilities](https://getbootstrap.com/docs/4.0/utilities/) to add custom styles to your form.
 
 ![Custom CSS Class: border border-danger rounded](images/bs_utilities.png)
 
 ### Columns
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 Use [Bootstrap Grids](https://getbootstrap.com/docs/4.0/layout/grid/) to customize columns. A form is 12 columns wide, divide it up any way you like (6x2, 4x3, 10+2, etc). There are some pre-set column widths in Simple Fields. In Advanced Fields, here's an example of 4 columns of width 3 (4 X 3 = 12):
 
@@ -52,7 +52,7 @@ Use [Bootstrap Grids](https://getbootstrap.com/docs/4.0/layout/grid/) to customi
 You can also nest columns, that is to say put columns inside of other components like a panel or even another parent column component.
 
 ### Icons
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 Add icons to buttons and input fields from [Font Awesome](https://fontawesome.com/v4.7.0/icons/).
 
@@ -66,3 +66,5 @@ You can add an input icon in front of a field by adding an HTML tag into the “
 ![](images/bs_prefix_suffix.png)
 
 
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

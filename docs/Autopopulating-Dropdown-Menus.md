@@ -14,7 +14,7 @@ Demonstrates how to implement the cascading dropdown menu effect, where the sele
 ***
 
 ## Autopopulate values of the Select component (Tutorial)
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 ## Option 1 - Autopopulate a "Ministry Name" Select field with the full list of ministries   
 ### Using a URL to a raw JSON file as the source for your "select" component dropdown menu values
@@ -184,4 +184,7 @@ The block of JavaScript fetches the full list of all sectors and ministries and 
 Show and hide form fields with [conditional logic](Conditional-forms-fields).
 In the provided example for this page we used a Simple Conditional for the "Secondary Sector" field which hides itself when "Primary Sector" has an empty value.  To express an empty value or a field that has nothing entered, just leave the "Has the value:" field blank.
 
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
+
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

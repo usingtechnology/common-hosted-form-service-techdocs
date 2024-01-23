@@ -5,3 +5,6 @@ Learn more about some of your options for accessing and managing data through CH
 * [Importing data into CHEFS](https://github.com/bcgov/common-hosted-form-service/wiki/importing-data-into-chefs)
 * [Offline mode](https://github.com/bcgov/common-hosted-form-service/wiki/Offline-mode)
 * [Sending to external systems](https://github.com/bcgov/common-hosted-form-service/wiki/Sending-to-an-external-systems)
+
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

@@ -97,3 +97,6 @@ You also can reach out to the CHEFS team directly at [submit.digital@gov.bc.ca](
 Take a tour of CHEFS to see it in action. **(Youtube)**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/obOhyYusMjM?si=HEnwSYnd48BWTio8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

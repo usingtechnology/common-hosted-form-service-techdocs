@@ -18,3 +18,6 @@ Easily create forms with an intuitive drag-and-drop interface. Add new form comp
 Export to save the design to your computer as a backup or template and import to easily start from where you left off. 
 
 ![Export and import your form design templates](images/export.png) 
+
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

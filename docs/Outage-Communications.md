@@ -52,3 +52,6 @@ The platform team releases their Root Cause Analysis and we pass this informatio
 > *Friday 10:00am*: Hello CHEFS users, this is an update about the CHEFS outage that happened on Wednesday from 10:36am until 1:30pm. The problem was due to network failures in the OpenShift cloud and affected many applications across many ministries. The OpenShift platform team has released their analysis of the problem: [relevant details, etc, etc, etc].
 
 If there are mitigation steps that the CHEFS team can make the application more resilient in the future, these plans should be included in the messaging.
+
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

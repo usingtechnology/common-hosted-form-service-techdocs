@@ -12,3 +12,6 @@ Application troubleshooting:
 * [Helpful Kibana Queries](Helpful-Kibana-Queries): useful queries to find application and database error logs using the Kibana logging tool
 * [Helpful Database Queries](Helpful-Database-Queries): useful queries when it's necessary to dig into the database tables
 * [Database Troubleshooting](Database-Troubleshooting): how to find and correct database performance problems
+
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

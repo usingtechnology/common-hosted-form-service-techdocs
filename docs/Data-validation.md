@@ -11,3 +11,6 @@ When someone submits a form, validation errors will pop up, informing them their
 A CHEFS form field can populate or verify data from an external source by connecting through an unsecured API endpoint. You can do this by writing JavaScript in the form field's settings. 
 
 * [Get started using API for form field validation](https://github.com/bcgov/common-hosted-form-service/wiki/Populating-a-form-design-with-External-Data)
+
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

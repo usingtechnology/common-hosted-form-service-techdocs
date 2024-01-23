@@ -26,3 +26,6 @@ It is also possible to get the list of statuses for each submission.
 - In the ribbon at the top of Power BI click `Get data` and select `Web`
 - Use the URL `https://submit.digital.gov.bc.ca/app/api/v1/submissions/{formSubmissionId}/status` to get the statuses for each submission - you will need to replace `{formSubmissionId}` with the `id` value for each submission 
 - Choose "Basic" for the authorization type, with "User name" set to your `formId` and "Password" set to your API Key
+
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

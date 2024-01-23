@@ -12,7 +12,7 @@ Change content of select list drop-downs with some advanced settings. For instan
 ***
 
 ## Advance select list configurations (Tutorial)
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 Use Advanced Fields for this tutorial.
 
@@ -145,4 +145,6 @@ Use JavaScript to format data, for example the rgba array can be joined with com
 ### Conditional logic
 Show and hide form fields with [conditional logic](Conditional-forms-fields).
 
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

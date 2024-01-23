@@ -9,3 +9,6 @@
 1. now when you get someone submitting the form it will send a post to you channel. that a new submission was received.  
 
 > this only makes sense to do where you are using your channel to help you discuss and manage what to do with new form submissions.
+
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

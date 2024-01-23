@@ -11,7 +11,7 @@
 
 
 ## What is Object Storage?
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 The Object Storage Service is for Ministry and Greater Public Sector clients to store data as objects using standard protocols including S3, NFS, and HTTPS. The S3 compatible storage is a Dell ECS Enterprise Object Storage, providing a scalable, secure, fully managed object storage platform with high availability and enterprise features. Data put into Object Storage will be mirrored by the OCIO between Calgary and Kamloops, with a failover function in the event that one data center is unavailable. The replication of data is asynchronous and constant. There are no data backups within Object Storage as it is meant for archival data.
 
@@ -21,7 +21,7 @@ The Object Storage Service is for Ministry and Greater Public Sector clients to 
 
 
 ## Requesting S3 Object Storage
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 Object Storage requests are handled through the Information Management Branch (IMB) Service Desk, the iStore preparer for several business areas within CITZ. The person submitting the request must be a MySC authorized requestor. 
 
@@ -60,12 +60,12 @@ The status of your ticket can be tracked by visiting the [CITZ IMB Service Desk]
 
 
 ## Migrating Data Between S3 Storage Buckets Using Rclone
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 Rclone is a command-line program to manage files on cloud storage. It is a feature-rich alternative to cloud vendors' web storage interfaces, supporting over 40 storage products including Amazon S3. 
 
 ### What can Rclone do for you?
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 *  Backup (and encrypt) files to cloud storage
 *  Restore (and decrypt) files from cloud storage
@@ -230,7 +230,7 @@ To read more about rclone commands, go to this link: [Commands (rclone.org)](htt
 
 
 ## Creating a New User
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 This article highlights the steps taken in the DELL EMC ECS console to create a new user. Note that a VPN is required to access the admin console. Contact your product owner to inquire about your team’s object storage access. 
 
@@ -284,7 +284,7 @@ This article highlights the steps taken in the DELL EMC ECS console to create a 
 
 
 ## Create New S3 Bucket and Add User to ACL
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 This article highlights the steps taken in the DELL EMC ECS console to create a new S3 bucket and add a user to the Access Contol List (ACL). Note that a VPN is required to access the admin console. Contact your product owner to inquire about your team’s object storage access. 
 
@@ -330,7 +330,7 @@ This article highlights the steps taken in the DELL EMC ECS console to create a 
 
 
 ## S3 Bucket Validation
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 Validation Process
 
@@ -378,4 +378,7 @@ III) extract the key the for each object metadata
 
 IV) compare the keys extracted in III) with the keys extracted in I)
 
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
+
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

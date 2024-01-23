@@ -26,3 +26,6 @@ If you wish to save the submission as a PDF, you can do this through the same br
 You can use your browser's "Save as PDF" print option for best results. You can get to this menu by clicking on the "File" menu and clicking "Print." Then from the "Destination" drop-down, you can select "Save as PDF." The exact wording from the screenshot below may vary from browser to browser.
 
 ![Save to pdf.](images/print_save.png) 
+
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

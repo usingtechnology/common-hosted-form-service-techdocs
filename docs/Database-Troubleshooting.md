@@ -66,3 +66,6 @@ You need to edit the Patroni configuration, which is fun because Patroni uses a 
    ``` 
 
 Done! `pg_stat_statements` can now be used to find long-running queries.
+
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

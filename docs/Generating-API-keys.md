@@ -23,7 +23,7 @@ Please note to never keep your API keys in an unsecure area.
 Once you have an API Key, the `Regenerate API Key` button will invalidate the old key and create a new key. The old key will no longer work to access the API, and you will have to update your applications to use the new key.
 
 ## How to make a call to the CHEFS API
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 You can make calls to our [endpoints](https://submit.digital.gov.bc.ca/app/api/v1/docs) by using [Basic Authorization](https://datatracker.ietf.org/doc/html/rfc7617#section-2).
 
@@ -38,14 +38,14 @@ You can find your Form's ID by going to your Form Settings page, and copying it 
 2. Your Password corresponds to your `Generated API Key`
 
 ## Which API endpoints can be called?
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 You can only make requests to the endpoints that have a BasicAuth Authorization type from our [API Specifications](https://submit.digital.gov.bc.ca/app/api/v1/docs).
 
 ![HTML Tag: div, CSS Class: alert alert-primary](images/api_spec_basic_auth.png)
 
 ## How to handle API Rate Limiting
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 The CHEFS API uses "Rate Limiting" to, as the name suggests, limit the rate at which the API will accept calls. This is to prevent malfunctioning code from accidentally overloading the API and affecting other users.
 
@@ -97,4 +97,7 @@ Once the remaining 13 seconds in the window elapse, the counter is reset to 20 a
 
 The example above is simplified, but in the real world there are always multiple containers that run the API. The count of requests is (currently) not shared between containers. In other words, if the limit is 60 requests and there are two containers running, then worst case is 60 requests per minute, best case is 120 per minute, and probably it will be close to - but under - 120. 
 
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
+
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

@@ -26,7 +26,7 @@ This will now allow you access to all three states: revising, assigned, and comp
 ![](images/status-workflow-settings-2.png)
 
 ## Using workflows
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 To access the workflow features, you need to:
 
@@ -60,7 +60,7 @@ When you click on the "Assign" button, the assignee will receive an email notifi
 Any attached messages will appear in the "Notes" section, so you have a log of all communications.
 
 ## Setting a submission to "Revising"
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 Setting a form to "Revising" allows you to send it back to the submitter to make changes before finalizing their submission.
 
@@ -87,4 +87,7 @@ When you click on the "Complete" button, the reviewer will receive an email noti
 
 Any attached messages will appear in the "Notes" section, so you have a log of all communications.
 
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
+
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

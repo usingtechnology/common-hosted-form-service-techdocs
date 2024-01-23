@@ -24,3 +24,6 @@ If you relaunch a new version of that form there is a button to click to get to 
 ### Submitting the form  
 Only the person who clicks the submit button will be listed as the submitter. However, each person who contributed will have their edits stored in the draft history.  If you had a field that you wanted to autopopulate with a username, email address or full Name, then you need that person to login and be the one to submit the form. If you started completing the form it would have your name in those fields, but if you save it and add another person to the submitter team, then they would load up the form and those values would change to their information.  
 > Here are the instructions to autopopulate data from the logged in User. [Custom-Default-Value](Custom-Default-Value)
+
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

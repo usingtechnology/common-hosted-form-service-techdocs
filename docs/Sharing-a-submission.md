@@ -28,3 +28,6 @@ The person filling in the form can invite team members to edit it when it is a d
 Once the form is submitted, they cannot edit anymore.  
 
 ![Add Team Member to your Submission](images/sub-group_manage-2.png)
+
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

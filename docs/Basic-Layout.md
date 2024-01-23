@@ -4,12 +4,12 @@
 | ![image](images/basic_layout.png) | The Basic Layout includes commonly used form components such as Text/Images, Columns, Tabs, and Panels. It serves as a solid foundation for designing visually appealing and well-structured forms. |
 |----------|----------|
 
-**Page content:**
+<!-- **Page content:**
 
 * [Text/Images](#textimages)
 * [Columns](#columns)
 * [Tabs](#tabs) 
-* [Panel](#panel)    
+* [Panel](#panel)     -->
 
 ## Text/Images
 
@@ -19,7 +19,7 @@ A text/image component merges text editing capabilities with the option to inclu
 
 
 ## Columns
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 This component allows you to group other components, such as Text Field, Text Area, Checkbox, and more, into columns that can be customized. You can use Columns when you want to show multiple components in a single line or to save space vertically on your form.
 
@@ -27,7 +27,7 @@ This component allows you to group other components, such as Text Field, Text Ar
 
 
 ## Tabs
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 This component organizes different sets of fields into separate tabs. It works similarly to a step-by-step wizard, where users can switch between tabs using a navigation bar with tab buttons. Each tab can contain a specific group of components that can be accessed by clicking on the corresponding tab button.
 
@@ -36,7 +36,7 @@ This component organizes different sets of fields into separate tabs. It works s
 It is also possible to control the current tab using "Previous" and "Next" [Navigation Buttons](Navigation-Buttons).
 
 ## Panel
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 A Panel is a useful tool for grouping fields together with a title and visual style. It helps you organize your components and create a more visually appealing user interface.
 
@@ -50,3 +50,5 @@ A Panel is a useful tool for grouping fields together with a title and visual st
 - [Advanced Data](Advanced-Data)
 - [BC Government](BC-Government)
 
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

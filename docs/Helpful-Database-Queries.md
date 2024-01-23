@@ -29,3 +29,6 @@ SELECT version, count(*) FROM form_submission JOIN form_version ON form_submissi
     AND form_submission.draft = false AND form_submission.deleted = false
     GROUP BY version ORDER BY version;
 ```
+
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

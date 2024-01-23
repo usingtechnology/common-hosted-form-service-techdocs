@@ -9,3 +9,5 @@ This component is good to use to track sequence of events where the time of the 
 
 > Example form: [Day versus Date/Time](https://submit.digital.gov.bc.ca/app/form/submit?f=2feb8f40-9c99-4f0c-a416-53d819bc730e)   
 
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

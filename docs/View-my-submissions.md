@@ -12,3 +12,6 @@ Click on the Show my submissions checkbox:
 
 You'll then be presented with your own submissions.
 ![image](images/vs4.png)
+
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

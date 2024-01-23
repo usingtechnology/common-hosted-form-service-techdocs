@@ -35,7 +35,7 @@ Below is a rough outline of the features that we are targeting for CHEFS. [Post 
 
 
 ## v1.5.0
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 * [x] Updated role permissions
 * [x] Navigation bar links updated based on identity provider (IDIR/BCeID Basic/BCeID Business)
@@ -199,5 +199,6 @@ Other Improvements
 * [x] Role based access control to manage a form with 5 roles (owner, team manager, editor, form reviewer, submitter)
 </details>
 
-
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)
 

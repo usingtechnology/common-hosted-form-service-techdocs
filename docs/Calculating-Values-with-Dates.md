@@ -38,7 +38,7 @@ For the text field that you want the calculated number of days between two dates
 _Note for developers_: It appears that the data type for the Date/Time field that returns with data.dateTime is a string. So it first has to be converted back to a date before you can simple subtract the two dates and take advantage of javaScript's automatic converting from date to number.  
 
 ## Autopopulate a Date/Time field with the value 1 Year Later than another Date/Time field
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 Here is the code you will need:
 ```  
@@ -58,3 +58,6 @@ For the Date/Time field that you want the calculated value "1 year later" than y
 1. Go into the field settings, on the data tab, scroll to the bottom and expand the calculated values section, and paste the code above into the javaScript section.   
 2. The name of your Date/Time field used to calculate must match the ones in the javaScript code (```endDateTime```).  To set this value go to the API tab of the settings and type endDateTime into Property Name field. Alternatively you can modify the javaScript code value "endDateTime" to make it match the "property name" you selected for your Date/Time field on the API tab.   
 3. Save your form design and try it out in the preview mode.   
+
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

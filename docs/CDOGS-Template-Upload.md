@@ -39,3 +39,6 @@ Create a simple template upload that shows how to replace a variable in a .txt t
 ![HTML Tag: div, CSS Class: alert alert-primary](images/simple_upload.png)
 
 Learn more about creating complex templates to fit your form's requirements, by [visiting the CDOGS Templating Wiki](https://github.com/bcgov/common-document-generation-service/blob/master/app/USAGE.md#templating).
+
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

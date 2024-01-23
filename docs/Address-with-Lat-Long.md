@@ -45,3 +45,6 @@ value = data.bcaddress.geometry.coordinates[0];
 ```   
 
 Save the field settings, then Save your form and preview to check that it worked.
+
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

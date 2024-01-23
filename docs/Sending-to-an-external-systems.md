@@ -19,7 +19,7 @@ To change the default submit button behaviour, edit the button on your form (or 
 ![modify submit button](images/external_submit_edit.png)
 
 ## Set POST options
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 On the `Display` tab you will modify the properties to change the button behaviour
 
@@ -37,7 +37,7 @@ On the `Display` tab you will modify the properties to change the button behavio
 ![the new button settings](images/external_submit_post.png)
 
 ## POST
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 When the user clicks your edited button, no network calls to the backend of CHEFS will be invoked. You can see the only resultant network activity will be a POST to your specified endpoint.
 
@@ -47,4 +47,5 @@ After the POST occurs, the interface will show `Success` to the user.
 
 ![success message](images/external_submit_success.png)
 
-
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

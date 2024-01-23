@@ -129,3 +129,6 @@ You can send the link to anyone you would like to share this form.
 ![Share your form](images/share.png)
 
 ![Share your form](images/share_link.png)
+
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

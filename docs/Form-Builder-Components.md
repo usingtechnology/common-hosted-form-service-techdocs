@@ -9,3 +9,6 @@
 - [BC Government](BC-Government)
 
 ![](images/form_builder_components.png)
+
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

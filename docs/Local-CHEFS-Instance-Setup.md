@@ -10,7 +10,7 @@ This document will help developers looking to install CHEFS on their local machi
 
 
 # Prerequisites
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 Node v16. You can't go any higher than this as some of the dependencies rely on an older OpenSSL routine which is only available in Node v16. If you try running it with a higher version of Node (e.g. node 20.x) you will get  
 ```    
@@ -31,7 +31,7 @@ Request an SSO Integration from the [Common Hosted Single Sign-on (CSS)](https:/
 Ensure that [Docker](https://www.docker.com/get-started/) is installed on your local machine. Using Docker allows for a quick CHEFS build on your local machine however this is not how the production environment is hosted. 
 
 # Setup
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 Start by cloning the [CHEFS source code](https://github.com/bcgov/common-hosted-form-service) onto your local machine and download `build_package.zip` linked below.
 
@@ -50,7 +50,7 @@ All the files are now configured and you can run Keycloak and PostgreSQL.
 Note that realm-export.json is configured with the SSO integration for the “Development” environment, and will only work with the resource and secret from the Development JSON. 
 
 # Build
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 Start Docker, open a terminal in the `/chefs_build` directory, and run the following command:
 
@@ -73,3 +73,6 @@ Open another terminal in the directory `/common-hosted-form-service/app/frontend
     npm run serve
 
 This will start the process for the CHEFS front end.
+
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

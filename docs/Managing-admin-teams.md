@@ -25,3 +25,5 @@ There are 5 roles available. A form must have always at least 1 owner. A team ma
 | Submitter    | Can submit a team-protected form     | IDIR, Business BCeID , Basic BCeID    |
 
 
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

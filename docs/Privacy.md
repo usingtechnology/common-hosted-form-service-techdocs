@@ -24,3 +24,6 @@ Before publishing or distributing your form you are required to discuss the inte
 ## Requesting a copy of the CHEFS Privacy Impact Assessment (PIA)  
 Privacy Impact Assessment can be requested by contacting Corporate Privacy Office in the Ministry of Citizens' Services (CPIAADMIN CITZ:EX).  
 They are the one who hold the official copies.  When they get your request, they may ask us to approve the sharing of it.  
+
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

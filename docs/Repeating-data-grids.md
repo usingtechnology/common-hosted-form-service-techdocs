@@ -35,3 +35,6 @@ If you require a high volume of columns in your Data Grid, we suggest that you o
 > You can also download the example files and [import](Importing-and-exporting-form-designs) it into your design<br>
 > Simple: [simple-data-grid.json](examples/simple-data-grid.json)<br>
 > Advanced: [advanced-data-grid.json](examples/advanced-data-grid.json)
+
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

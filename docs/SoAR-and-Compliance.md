@@ -95,3 +95,6 @@ During sprint planning arrange for the new JIRA item to be included in the sprin
 |2023-12-07|&check;|&check;|&check;|&check;|
 |2023-11-01|&check;|&check;|&check;|Wait for Vue3|
 |2023-10-12|&check;|&check;|&check;|Wait for Vue3|
+
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

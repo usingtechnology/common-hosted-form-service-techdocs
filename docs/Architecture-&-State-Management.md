@@ -16,7 +16,7 @@
   - [Completed](#completed)
 
 ## Infrastructure
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 The Common Hosted Form Service (CHEFS) is designed to be a cloud-native containerized microservice. CHEFS is intended to be operated within a Kubernetes/OpenShift container ecosystem, where it can scale based on incoming load and demand. The following diagram provides a general overview of how the three main components relate to one another, and how network traffic generally flows between the components.
 
@@ -34,14 +34,14 @@ In general, all network traffic follows the standard OpenShift Route to Service 
 Since this service depends on persistent database connections, we have them configured to leverage a network pool. The network pool allows the service to avoid making a TCP/IP 3-way handshake on every new connection. Instead, the service can leverage existing pipeline traffic and improve general efficiency. We pool connections from CHEFS to Patroni within our architecture. The OpenShift 4 Route and load balancer follow the general default scheduling behaviour as defined by Kubernetes.
 
 ## Database Structure
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 The Postgres database is written and handled via managed, code-first migrations as specified in the repository. We generally store tables regarding users, forms, submissions, and how they relate to each other. Since CHEFS itself is relatively agnostic to form technology used in the frontend, we went with an explicit black-box approach to storing form schemas and submission content. Although we use form.io for form rendering and management, CHEFS can support arbitrary schemas and formats as well.
 
 The key is how CHEFS stores form content: form and submission data are treated as a single, black-box payload for most intents and purposes. The Postgres database stores form content in JSONB columns because they offer reverse indexing and searching support. This method allows us to do simple JSON structured searches for data to a certain degree. JSONB is also generally better than JSON fields in Postgres because it handles whitespaces and other edge cases more cleanly.
 
 ## Code Design
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 While CHEFS itself is a compact microservice with a focused approach to handling and managing forms, not all design choices are self-evident just from inspecting the codebase. The following section will cover some of our major coding decisions. 
 
@@ -64,12 +64,12 @@ Our current limiting factor for scaling higher is the ability of our database to
 ***
 
 # Submission State Management
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 This section outlines the general submission state workflow that the CHEFS application supports. It is  mainly intended for a technical audience, and for people who want to have a better understanding of how the system works.
 
 ## State Diagram
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 The Common Hosted Form Service supports a relatively simple, succinct and generic workflow system consisting of four main key states: `Submitted`, `Assigned`, `Revising` and `Completed`. Most generic user workflows are able to fit within this system as it is highly abstract and generic in nature. The following diagram shows the ways you are able to transition between states in CHEFS:
 
@@ -79,7 +79,7 @@ The Common Hosted Form Service supports a relatively simple, succinct and generi
 The blue transition arrows are only actionable by form staff members, whereas the orange transition arrows are only actionable by form user submitters. In general, there is a very clear, logical boundary of action between users and staff depending on whether a form submission has been submitted to staff or not.
 
 ## Permissions
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 CHEFS has an underlying permission system which governs what users can and cannot do to submissions, forms, and form teams. For the discussion of submission state management, there are four relevant permissions following the general CRUD operations:
 
@@ -93,7 +93,7 @@ CHEFS has an underlying permission system which governs what users can and canno
 How these permissions will be shifted around will be described in the following sections.
 
 ## Statuses
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 This section explains what each of the states does, which states it can transition to, and what permissions get changed along the way.
 
@@ -130,4 +130,7 @@ Any staff member may transition a submission in `Revising` state to either anoth
 The `Completed` status indicates that a submission has been fully processed. While a submission is in assigned state, only staff users are able to manipulate the submission, by virtue of staff being a member of the form's team. Staff users are implicitly granted `submission_read` and `submission_update` permissions for all submissions for the form they are associated with.
 
 Any staff member may transition a submission in `Completed` state to either another `Assigned` or `Revising` statuses. While Completed is intended to be a terminal state, these transitions are permitted in the event a staff member performed a transition incorrectly and needs to undo the action.
+
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)
 

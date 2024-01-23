@@ -38,4 +38,7 @@ To achieve this, add an ‘HTML Element Component’ to your form and click on t
 </h1>
 ```
 
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
+
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

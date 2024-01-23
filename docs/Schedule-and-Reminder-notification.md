@@ -30,7 +30,7 @@ Upon closing a form, the Form designer can set a custom message for the end user
 ![image](images/sr3.png)
 
 ## Reminder Notifications
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 Reminder notifications is a service of chefs that allows the system to send reminder emails to the submitter of a specific form during the open submission period. Generally, it sends three emails, one on the first day of opening, the second in the middle, and the last one day before the end of the period.
 
@@ -50,4 +50,7 @@ It is a moment when a form is open for submission, containing a start date and a
 
 ![image](images/sr4)
 
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
+
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

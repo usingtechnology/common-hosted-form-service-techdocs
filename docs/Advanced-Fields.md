@@ -4,7 +4,7 @@
 | ![image](images/advanced-fields.png) | Advanced Fields in form builders are an extension of Basic Fields, specifically designed to cater to more complex requirements. They offer additional features, functionality, or customization options beyond what the Basic Components provide |
 |----------|----------|
 
-**Page content:**
+<!-- **Page content:**
 
 * [Text Field](#text-field)
 * [Email](#email)
@@ -25,11 +25,11 @@
 * [Radio](#radio)
 * [Button](#button)
 * [Survey](#survey)
-* [Signature](#signature)
+* [Signature](#signature) -->
 
 
 ## Text Field
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 The Text/Images input field is a versatile option for entering short and general text. It provides rules and validations to manage and format the information based on specific requirements. It also offers additional features like multiple masks, label hiding, word/character counters, spellcheck, and disabled mode for added functionality.
 
@@ -37,7 +37,7 @@ The Text/Images input field is a versatile option for entering short and general
  
 
 ## Email
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 The Email component is a string field that carries special input validation ensuring the entered data is in a valid email format. A valid email address consists of an email prefix and an email domain, both in acceptable formats.
 
@@ -45,7 +45,7 @@ The Email component is a string field that carries special input validation ensu
 
 
 ## Text Area
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 The Text Area input field is an enhanced version of a multi-line input field with (Basic layout). It enables users to enter multiple lines of text, making it ideal for longer messages, descriptions, or comments.
 
@@ -65,12 +65,12 @@ In addition to the basic functionality, the Text Area offers several advanced fe
 
 
 ## Url
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 Similar to the Email field, the URL component is a string field that carries special input validation ensuring the entered data is in a valid URL format. Validation will check to see if the entered input data is at least in the correct format to be a legitimate URL potentially.
 
 ## Number
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 Use a Number field whenever a field should be limited to a number value type. There are options to set thousands separators,  decimal places, and decimal requirements.
 
@@ -78,19 +78,19 @@ Use a Number field whenever a field should be limited to a number value type. Th
 
 
 ## Phone Number
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 The Phone Number field carries an input mask to force the user to enter the field data in Phone Number format.
 
 ## Tags
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 The Tag component draws attention to or categorizes elements on your form. Multiple tags can be added to one Tag field.
 ![image](images/advanced-tags.png)
 
 
 ## Address
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 The Address component is a special component that performs an address lookup based on user input using several map and location providers as well as Custom Provider support. Address data can also be entered in free form and will save the address as well as geolocation and other metadata.
 
 <details>
@@ -119,7 +119,7 @@ Custom: Provides settings to integrate your own custom map provider.
 
 
 ## Password
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 The password field has the same options as a text field component. It differs from a text field in that its HTML <input> type will be password instead of text. This will cause the field to display hidden input symbols instead of the entered value.
 
@@ -127,7 +127,7 @@ The password field has the same options as a text field component. It differs fr
 
 
 ## Date Time
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 The Date/Time component is a powerful and flexible component that offers many options for validation, date ranges, and calculations.
 
@@ -212,7 +212,7 @@ A check box can be used for boolean value input field. It can either be checked 
 
 
 ## Day
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 The Day component provides a way to input values for the day, month, and year using either a numeric or dropdown selection field.
 This component offers enhanced functionality compared to the basic version.
@@ -238,14 +238,14 @@ Select - User will select a value relative to the field.
 
 
 ## Time
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 The stand-alone time field allows for manual input or can be replaced with a time selector widget for easier selection.
 ![image](images/advanced-time.png)
 
 
 ## Select Boxes
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 This multi-valued component enables users to select one or multiple options in a checkbox-style format. You can configure the values within the Data tab of the settings. Additionally, you can apply unique settings such as value shortcuts and min/max value validation.
 
@@ -272,7 +272,7 @@ When setting the option value, use only Strings or Numeric values.
 
 
 ## Select
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 The Select component displays a list of values in a dropdown list where users can select one of the values. This component has flexibility on where the data source originates from. There is also a large offering of settings providing different ways of filtering, querying, and loading data values.  
 
@@ -349,7 +349,7 @@ Choices.js options: A raw JSON object to use as options for the Select component
 
 
 ## Currency
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 Use the Currency component when a field should display currency amounts on the field. This component holds a numeric input mask that allows two decimal values and automatically adds commas as a user inputs a currency amount. The type of currency can also be selected which will change the prefix currency symbol.
 
@@ -357,7 +357,7 @@ Use the Currency component when a field should display currency amounts on the f
 
 
 ## Radio
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 The radio component is a field that allows users to select a single option from a list of options displayed in radio-style format. Users can click a selected option to deselect it, returning the field back to its original state.
 <details>
@@ -384,7 +384,7 @@ Inline Layout: Displays the option values horizontally
 
 
 ## Button
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 Buttons can be added to perform various actions within the form. The most obvious function of the Button component is the Submission action. However, you can also utilize the Button component to trigger events associated with workflow logic, reset field data, authenticate to an OAuth provider, and more. 
 In addition to functionality, the button component offers many settings to change the style and theme of the component
@@ -427,7 +427,7 @@ Disable on Form Invalid: If any field on the form is invalid, disable the button
 
 
 ## Survey
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 The Survey component works similarly to the radio. Instead of one question, users are able to select a value for multiple questions which are configured within the component settings. Survey is a great component to utilize when asking multiple questions with the same context of answers or values.
 
@@ -445,7 +445,7 @@ The Survey component works similarly to the radio. Instead of one question, user
 
 
 ## Signature
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 The Signature component allows the end-user to digitally sign a signature pad with either their finger on a touch-enabled device or with the mouse pointer.  When the form is submitted, the Signature pad will be converted into an image and stored with the form submission.
 
@@ -462,3 +462,6 @@ The Signature component allows the end-user to digitally sign a signature pad wi
 - **Advanced Fields**
 - [Advanced Data](Advanced-Data)
 - [BC Government](BC-Government)
+
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

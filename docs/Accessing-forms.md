@@ -73,7 +73,7 @@ To update access to an existing form:
 5.	Click **Update** to accept the change.
 
 ## To use Log in Required with BCeID
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 If you decide to use **Basic BCeID** or **Business BCeID** for your form access, you must notify the Identity Information Management (IDIM) team by email (IDIM.Consulting@gov.bc.ca). They need to know which forms are using the BCeID service and allocate appropriate resources. 
 You should provide them the following in your notification:
@@ -99,4 +99,6 @@ Additional forms created for a similar purpose and similar customer base may not
 
 > **Note:** BCeID users cannot be added to your form as an administrator. See [Managing admin teams](Managing-admin-teams) for more details on how to add administrators to you form.
 
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

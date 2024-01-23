@@ -35,3 +35,6 @@ kubernetes.namespace_labels.environment:prod AND /error|warn/ AND NOT message:"/
 ```
 kubernetes.namespace_labels.environment:prod AND kubernetes.container_name.raw:postgresql AND (message:"\"level\":\"error\"" OR message:"\"level\":\"warn\"")
 ```
+
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

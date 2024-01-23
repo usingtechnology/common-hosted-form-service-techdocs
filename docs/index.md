@@ -16,3 +16,6 @@
 <a href="mailto:submit.digital@gov.bc.ca?subject=Subject%20Line&body=Body%20Text" target="_blank">
   <img src="images/email.png" alt="Image description">
 </a> 
+
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

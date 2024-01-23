@@ -33,3 +33,6 @@ is declined if the reviewers think the work is not ready for a pull request
 * Once approved, the forminators team lead will deploy the change to the test environment, where further smoke or sanity checks will be done.
 
 * Once the feature is ready for production, the forminators team lead will deploy it to the production environment.
+
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

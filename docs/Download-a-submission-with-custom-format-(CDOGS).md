@@ -11,7 +11,7 @@ Having your own personalized template allows you to organize all your user's sub
 Printing from the browser option only allows you to capture whatever is on the screen, using a template gives you more customization options. A typical example would be creating a layout that shows everything a user has submitted in a different format. This new format can be helpful when moving the data to another application.
 
 ## Creating a CDOGS Template
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
 
 You can provide CHEFS a template file that holds variables that let you plug in your user's submission data.
 
@@ -41,4 +41,6 @@ Create a simple template upload that shows how to replace a variable in a .txt t
 
 Learn more about creating complex templates to fit your form's requirements, by [visiting the CDOGS Templating Wiki](https://github.com/bcgov/common-document-generation-service/blob/master/app/USAGE.md#templating).
 
-**[Back to top](#top)**
+<!-- **[Back to top](#top)** -->
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

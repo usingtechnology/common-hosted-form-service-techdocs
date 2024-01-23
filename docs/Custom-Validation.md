@@ -18,4 +18,5 @@ if (!val.isValid() || val.format('YYYY') === '0000') {
 
 This way we validate if user enter incorrect `Day` for example `e2, -2, +2` or leaves `Year` box empty
 
-
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

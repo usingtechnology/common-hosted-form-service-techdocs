@@ -24,3 +24,5 @@
   - [Schedule and Reminder notification](Schedule-and-Reminder-notification) - Schedule and Reminder notification
   - [Allow multiple draft upload](Allow-multiple-draft-upload) - Allow multiple draft upload
 
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

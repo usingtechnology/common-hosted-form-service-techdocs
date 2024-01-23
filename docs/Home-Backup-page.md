@@ -16,7 +16,8 @@
   <img src="images/email.png" alt="Image description">
 </a> 
 
-
+***
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)
 
 
 
