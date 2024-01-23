@@ -1,4 +1,4 @@
-[Terms of Use](terms-of-use) | [Privacy](privacy) | [Security](security) | Service Agreement | [Accessibility](Accessibility)  
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | Service Agreement | [Accessibility](Accessibility)  
 
 # CHEFS Service Agreement  (DRAFT)
   

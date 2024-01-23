@@ -1,4 +1,4 @@
-[Terms of Use](terms-of-use) | [Privacy](privacy) | Security | [Service Agreement](service-agreement) | [Accessibility](Accessibility)
+[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | Security | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)
 
 ## Security Controls
 * Confidentiality: Preventing unauthorized access to information.

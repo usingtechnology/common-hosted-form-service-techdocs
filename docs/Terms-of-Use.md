@@ -1,4 +1,4 @@
-Terms of Use | [Privacy](privacy) | [Security](security) | [Service Agreement](service-agreement) | [Accessibility](Accessibility)
+Terms of Use | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)
 
 ## Your responsibilities   
 

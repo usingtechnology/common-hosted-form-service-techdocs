@@ -1,4 +1,4 @@
-[Terms of Use](terms-of-use) | Privacy | [Security](security) | [Service Agreement](service-agreement) | [Accessibility](Accessibility)
+[Terms of Use](Terms-of-Use) | Privacy | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)
 
 The Common Hosted Form Service (CHEFS) is an open source product built as part of a Common Components Program in the BC Government. An instance of CHEFS is deployed as [Submit.Digital.gov.bc.ca](https://submit.digital.gov.bc.ca). It is running as a service for use by all employees and contractors of the BC Government. [Submit](https://submit.digital.gov.bc.ca) is operated and supported as an Enterprise Service by a team in the Office of the Chief Information Officer.  
 
