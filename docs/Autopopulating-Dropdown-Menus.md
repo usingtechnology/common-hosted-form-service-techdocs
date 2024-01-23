@@ -4,9 +4,8 @@
 ## Examples
 > Try a working example<br>
 > [View example](https://submit.digital.gov.bc.ca/app/form/submit?f=a71bed59-de8b-4f91-a699-fd86b6dbe6ad)
-
-> Download this example file and [import](Importing-and-exporting-form-designs) it into a new form to try it out<br>
-> [example__autopopulating_dropdown_menus_schema.json](examples/example__autopopulating_dropdown_menus_schema.json)  
+<!-- > Download this example file and [import](Importing-and-exporting-form-designs) it into a new form to try it out<br>
+> [example__autopopulating_dropdown_menus_schema.json](examples/example__autopopulating_dropdown_menus_schema.json)   -->
 > When you are ready to implement it into your existing form you can follow these instructions to recreate it.
 
 (Experimental Feature) Autopopulates the values of select list drop-downs with some advanced settings. For instance, the list of ministry names, or the list of ministry sectors.  

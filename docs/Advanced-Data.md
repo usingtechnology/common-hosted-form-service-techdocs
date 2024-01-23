@@ -57,17 +57,17 @@ Once you have populated all of the columns that you want for this Data Grid, you
 
 If you require a high volume of columns in your Data Grid, we suggest that you organize your Components within your Data Grid by inserting additional Columns to organize all of the Data.
 
-> You can also download an example file and [import](Importing-and-exporting-form-designs) it into your design to test out columns in the Data Grid<br>
-> Example: [advanced-data-grid.json](examples/advanced-data-grid.json)
+<!-- > You can also download an example file and [import](Importing-and-exporting-form-designs) it into your design to test out columns in the Data Grid<br>
+> Example: [advanced-data-grid.json](examples/advanced-data-grid.json) -->
 
 ### Examples
 > Try a working example:<br>
 > [View simple example](https://submit.digital.gov.bc.ca/app/form/submit?f=c07fb298-afce-41c5-8f53-8bb838546347)<br>
 > [View advanced example](https://submit.digital.gov.bc.ca/app/form/submit?f=285efa0d-e3d7-457c-9d34-67a9719cac1c)
 
-> You can also download the example files and [import](Importing-and-exporting-form-designs) it into your design<br>
+<!-- > You can also download the example files and [import](Importing-and-exporting-form-designs) it into your design<br>
 > Simple: [simple-data-grid.json](examples/simple-data-grid.json)<br>
-> Advanced: [advanced-data-grid.json](examples/advanced-data-grid.json)
+> Advanced: [advanced-data-grid.json](examples/advanced-data-grid.json) -->
 
 
 ## Edit Grid

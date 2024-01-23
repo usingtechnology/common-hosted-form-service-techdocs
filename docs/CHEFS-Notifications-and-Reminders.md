@@ -2,11 +2,11 @@
 ***
 
 ## Notifications:
-
+<!-- 
 * [Submission Success Confirmation for Team Members](#Submission-Success-Confirmation-for-Team-Members)
 * [Submission Confirmation for Submitters](#Submission-Confirmation-for-Submitters)
 * [Status Change Notifications](#Status-Change-Notifications)
-* [Draft Invitation for Team Members](#Draft-Invitation-for-Team-Members)
+* [Draft Invitation for Team Members](#Draft-Invitation-for-Team-Members) -->
 
 ##
 

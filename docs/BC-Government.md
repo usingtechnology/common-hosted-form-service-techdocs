@@ -1,9 +1,9 @@
 [Home](index) > [CHEFS Components](CHEFS-Components) > [Form Builder Components](Form-Builder-Components) > **BC Government**
 ***
 
-* [File Upload](#file-upload)
+<!-- * [File Upload](#file-upload)
 * [Business Name Search](#business-name-search)
-* [BC Address](#bc-address)
+* [BC Address](#bc-address) -->
 
 ![image](images/bc-gov.png)
 
