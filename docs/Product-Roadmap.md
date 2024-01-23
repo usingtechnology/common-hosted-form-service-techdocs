@@ -13,7 +13,7 @@ Below is a rough outline of the features that we are targeting for CHEFS. [Post 
 
 
 <details>
-  <summary><strong>VX.X - FUTURE PLANS....(expand)</summary>
+  <summary><strong>VX.X - FUTURE PLANS....(expand)</strong></summary>
   
   * [ ] Integrate with COMS for file uploads and to allow access to attachments via the API
 * [ ] Show notes in exported submissions via API (would need to be configurable, so the form owners could allow that or not)
@@ -41,11 +41,11 @@ Below is a rough outline of the features that we are targeting for CHEFS. [Post 
 * [x] Navigation bar links updated based on identity provider (IDIR/BCeID Basic/BCeID Business)
 
 New Features
-* [x] Users can now add BCeID Basic and BCeID Business as team members on their form  - **[Link](https://github.com/bcgov/common-hosted-form-service/wiki/Managing-admin-teams)** 
+* [x] Users can now add BCeID Basic and BCeID Business as team members on their form  - **[Link](Managing-admin-teams)** 
 * [x] Users can now add BCeID Basic and BCeID Business as team members on their drafts
-* [x] Ability to create a new submission from an existing one using a property in the form designers basic fields - **[Link](https://github.com/bcgov/common-hosted-form-service/wiki/Copy-an-existing-submission)** 
-* [x] Sends a notification email reminder when a form is about to open for submission - **[Link](https://github.com/bcgov/common-hosted-form-service/wiki/Schedule-and-Reminder-notification)** 
-* [x] Form schedule in form settings allows a form to open and close on a repeatable date range - **[Link](https://github.com/bcgov/common-hosted-form-service/wiki/Schedule-and-Reminder-notification)** 
+* [x] Ability to create a new submission from an existing one using a property in the form designers basic fields - **[Link](Copy-an-existing-submission)** 
+* [x] Sends a notification email reminder when a form is about to open for submission - **[Link](Schedule-and-Reminder-notification)** 
+* [x] Form schedule in form settings allows a form to open and close on a repeatable date range - **[Link](Schedule-and-Reminder-notification)** 
 
 Bug Fixes
 
