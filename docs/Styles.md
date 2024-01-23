@@ -14,7 +14,7 @@
 
 Create visually pleasing designs with built-in formatting styles using our version of [Bootstrap](https://getbootstrap.com/docs/4.5/components/).
 
-**On this page:**
+<!-- **On this page:**
 
 * [Styles(Tutorial)](#Styles(Tutorial))
    * [Components](#Components)
@@ -22,7 +22,7 @@ Create visually pleasing designs with built-in formatting styles using our versi
    * [Columns](#Columns)
    * [Icons](#Icons)
      * [Button icons](#Button-icons)
-     * [Input icons or text](#Input-icons-or-text)
+     * [Input icons or text](#Input-icons-or-text) -->
 
 ## Styles(Tutorial)
 

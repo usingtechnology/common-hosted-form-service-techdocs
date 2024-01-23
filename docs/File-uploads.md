@@ -1,8 +1,8 @@
 The CHEFS form builder has a 'File Upload' component. This allows someone to attach files or documents when submitting the form.
 
-On this page:
+<!-- On this page:
 * [Configuration options](#Configuration-options)
-* [File Storage](#File-storage)
+* [File Storage](#File-storage) -->
 
 ![File Upload Component](images/file-upload-1.png)
 

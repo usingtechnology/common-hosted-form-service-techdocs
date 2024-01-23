@@ -1,4 +1,4 @@
-  - [Quick Start Guide](Quick-Start-Guide) - learn how to create a basic form
+  - [Quick Start Guide](Quick-start-guide) - learn how to create a basic form
   - [Using the Menu Bar](Side-Menu-Buttons) - how to use the side menu buttons in the form designer
   - [Printing from a browser](Printing-from-a-browser) - options for printing your form results
   - [Calculated Values](Calculated-Values) - use the entered results from one form filed to populate another 
@@ -9,17 +9,17 @@
   - [Dynamic Select Lists](Dynamic-Select-Lists) - changing the contents of another drop-down list based on what the user selects in another drop-down 
   - [File uploads](File-uploads) - allowing users to attach files with their submissions
   - [Importing and exporting form designs](Importing-and-exporting-form-designs) - how to save a reuse your form designs
-  - [Repeating data grids](Repeating-Data-Grids)
+  - [Repeating data grids](Repeating-data-grids)
   - [Styles](Styles) - changing the appearance of your form
-  - [Workflows & Statuses](Workflows-&-Statuses) - you can assign a form to a team member for review, send it back to the submitter or mark it as complete
+  - [Workflows & Statuses](Workflows-and-Statuses) - you can assign a form to a team member for review, send it back to the submitter or mark it as complete
   - [Restoring a deleted submission](Restoring-a-deleted-submission) - you can restore a submission you have deleted
-  - [Tooltip](Tooltip) - add a tooltip or create a custom tooltip using HTML
+  - [Tooltip](Tooltip-for-Text-Images-Component) - add a tooltip or create a custom tooltip using HTML
   - [Navigation Buttons](Navigation-Buttons) - create navigation buttons to switch tabs within a form
   - [Progress Bar](Progress-Bar) - create a simple progress bar to track form progress across tabs
   - [Advanced Progress Bar](Advanced-Progress-Bar) - create an advanced progress bar to navigate between tabs or hidden components
   - [View my submissions](View-my-submissions) - how to view your own submissions for a form
-  - [BC-Address-Component](BC-Address-Component) - using the BC Address Component to autocomplete BC addresses
-  - [Allow multiple submission upload](Allow-multiple-submission-upload) - Allow multiple submission upload
+  - [BC-Address Component](BC-Address-Component) - using the BC Address Component to autocomplete BC addresses
+  - [Allow multiple submission upload](Allow-multiple-draft-upload) - Allow multiple submission upload
   - [Copy an existing submission](Copy-an-existing-submission) - Copy an existing submission
   - [Schedule and Reminder notification](Schedule-and-Reminder-notification) - Schedule and Reminder notification
   - [Allow multiple draft upload](Allow-multiple-draft-upload) - Allow multiple draft upload
