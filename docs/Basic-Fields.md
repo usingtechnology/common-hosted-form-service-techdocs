@@ -44,7 +44,7 @@ A select list field, also known as a dropdown or drop-down list, is a user inter
 ## Checkbox
 <!-- **[Back to top](#top)** -->
 
-A checkbox is a user interface element used for binary selections. Users can click on the checkbox to toggle between a checked and unchecked state. It is commonly used to represent options or preferences that users can select or deselect with a simple click.  If you need an advanced version that supports more functionalities, please check the [Advanced Checkbox](https://github.com/bcgov/common-hosted-form-service/wiki/Advanced-Fields#checkbox)
+A checkbox is a user interface element used for binary selections. Users can click on the checkbox to toggle between a checked and unchecked state. It is commonly used to represent options or preferences that users can select or deselect with a simple click.  If you need an advanced version that supports more functionalities, please check the [Advanced Checkbox](Advanced-Fields/#checkbox)
 
 ![image](images/basic-checkbox.png)
 

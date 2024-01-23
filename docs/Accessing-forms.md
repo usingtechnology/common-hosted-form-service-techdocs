@@ -54,7 +54,7 @@ To invite team members:
 
 ![img](images/chefs-form-access-fig3.png)
 
-> **Note**: If there is no one on your team list, you will need to add them. [Learn how to add a user to your team](/bcgov/common-hosted-form-service/wiki/Managing-admin-teams#adding-a-new-team-member).
+> **Note**: If there is no one on your team list, you will need to add them. [Learn how to add a user to your team](Managing-admin-teams).
 
 To set the access for a new form:
 1.	Click **Create a New Form**.
