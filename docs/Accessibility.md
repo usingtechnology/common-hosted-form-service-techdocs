@@ -27,7 +27,7 @@ We will work with you to:
 ## Accessibility Topics  
 
 - [Form Multilanguage Support](Form-multilanguage) 
-- [Screen Reader Support](Accessibility#Screen-Reader-Support)
+- [Screen Reader Support](Accessibility#screen-reader-support)
 
 ### Screen Reader Support  
   
