@@ -37,6 +37,7 @@ In this JSON template, there are three Draft submissions. See the video below to
   Your browser does not support the video tag.
 </video>
 
+![video](./videos/multi-draft-upload.mp4)
 
 <!-- **[Back to top](#top)** -->
 
