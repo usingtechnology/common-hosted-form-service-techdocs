@@ -1,9 +1,9 @@
 [Home](index) > [CHEFS Capabilities](CHEFS-Capabilities) > [CHEFS functionalities](CHEFS-functionalities) > **Schedule and Reminder notification**
 ***
 
-
+<!-- 
 - [Form schedule](#Form-schedule)
-- [Reminder notifications](#Reminder-notifications)
+- [Reminder notifications](#Reminder-notifications) -->
 
 ## Form schedule 
 

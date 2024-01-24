@@ -1,9 +1,9 @@
 [Home](index) > [CHEFS Capabilities](CHEFS-Capabilities) > [Data Management](Data-Management) > **Privacy and data collection**
 ***
 
-* [Privacy](#Privacy)
+<!-- * [Privacy](#Privacy)
 * [Surveys and privacy](#Surveys-and-privacy)
-* [Data storage](#Data-storage)
+* [Data storage](#Data-storage) -->
 
 ## Privacy
 It's your responsibility to comply with privacy laws governing the collection, use and disclosure of personally identifiable information. 

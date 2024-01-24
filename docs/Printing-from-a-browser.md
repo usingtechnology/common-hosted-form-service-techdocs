@@ -1,9 +1,9 @@
 [Home](index) > [CHEFS Capabilities](CHEFS-Capabilities) > [CHEFS functionalities](CHEFS-functionalities) > **Printing from a browser**
 ***
 
-* [Printing](#Printing)
+<!-- * [Printing](#Printing)
 * [Printing to a template](#Printing-to-a-template)
-* [Saving to a PDF](#Saving-to-a-PDF)
+* [Saving to a PDF](#Saving-to-a-PDF) -->
 
 ## Printing
 

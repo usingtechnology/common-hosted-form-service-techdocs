@@ -2,7 +2,7 @@
 
 This page outlines the general submission state workflow that the CHEFS application supports. It is  mainly intended for a technical audience, and for people who want to have a better understanding of how the system works.
 
-## Table of Contents
+<!-- ## Table of Contents
 
 - [State Diagram](#state-diagram)
 - [Permissions](#permissions)
@@ -11,7 +11,7 @@ This page outlines the general submission state workflow that the CHEFS applicat
   - [Submitted](#submitted)
   - [Assigned](#assigned)
   - [Revising](#revising)
-  - [Completed](#completed)
+  - [Completed](#completed) -->
 
 ## State Diagram
 
