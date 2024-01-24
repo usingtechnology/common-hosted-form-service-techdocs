@@ -8,10 +8,10 @@
 > [View Example: Progress Bar Using Layout with Validation](https://submit.digital.gov.bc.ca/app/form/submit?f=ba809aaa-f975-42a8-bc20-8de12c11ec22)
 
 
-> Download this example file and [import](Importing-and-exporting-form-designs) it into your design<be>
+<!-- > Download this example file and [import](Importing-and-exporting-form-designs) it into your design<be>
 >  [example_progress_bar_with_validation_schema.json](examples/example_progress_bar_with_validation_schema.json)
 >  [example_progress_bar_using_layout_schema.json](examples/example_progress_bar_using_layout_schema.json)
->  [example_progress_bar_using_layout_with_validation_schema.json](examples/example_progress_bar_using_layout_with_validation_schema.json)
+>  [example_progress_bar_using_layout_with_validation_schema.json](examples/example_progress_bar_using_layout_with_validation_schema.json) -->
 
 ---
 ## Advanced Progress Bar (Tutorial)
