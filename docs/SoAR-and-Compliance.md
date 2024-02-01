@@ -14,7 +14,8 @@ The SoAR section "Assessment", subsection "Access Control" states:
 CHEFS is on a two week sprint schedule, and this review happens every second sprint before the sprint planning meeting. Check the following access controls and remove stale user accounts:
 
 - The `Collaborators` in the GitHub repo must only be current developers, and contractors must not have more than `Write` access
-- The `test` and `prod` Environments in GitHub have `Required reviewers` in the protection rules that must only be current users
+- The `chefs-team` in GitHub repo must only be current developers, and contractors must not have more than `Member` access
+- The `pr-external`, `test`, and `prod` Environments in GitHub have `Required reviewers` in the protection rules that must only be current users
 - The `RoleBindings` in the OpenShift `-tools`, `-dev`, `-test`, and `-prod` environments of the `a12c97` and `a191b5` namespaces must only be for current `User` and `ServiceAccount` subjects
 - SysDig access must only be for current team users (`oc -n a12c97-tools get sysdig-team a12c97-sysdigteam -o yaml`)
 - The SSO environments `dev`, `test`, and `prod` must only contain current users in the groups `Realm Administrator`, `Realm Viewer`, and `operations-team`
@@ -90,6 +91,7 @@ During sprint planning arrange for the new JIRA item to be included in the sprin
 <!-- NOTE: The log is in reverse order by date (newest at top) -->
 |Date|Access Review|ACS|Dependabot|OWASP Zap Scan|
 |:---:|:---:|:---:|:---:|:---:|
+|2024-02-01|&check;|&check;|&check;|&check;|
 |2024-01-18|&check;|&check;|&check;|&check;|
 |2024-01-04|&check;|&check;|&check;|&check;|
 |2023-12-07|&check;|&check;|&check;|&check;|
