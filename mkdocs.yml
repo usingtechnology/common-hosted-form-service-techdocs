@@ -6,6 +6,7 @@ plugins:
   - ezlinks
 
 markdown_extensions:
+  - attr_list
   - markdown_inline_mermaid
   - md_in_html
   - mkpatcher:

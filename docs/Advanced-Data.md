@@ -61,6 +61,7 @@ If you require a high volume of columns in your Data Grid, we suggest that you o
 
 Example: [advanced-data-grid.json](./examples/advanced-data-grid.json)
 Example: [advanced-data-grid.json](./api/techdocs/static/docs/default/component/chefs-techdocs/examples/advanced-data-grid.json)
+Example: [advanced-data-grid.json](/examples/advanced-data-grid.json){:download}
 
 
 ### Examples
