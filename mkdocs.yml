@@ -4,7 +4,6 @@ docs_dir: "docs"
 plugins:
   - techdocs-core
   - ezlinks
-  - mkdocs-video-embed
 
 markdown_extensions:
   - attr_list

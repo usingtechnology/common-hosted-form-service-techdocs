@@ -59,7 +59,6 @@ If you require a high volume of columns in your Data Grid, we suggest that you o
 
 > You can also download an example file and [import](Importing-and-exporting-form-designs) it into your design to test out columns in the Data Grid<br>
 
-Example: [advanced-data-grid.json](/docs/examples/advanced-data-grid.json)
 Example: [advanced-data-grid.json](/examples/advanced-data-grid.json){:download="advanced-data-grid.json"}
 
 
@@ -68,9 +67,6 @@ Example: [advanced-data-grid.json](/examples/advanced-data-grid.json){:download=
 > Try a working example:<br>
 > [View simple example](https://submit.digital.gov.bc.ca/app/form/submit?f=c07fb298-afce-41c5-8f53-8bb838546347)<br>
 > [View advanced example](https://submit.digital.gov.bc.ca/app/form/submit?f=285efa0d-e3d7-457c-9d34-67a9719cac1c)
-
-![type:video](/videos/drag_drop.mp4)
-![type:video](/docs/videos/drag_drop.mp4)
 
 <!-- > You can also download the example files and [import](Importing-and-exporting-form-designs) it into your design<br>
 > Simple: [simple-data-grid.json](examples/simple-data-grid.json)<br>
