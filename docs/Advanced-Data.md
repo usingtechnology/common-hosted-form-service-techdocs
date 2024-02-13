@@ -57,8 +57,8 @@ Once you have populated all of the columns that you want for this Data Grid, you
 
 If you require a high volume of columns in your Data Grid, we suggest that you organize your Components within your Data Grid by inserting additional Columns to organize all of the Data.
 
-<!-- > You can also download an example file and [import](Importing-and-exporting-form-designs) it into your design to test out columns in the Data Grid<br>
-> Example: [advanced-data-grid.json](examples/advanced-data-grid.json) -->
+> You can also download an example file and [import](Importing-and-exporting-form-designs) it into your design to test out columns in the Data Grid<br>
+> Example: [advanced-data-grid.json](examples/advanced-data-grid.json)
 
 ### Examples
 > Try a working example:<br>
