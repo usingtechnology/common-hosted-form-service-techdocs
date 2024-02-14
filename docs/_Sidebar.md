@@ -2,7 +2,7 @@
 
 * [Home](Home)
 
-* [About CHEFS](About-CHEFS)
+* [About CHEFS](About/About-CHEFS)
 
 * [Roadmap](Product-Roadmap)
 
