@@ -6,10 +6,10 @@
 
 * [Roadmap](Product-Roadmap)
 
-* [CHEFS Capabilities](CHEFS-Capabilities)
-  * [Functionalities](CHEFS-functionalities)
-  * [Integrations](Integrations)
-  * [Accessibility](Accessibility)
+* [Capabilities](Capabilities)
+  * [Functionalities](Capabilities/Functionalities)
+  * [Integrations](Capabilities/Integrations)
+  * [Accessibility](Capabilities/Accessibility)
   * [Form Management](Form-Management)
   * [Data Management](Data-Management)
   * [Architecture & State Management](Architecture-&-State-Management)

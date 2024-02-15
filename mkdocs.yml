@@ -14,14 +14,14 @@ markdown_extensions:
 nav:
   - About CHEFS: About-CHEFS.md
   - Roadmap: Product-Roadmap.md
-  - CHEFS Capabilities:
-      - Functionalities: CHEFS-functionalities.md
-      - Integrations: Integrations.md
-      - Accessibility: Accessibility.md
-      - Form Management: Form-Management.md
-      - Data Management: Data-Management.md
-      - Architecture & State Management: Architecture-&-State-Management.md
-  - CHEFS Components:
+  - Capabilities:
+      - Functionalities: Capabilities/Functionalities.md
+      - Integrations: Capabilities/Integrations.md
+      - Accessibility: Capabilities/Accessibility.md
+      - Form Management: Capabilities/Form-Management.md
+      - Data Management: Capabilities/Data-Management.md
+      - Architecture & State Management: Capabilities/Architecture-&-State-Management.md
+  - Components:
       - Form Builder Components: Form-Builder-Components.md
       - Custom Components: Custom-components.md
       - Examples of CHEFS forms and features: Examples-of-CHEFS-forms-and-features.md
