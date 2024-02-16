@@ -12,6 +12,7 @@ markdown_extensions:
   - mkpatcher:
       location: patcher.py
 nav:
+  - Home: index.md
   - About CHEFS: About.md
   - Roadmap: About/Product-Roadmap.md
   - Capabilities:
