@@ -3,6 +3,7 @@
 # Common Hosted Forms Service - Technical Documentation
 
 Technical documentation repository to be hosted in Backstage.
+The main code repo these techdocs refer to is: [https://github.com/bcgov/common-hosted-form-service](https://github.com/bcgov/common-hosted-form-service)  
 
 ## Technical Details
 
