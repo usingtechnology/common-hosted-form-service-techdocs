@@ -20,7 +20,7 @@ nav:
       - Accessibility: Capabilities/Accessibility.md
       - Form Management: Capabilities/Form-Management.md
       - Data Management: Capabilities/Data-Management.md
-      - Architecture & State Management: Capabilities/Architecture-&-State-Management.md
+      - Architecture & State Management: Capabilities/Architecture.md
   - Components:
       - Form Builder Components: Components/Form-Builder.md
       - Custom Components: Components/Custom.md

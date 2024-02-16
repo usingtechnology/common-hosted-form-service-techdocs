@@ -1,7 +1,7 @@
 [Home](index) > [Developer](Developer) > **Contributors**
 ***
 
-* [Local CHEFS Instance Setup](Local-CHEFS-Instance-Setup)
+* [Local Setup](Local-Setup)
 * [Forking Repository](Forking-Repository)
 * [Git Branching and Pull Request Workflow](Git-Branching-and-Pull-Request-Workflow)
 * [Keycloak configuration](Keycloak-configuration)
