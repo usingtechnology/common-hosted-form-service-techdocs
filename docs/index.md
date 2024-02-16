@@ -1,11 +1,11 @@
 
 ![img](images/chefs_text.png)
 
-[![img](images/about-chefs.png)](About-CHEFS) 
-[![img](images/roadmap.png)](Product-Roadmap)
-[![img](images/capabilities.png)](CHEFS-Capabilities)
+[![img](images/about-chefs.png)](About) 
+[![img](images/roadmap.png)](About/Product-Roadmap)
+[![img](images/capabilities.png)](Capabilities)
 
-[![img](images/components.png)](CHEFS-Components) 
+[![img](images/components.png)](Components) 
 [![img](images/developer.png)](Developer)
 [![img](images/request_features.png)](https://chefs-fider.apps.silver.devops.gov.bc.ca/)
 
@@ -18,4 +18,4 @@
 </a> 
 
 ***
-[Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)
+[Terms of Use](About/Terms-of-Use) | [Privacy](About/Privacy) | [Security](About/Security) | [Service Agreement](About/Service-Agreement) | [Accessibility](Capabilities/Accessibility)
