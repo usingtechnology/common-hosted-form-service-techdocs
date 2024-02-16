@@ -2,7 +2,7 @@
 ![img](images/chefs_text.png)
 
 [![img](images/about-chefs.png)](About) 
-[![img](images/roadmap.png)](About/Product-Roadmap)
+[![img](images/roadmap.png)](Product-Roadmap)
 [![img](images/capabilities.png)](Capabilities)
 
 [![img](images/components.png)](Components) 
