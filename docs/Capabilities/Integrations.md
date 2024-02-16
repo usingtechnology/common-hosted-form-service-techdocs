@@ -1,4 +1,4 @@
-[Home](index) > [CHEFS Capabilities](CHEFS-Capabilities) > **Integrations**
+[Home](index) > [CHEFS Capabilities](Capabilities) > **Integrations**
 ***
 
 * [Power BI Integration](Power-BI-Integration)

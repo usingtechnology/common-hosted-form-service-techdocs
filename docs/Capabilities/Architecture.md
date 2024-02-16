@@ -1,4 +1,4 @@
-[Home](index) > [CHEFS Capabilities](CHEFS-Capabilities) > **Architecture & State Management**
+[Home](index) > [CHEFS Capabilities](Capabilities) > **Architecture & State Management**
 ***
 <!-- **Architecture**
 - [Infrastructure](#infrastructure)

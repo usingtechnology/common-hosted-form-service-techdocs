@@ -1,4 +1,4 @@
-[Home](index) > [CHEFS Capabilities](CHEFS-Capabilities) > [Form Management](Form-Management) > **Managing admin teams**
+[Home](index) > [CHEFS Capabilities](Capabilities) > [Form Management](Form-Management) > **Managing admin teams**
 ***
 
 To manage your form and its submissions, you have the option to add team members with an IDIR account. Additionally, you can add Basic BCeID users with the role of form submitter, and BCeID Business users with roles including submitter, submission reviewer, and team manager.

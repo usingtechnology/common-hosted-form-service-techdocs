@@ -1,4 +1,4 @@
-[Home](index) > [CHEFS Capabilities](CHEFS-Capabilities) > [Data Management](Data-Management) > **Offline mode**
+[Home](index) > [CHEFS Capabilities](Capabilities) > [Data Management](Data-Management) > **Offline mode**
 ***
 
 CHEFS doesn't have an offline mode or work without an internet connection. 

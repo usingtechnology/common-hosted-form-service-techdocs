@@ -1,4 +1,4 @@
-[Home](index) > [CHEFS Capabilities](CHEFS-Capabilities) > [Form Management](Form-Management) > **Sharing a submission**
+[Home](index) > [CHEFS Capabilities](Capabilities) > [Form Management](Form-Management) > **Sharing a submission**
 ***
 
 ![image](images/update_needed.png)

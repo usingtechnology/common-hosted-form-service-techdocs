@@ -1,4 +1,4 @@
-[Home](index) > [CHEFS Components](CHEFS-Components) > [Custom Components](Custom-components) > **Custom Default Value**
+[Home](index) > [CHEFS Components](Components) > [Custom Components](Custom-components) > **Custom Default Value**
 ***
 
 ## Examples

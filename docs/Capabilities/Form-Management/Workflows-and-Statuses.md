@@ -1,4 +1,4 @@
-[Home](index) > [CHEFS Capabilities](CHEFS-Capabilities) > [Form Management](Form-Management) > **Workflows and Statuses**
+[Home](index) > [CHEFS Capabilities](Capabilities) > [Form Management](Form-Management) > **Workflows and Statuses**
 ***
 
 Workflows and statuses allow you to communicate with your clients and administrative team to complete a CHEFS submissions.

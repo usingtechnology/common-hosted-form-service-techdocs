@@ -1,4 +1,4 @@
-[Home](index) > [CHEFS Components](CHEFS-Components) > **Form Builder Components** 
+[Home](index) > [CHEFS Components](Components) > **Form Builder Components** 
 ***
 
 - [Basic Layout](Basic-Layout) 

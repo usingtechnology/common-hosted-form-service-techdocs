@@ -3,7 +3,7 @@
 # CHEFS Service Agreement  (DRAFT)
   
 ## Our responsibilities  
-For your responsibilities read the CHEFS [Terms of Use](terms-of-use)  
+For your responsibilities read the CHEFS [Terms of Use](Terms-of-Use)  
 
 ### CHEFS Overview
 * Software as a Service (SaaS) system operated by the Office of the Chief Information Officer (OCIO)  
@@ -32,10 +32,10 @@ The teams that develop and support the CHEFS software are funded through the OCI
 
 ### OCIO CHEFS team will provide, operate and support  
 * Patching security vulnerabilities in a timely manner, based on our determination of the level of threat  
-* Priority bug fixes for all [CHEFS Capabilities](CHEFS-Capabilities) that are not listed as experimental
+* Priority bug fixes for all [CHEFS Capabilities](Capabilities) that are not listed as experimental
 * Restoration of the system to operation if there’s unplanned downtime
      * Downtime is an interruption in which you experience a reduction in the existing quality of service or an event that will impact the existing service   
-     * The CHEFS service is setup for [High Availability](Architecture-&-State-Management), notwithstanding; unplanned downtime will trigger automated alarms to the CHEFS Team  
+     * The CHEFS service is setup for [High Availability](Architecture), notwithstanding; unplanned downtime will trigger automated alarms to the CHEFS Team  
 * Support your use of CHEFS, including requests submitted through our MS Teams channel or via email:  
 
 (a) Non-urgent requests: We are working towards having shorter response times, usually in 1-2 business days, Monday to Friday between 9am-5pm Pacific Time  

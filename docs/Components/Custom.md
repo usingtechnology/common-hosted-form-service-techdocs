@@ -1,4 +1,4 @@
-[Home](index) > [CHEFS Components](CHEFS-Components) > **Custom Components** 
+[Home](index) > [CHEFS Components](Components) > **Custom Components** 
 ***
 
 ## Navigation  

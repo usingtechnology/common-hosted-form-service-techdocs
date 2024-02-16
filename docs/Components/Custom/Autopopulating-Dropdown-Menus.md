@@ -1,4 +1,4 @@
-[Home](index) > [CHEFS Components](CHEFS-Components) > [Custom Components](Custom-components) > **Autopopulating Dropdown Menus**
+[Home](index) > [CHEFS Components](Components) > [Custom Components](Custom-components) > **Autopopulating Dropdown Menus**
 ***
 
 ## Examples

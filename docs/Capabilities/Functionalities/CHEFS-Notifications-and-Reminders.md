@@ -1,4 +1,4 @@
-[Home](index) > [CHEFS Capabilities](CHEFS-Capabilities) > [CHEFS Functionalities](CHEFS-functionalities) > **CHEFS Notifications and Reminders**
+[Home](index) > [CHEFS Capabilities](Capabilities) > [CHEFS Functionalities](CHEFS-functionalities) > **CHEFS Notifications and Reminders**
 ***
 
 ## Notifications:

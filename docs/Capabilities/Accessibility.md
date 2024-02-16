@@ -1,4 +1,4 @@
-[Home](index) > [CHEFS Capabilities](CHEFS-Capabilities) > **Accessibility** 
+[Home](index) > [CHEFS Capabilities](Capabilities) > **Accessibility** 
 ***  
 ## Our Approach 
 Accessibility is important because it empowers everyone to use the forms you'll build with CHEFS. It ensures equal access and inclusion, enabling individuals to use forms on an equal footing. By making forms accessible, such as providing clear instructions and appropriate labels, we empower people to fully engage and participate. Accessibility not only benefits all users but also improves their experience and ensures compliance with accessibility standards. It fosters an inclusive environment where everyone can confidently and independently interact with CHEFS forms.  

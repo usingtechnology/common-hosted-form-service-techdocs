@@ -1,4 +1,4 @@
-[Home](index) > [CHEFS Capabilities](CHEFS-Capabilities) > [Data Management](Data-Management) > **Importing data into CHEFS**
+[Home](index) > [CHEFS Capabilities](Capabilities) > [Data Management](Data-Management) > **Importing data into CHEFS**
 ***
 
 There is no bulk upload feature in CHEFS. If you want to add submissions into CHEFS that you collected through other means, you can use the API. 

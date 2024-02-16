@@ -1,4 +1,4 @@
-[Home](index) > [CHEFS Capabilities](CHEFS-Capabilities) > [CHEFS functionalities](CHEFS-functionalities) > **Importing and exporting form designs**
+[Home](index) > [CHEFS Capabilities](Capabilities) > [CHEFS functionalities](CHEFS-functionalities) > **Importing and exporting form designs**
 ***
 
 

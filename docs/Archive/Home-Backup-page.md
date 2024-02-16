@@ -3,9 +3,9 @@
 
 [![img](images/about-chefs.png)](About-CHEFS) 
 [![img](images/roadmap.png)](Product-Roadmap)
-[![img](images/capabilities.png)](CHEFS-Capabilities)
+[![img](images/capabilities.png)](Capabilities)
 
-[![img](images/components.png)](CHEFS-Components) 
+[![img](images/components.png)](Components) 
 [![img](images/developer.png)](Developer)
 [![img](images/request_features.png)](https://chefs-fider.apps.silver.devops.gov.bc.ca/)
 

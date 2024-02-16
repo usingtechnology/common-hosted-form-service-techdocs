@@ -1,4 +1,4 @@
-[Home](index) > [CHEFS Components](CHEFS-Components) > **Examples of CHEFS forms and features** 
+[Home](index) > [CHEFS Components](Components) > **Examples of CHEFS forms and features** 
 ***
 
 ## CHEFS forms in action

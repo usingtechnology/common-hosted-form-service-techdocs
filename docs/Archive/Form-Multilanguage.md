@@ -1,4 +1,4 @@
-[Home](index) > [CHEFS Capabilities](CHEFS-Capabilities) > **Form multilanguage**
+[Home](index) > [CHEFS Capabilities](Capabilities) > **Form multilanguage**
 ***
 
 ## Internationalization

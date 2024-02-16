@@ -1,4 +1,4 @@
-[Home](index) > [CHEFS Components](CHEFS-Components) > [Custom Components](Custom-components) > **Progress Bar**
+[Home](index) > [CHEFS Components](Components) > [Custom Components](Custom-components) > **Progress Bar**
 ***
 
 ## Examples

@@ -1,4 +1,4 @@
-[Home](index) > [CHEFS Capabilities](CHEFS-Capabilities) > [CHEFS functionalities](CHEFS-functionalities) > **Download a submission with custom format (CDOGS)**
+[Home](index) > [CHEFS Capabilities](Capabilities) > [CHEFS functionalities](CHEFS-functionalities) > **Download a submission with custom format (CDOGS)**
 ***
 <!-- 
 * [Formatting a submission](#Formatting-a-submission)

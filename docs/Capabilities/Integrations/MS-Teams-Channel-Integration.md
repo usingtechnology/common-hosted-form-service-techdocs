@@ -1,4 +1,4 @@
-[Home](index) > [CHEFS Capabilities](CHEFS-Capabilities) > [Integrations](Integrations) > **MS Teams Channel Integration** 
+[Home](index) > [CHEFS Capabilities](Capabilities) > [Integrations](Integrations) > **MS Teams Channel Integration** 
 ***  
 
 > This page describe how to add to an MS Teams Channel a form  built with https://Submit.digital.gov.bc.ca
