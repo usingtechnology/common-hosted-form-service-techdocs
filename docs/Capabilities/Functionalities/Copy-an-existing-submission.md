@@ -1,4 +1,4 @@
-[Home](index) > [CHEFS Capabilities](Capabilities) > [CHEFS functionalities](CHEFS-functionalities) > **Copy an existing submission**
+[Home](index) > [Capabilities](Capabilities) > [Functionalities](Functionalities) > **Copy an existing submission**
 ***
 
 

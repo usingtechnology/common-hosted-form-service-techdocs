@@ -1,4 +1,4 @@
-[Home](index) > [About CHEFS](About-CHEFS) > **User Comments and Monitoring**
+[Home](index) > [About CHEFS](About) > **User Comments and Monitoring**
 ***
 
 The CHEFS team monitors comments from a variety of sources, where "comments" includes:

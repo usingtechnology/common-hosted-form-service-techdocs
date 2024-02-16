@@ -1,4 +1,4 @@
-[Home](index) > [CHEFS Capabilities](Capabilities) > **Form Management**
+[Home](index) > [Capabilities](Capabilities) > **Form Management**
 ***
 
 - [Workflows and Statuses](Workflows-and-Statuses)

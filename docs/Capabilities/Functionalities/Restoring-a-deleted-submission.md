@@ -1,4 +1,4 @@
-[Home](index) > [CHEFS Capabilities](Capabilities) > [CHEFS functionalities](CHEFS-functionalities) > **Restoring a deleted submission**
+[Home](index) > [Capabilities](Capabilities) > [Functionalities](Functionalities) > **Restoring a deleted submission**
 ***
 
 

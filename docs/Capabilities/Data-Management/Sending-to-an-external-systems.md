@@ -1,4 +1,4 @@
-[Home](index) > [CHEFS Capabilities](Capabilities) > [Data Management](Data-Management) > **Sending to an external systems**
+[Home](index) > [Capabilities](Capabilities) > [Data Management](Data-Management) > **Sending to an external systems**
 ***
 
 CHEFS forms can be used to save data into the CHEFS backend by default, but can also be modified to POST the data to an external (open) API if desired.

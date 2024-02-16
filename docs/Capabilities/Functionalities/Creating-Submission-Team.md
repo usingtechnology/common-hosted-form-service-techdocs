@@ -1,4 +1,4 @@
-[Home](index) > [CHEFS Capabilities](Capabilities) > [CHEFS functionalities](CHEFS-functionalities) > **Creating Submission Team**  
+[Home](index) > [Capabilities](Capabilities) > [Functionalities](Functionalities) > **Creating Submission Team**  
 ***
 
 ## Question   

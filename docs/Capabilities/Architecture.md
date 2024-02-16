@@ -1,4 +1,4 @@
-[Home](index) > [CHEFS Capabilities](Capabilities) > **Architecture & State Management**
+[Home](index) > [Capabilities](Capabilities) > **Architecture & State Management**
 ***
 <!-- **Architecture**
 - [Infrastructure](#infrastructure)
@@ -20,7 +20,7 @@
 
 The Common Hosted Form Service (CHEFS) is designed to be a cloud-native containerized microservice. CHEFS is intended to be operated within a Kubernetes/OpenShift container ecosystem, where it can scale based on incoming load and demand. The following diagram provides a general overview of how the three main components relate to one another, and how network traffic generally flows between the components.
 
-![CHEFS Architecture](images/chefs_infra_architecture.png)  
+![CHEFS Architecture](images/infrastructure.png)  
 **Figure 1 - The general infrastructure and network topology of CHEFS**
 
 ### High Availability

@@ -1,4 +1,4 @@
-[Home](index) > [CHEFS Components](Components) > [Form Builder Components](Form-Builder-Components) > **Advanced Fields**
+[Home](index) > [CHEFS Components](Components) > [Form Builder Components](Form-Builder) > **Advanced Fields**
 ***
 
 | ![image](images/advanced-fields.png) | Advanced Fields in form builders are an extension of Basic Fields, specifically designed to cater to more complex requirements. They offer additional features, functionality, or customization options beyond what the Basic Components provide |

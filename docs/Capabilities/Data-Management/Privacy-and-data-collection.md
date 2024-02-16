@@ -1,4 +1,4 @@
-[Home](index) > [CHEFS Capabilities](Capabilities) > [Data Management](Data-Management) > **Privacy and data collection**
+[Home](index) > [Capabilities](Capabilities) > [Data Management](Data-Management) > **Privacy and data collection**
 ***
 
 <!-- * [Privacy](#Privacy)

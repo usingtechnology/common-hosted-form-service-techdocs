@@ -1,4 +1,4 @@
-[Home](index) > [CHEFS Capabilities](Capabilities) > [Integrations](Integrations) > **Power BI Integration** 
+[Home](index) > [Capabilities](Capabilities) > [Integrations](Integrations) > **Power BI Integration** 
 ***
 
 Microsoft Power BI is one of many ways to work with form submission data. The web version of Power BI doesn't have the features needed to retrieve submissions, so download Power BI from the Microsoft Store.

@@ -1,5 +1,6 @@
 Provide your own CDOGS template so you can download a submission with custom formatting, and in a file type of your choice. 
-
+[Home](index) > [Capabilities](Capabilities) > [Functionalities](Functionalities) > **Download a submission with custom format (CDOGS)**
+***
 <!-- On this page:
 * [Formatting a submission](#Formatting-a-submission)
 * [Creating a CDOGS template](#Creating-a-CDOGS-template) -->

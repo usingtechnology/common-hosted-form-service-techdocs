@@ -1,4 +1,4 @@
-[Home](index) > [CHEFS Capabilities](Capabilities) > [Integrations](Integrations) > **Event Subscription** 
+[Home](index) > [Capabilities](Capabilities) > [Integrations](Integrations) > **Event Subscription** 
 ***  
 
 ![img](./images/coming-soon.png)

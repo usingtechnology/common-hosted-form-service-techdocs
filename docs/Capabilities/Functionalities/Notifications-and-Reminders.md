@@ -1,14 +1,12 @@
-[Home](index) > [CHEFS Capabilities](Capabilities) > [CHEFS Functionalities](CHEFS-functionalities) > **CHEFS Notifications and Reminders**
+[Home](index) > [Capabilities](Capabilities) > [Functionalities](Functionalities) > **Notifications and Reminders**
 ***
 
-## Notifications:
+<!-- ## Notifications: -->
 <!-- 
 * [Submission Success Confirmation for Team Members](#Submission-Success-Confirmation-for-Team-Members)
 * [Submission Confirmation for Submitters](#Submission-Confirmation-for-Submitters)
 * [Status Change Notifications](#Status-Change-Notifications)
 * [Draft Invitation for Team Members](#Draft-Invitation-for-Team-Members) -->
-
-##
 
 ## Submission Success Confirmation for Team Members
 

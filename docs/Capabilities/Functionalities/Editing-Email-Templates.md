@@ -1,4 +1,4 @@
-[Home](index) > [CHEFS Capabilities](Capabilities) > [CHEFS Functionalities](CHEFS-functionalities) > **Editing Email Templates**
+[Home](index) > [Capabilities](Capabilities) > [Functionalities](Functionalities) > **Editing Email Templates**
 ***
 
 > **EXPERIMENTAL**

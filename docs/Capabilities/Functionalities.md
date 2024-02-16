@@ -1,4 +1,4 @@
-[Home](index) > [CHEFS Capabilities](Capabilities) > **Functionalities**
+[Home](index) > [Capabilities](Capabilities) > **Functionalities**
 ***
 
 ## Working with forms
@@ -8,8 +8,7 @@
 
 ## Working with submissions
 * [Printing from a browser](Printing-from-a-browser)
-<!-- Techdocs automatically added /CHEFS-functionalities to the URL path below hence the ../ -->
-* [Download a submission with custom format (CDOGS)](../Download-a-submission-with-custom-format-%28CDOGS%29)
+* [Download a submission with custom format (CDOGS)](CDOGS-Template-Upload)
 * [Copy an existing submission](Copy-an-existing-submission)
 * [Restoring a deleted submission](Restoring-a-deleted-submission)
 * [Allow multiple draft upload](Allow-multiple-draft-upload)

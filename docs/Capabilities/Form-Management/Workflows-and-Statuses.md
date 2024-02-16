@@ -1,4 +1,4 @@
-[Home](index) > [CHEFS Capabilities](Capabilities) > [Form Management](Form-Management) > **Workflows and Statuses**
+[Home](index) > [Capabilities](Capabilities) > [Form Management](Form-Management) > **Workflows and Statuses**
 ***
 
 Workflows and statuses allow you to communicate with your clients and administrative team to complete a CHEFS submissions.
@@ -23,7 +23,7 @@ To enable this feature on your "Manage Form" page, you must:
 
 This will now allow you access to all three states: revising, assigned, and completed.
 
-![](images/status-workflow-settings-2.png)
+![](images/status-workflow-settings.png)
 
 ## Using workflows
 <!-- **[Back to top](#top)** -->

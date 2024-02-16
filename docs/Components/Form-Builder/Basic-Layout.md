@@ -1,4 +1,4 @@
-[Home](index) > [CHEFS Components](Components) > [Form Builder Components](Form-Builder-Components) > **Basic Layout**
+[Home](index) > [CHEFS Components](Components) > [Form Builder Components](Form-Builder) > **Basic Layout**
 ***
 
 | ![image](images/basic_layout.png) | The Basic Layout includes commonly used form components such as Text/Images, Columns, Tabs, and Panels. It serves as a solid foundation for designing visually appealing and well-structured forms. |
