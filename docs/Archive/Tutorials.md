@@ -3,7 +3,7 @@
 * [Conditional Forms](Conditional-forms-fields)
 * [Dynamic Select Lists](Dynamic-Select-Lists)
 * [Import/Export](Importing-and-exporting-form-designs)
-* [Sending to External Systems](Sending-to-an-external-systems)
+* [Sending to External Systems](Sending-to-external-systems)
 * [Styles](Styles)
 * [Connecting to API](Managing-API-Keys)
 * [Generating API Keys](Generating-API-keys)
