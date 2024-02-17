@@ -1,12 +1,12 @@
-[Home](index) > [CHEFS Components](Components) > [Custom Components](Custom-components) > **Dynamic Select Lists**
+[Home](index) > [Components](Components) > [Custom](Custom) > **Dynamic Select Lists**
 ***
 
 ## Examples
 > Try a working example<br>
 > [View example](https://submit.digital.gov.bc.ca/app/form/submit?f=4ee726e0-f7a7-49a1-8454-7325d2593a7d)
 
-<!-- > Download this example file and [import](Importing-and-exporting-form-designs) it into your design<br>
-> [example__dynamic_select_lists_schema.json](examples/example__dynamic_select_lists_schema.json) -->
+> Download this example file and [import](Importing-and-exporting-form-designs) it into your design<br>
+> [example__dynamic_select_lists_schema.json](../examples/example_dynamic_select_lists_schema.json){:download="example_dynamic_select_lists_schema.json"}
 
 Change content of select list drop-downs with some advanced settings. For instance, the make and model of a car, or in this case information selecting primary or secondary colours.
 ***

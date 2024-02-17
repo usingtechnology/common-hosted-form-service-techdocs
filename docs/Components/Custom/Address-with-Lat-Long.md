@@ -1,4 +1,4 @@
-[Home](index) > [CHEFS Components](Components) > [Custom Components](Custom-components) > **Address with Lat Long**
+[Home](index) > [Components](Components) > [Custom](Custom) > **Address with Lat Long**
 ***
 
 ## Examples

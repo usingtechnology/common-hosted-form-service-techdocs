@@ -14,9 +14,9 @@
   * [Data Management](Data-Management)
   * [Architecture & State Management](Architecture-&-State-Management)
 
-* [CHEFS Components](Components)
-  * [Form Builder Components](Form-Builder)
-  * [Custom Components](Custom-components)
+* [Components](Components)
+  * [Form Builder](Form-Builder)
+  * [Custom](Custom)
   * [Examples of CHEFS forms and features](Examples-of-CHEFS-forms-and-features)
 
 * [Developer](Developer)

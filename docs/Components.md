@@ -1,10 +1,10 @@
-[Home](index) > **CHEFS Components**
+[Home](index) > **Components**
 ***
 
 ![](images/components-icon.png)
 
-* [Form Builder Components](Form-Builder) 
-* [Custom Components](Custom-components)
+* [Form Builder](Form-Builder) 
+* [Custom](Custom)
 * [Examples of CHEFS forms and features](Examples)
 
 ***

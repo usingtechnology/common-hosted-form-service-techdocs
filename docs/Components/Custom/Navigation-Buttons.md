@@ -1,12 +1,12 @@
-[Home](index) > [CHEFS Components](Components) > [Custom Components](Custom-components) > **Navigation Buttons**
+[Home](index) > [Components](Components) > [Custom](Custom) > **Navigation Buttons**
 ***
 
 ## Examples
 > Try a working example<br>
 > [View example](https://submit.digital.gov.bc.ca/app/form/submit?f=3fe31d91-a802-44a4-8215-03110af26470)
 
-<!-- > Download this example file and [import](Importing-and-exporting-form-designs) it into your design<br>
-> [example_navigation_buttons_schema.json](examples/example_navigation_buttons_schema.json) -->
+> Download this example file and [import](Importing-and-exporting-form-designs) it into your design<br>
+> [example_navigation_buttons_schema.json](../examples/example_navigation_buttons_schema.json){:download="example_navigation_buttons_schema.json"}
 ***
 
 ## Navigation buttons (Tutorial)

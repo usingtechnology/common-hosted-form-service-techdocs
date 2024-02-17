@@ -1,12 +1,12 @@
-[Home](index) > [CHEFS Components](Components) > [Custom Components](Custom-components) > **Calculating Values with Dates**
+[Home](index) > [Components](Components) > [Custom](Custom) > **Calculating Values with Dates**
 ***
 
 ## Examples
 > Try a working example<br>
 > [View example](https://submit.digital.gov.bc.ca/app/form/submit?f=506ccffb-b0c5-49b3-8f8f-8e5f9809e1a5)
 
-<!-- > Download this example file and [import](Importing-and-exporting-form-designs) it into your design<br>
-> [example_counting_days_between_two_dates_schema.json](examples/example_counting_days_between_two_dates_schema.json) -->
+> Download this example file and [import](Importing-and-exporting-form-designs) it into your design<br>
+> [example_counting_days_between_two_dates_schema.json](../examples/example_counting_days_between_two_dates_schema.json){:download="example_counting_days_between_two_dates_schema.json"}
 
 ***
 ## Number of days between two dates.  

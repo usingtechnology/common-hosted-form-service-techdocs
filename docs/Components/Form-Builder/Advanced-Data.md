@@ -1,4 +1,4 @@
-[Home](index) > [CHEFS Components](Components) > [Form Builder Components](Form-Builder) > **Advanced Data**
+[Home](index) > [Components](Components) > [Form Builder](Form-Builder) > **Advanced Data**
 ***
 
 | ![image](images/advanced_data.png) | Advanced data components are fields that manipulate the way Data is presented, saved, and organized. |
@@ -59,9 +59,6 @@ If you require a high volume of columns in your Data Grid, we suggest that you o
 
 > You can also download an example file and [import](Importing-and-exporting-form-designs) it into your design to test out columns in the Data Grid<br>
 
-Example: [advanced-data-grid.json](/examples/advanced-data-grid.json){:download="advanced-data-grid.json"}
-
-
 
 ### Examples
 > Try a working example:<br>
@@ -69,8 +66,8 @@ Example: [advanced-data-grid.json](/examples/advanced-data-grid.json){:download=
 > [View advanced example](https://submit.digital.gov.bc.ca/app/form/submit?f=285efa0d-e3d7-457c-9d34-67a9719cac1c)
 
 > You can also download the example files and [import](Importing-and-exporting-form-designs) it into your design<br>
-> Simple: [simple-data-grid.json](examples/simple-data-grid.json){:download="advanced-data-grid.json"}<br>
-> Advanced: [advanced-data-grid.json](examples/advanced-data-grid.json){:download="advanced-data-grid.json"}
+> Simple: [simple-data-grid.json](../examples/simple-data-grid.json){:download="simple-data-grid.json"}<br>
+> Advanced: [advanced-data-grid.json](../examples/advanced-data-grid.json){:download="advanced-data-grid.json"}
 
 
 ## Edit Grid

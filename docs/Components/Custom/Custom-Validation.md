@@ -1,4 +1,4 @@
-[Home](index) > [CHEFS Components](Components) > [Custom Components](Custom-components) > **Custom Validation**
+[Home](index) > [Components](Components) > [Custom](Custom) > **Custom Validation**
 ***
 
 ### Get started

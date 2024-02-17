@@ -1,4 +1,4 @@
-[Home](index) > [CHEFS Components](Components) > [Form Builder Components](Form-Builder) > **Advanced Layout**
+[Home](index) > [Components](Components) > [Form Builder](Form-Builder) > **Advanced Layout**
 ***
 
 | ![image](images/advanced-layout.png) | Layout components in form builders allow users to structure and organize the various elements of a form effectively. They serve distinct purposes in defining the layout and presentation of form fields. |

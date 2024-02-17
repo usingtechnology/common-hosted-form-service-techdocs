@@ -1,4 +1,4 @@
-[Home](index) > [CHEFS Components](Components) > **Examples of CHEFS forms and features** 
+[Home](index) > [Components](Components) > **Examples of CHEFS forms and features** 
 ***
 
 ## CHEFS forms in action
@@ -17,23 +17,14 @@ We have created some examples of features you might want to use in your forms. F
  
 **Note:** **You will want to import the JSON into a new form, as it will overwrite any of your existing work.**
 
-<!-- |Feature example|Downloads|
+|Feature example|Downloads|
 |---|---|
-|[Conditional forms fields example](https://submit.digital.gov.bc.ca/app/form/submit?f=9bc36ebf-c6c3-4f5a-9a8d-ea9e8acb0ded)|[example_conditional_logic_schema.json](examples/example_conditional_logic_schema.json)|
-|[Dynamic select lists example](https://submit.digital.gov.bc.ca/app/form/submit?f=4ee726e0-f7a7-49a1-8454-7325d2593a7d)|[example__dynamic_select_lists_schema.json](examples/example__dynamic_select_lists_schema.json)|
-|[Calculated values example](https://submit.digital.gov.bc.ca/app/form/submit?f=858a4aba-7e7b-4019-80c1-78a414ee5129)|[example_calculated_values_schema.json](examples/example__calculated_values_schema.json)|
-|[Calculations in a Data Grid example](https://submit.digital.gov.bc.ca/app/form/submit?f=66c7918f-aa60-4095-8dfb-36b3002b4d47)|[example__calculations_in_datagrid_schema.json](examples/example__calculations_in_datagrid_schema.json)|
-|[Calculations in Data Grid with dates and time](https://submit.digital.gov.bc.ca/app/form/submit?f=66c7918f-aa60-4095-8dfb-36b3002b4d47)|[example__calculations_in_data_grid_schema.json](example__calculations_in_data_grid_schema.json)|
-|[Tabs controlled with Navigation Buttons](https://submit.digital.gov.bc.ca/app/form/submit?f=3fe31d91-a802-44a4-8215-03110af26470)|[example_navigation_buttons_schema.json](examples/example_navigation_buttons_schema.json)| -->
-
-|Feature example|
-|---|
-|[Conditional forms fields example](https://submit.digital.gov.bc.ca/app/form/submit?f=9bc36ebf-c6c3-4f5a-9a8d-ea9e8acb0ded)|
-|[Dynamic select lists example](https://submit.digital.gov.bc.ca/app/form/submit?f=4ee726e0-f7a7-49a1-8454-7325d2593a7d)|
-|[Calculated values example](https://submit.digital.gov.bc.ca/app/form/submit?f=858a4aba-7e7b-4019-80c1-78a414ee5129)|
-|[Calculations in a Data Grid example](https://submit.digital.gov.bc.ca/app/form/submit?f=66c7918f-aa60-4095-8dfb-36b3002b4d47)|
-|[Calculations in Data Grid with dates and time](https://submit.digital.gov.bc.ca/app/form/submit?f=66c7918f-aa60-4095-8dfb-36b3002b4d47)|
-|[Tabs controlled with Navigation Buttons](https://submit.digital.gov.bc.ca/app/form/submit?f=3fe31d91-a802-44a4-8215-03110af26470)|
+|[Conditional forms fields example](https://submit.digital.gov.bc.ca/app/form/submit?f=9bc36ebf-c6c3-4f5a-9a8d-ea9e8acb0ded)|[example_conditional_logic_schema.json](examples/example_conditional_logic_schema.json){:download="example_conditional_logic_schema.json"}|
+|[Dynamic select lists example](https://submit.digital.gov.bc.ca/app/form/submit?f=4ee726e0-f7a7-49a1-8454-7325d2593a7d)|[example_dynamic_select_lists_schema.json](examples/example_dynamic_select_lists_schema.json){:download="example_dynamic_select_lists_schema.json"}|
+|[Calculated values example](https://submit.digital.gov.bc.ca/app/form/submit?f=858a4aba-7e7b-4019-80c1-78a414ee5129)|[example_calculated_values_schema.json](examples/example_calculated_values_schema.json){:download="example_calculated_values_schema.json"}|
+|[Calculations in a Data Grid example](https://submit.digital.gov.bc.ca/app/form/submit?f=66c7918f-aa60-4095-8dfb-36b3002b4d47)|[example_calculations_in_datagrid_schema.json](examples/example_calculations_in_datagrid_schema.json){:download="example_calculations_in_datagrid_schema.json"}|
+|[Calculations in Data Grid with dates and time](https://submit.digital.gov.bc.ca/app/form/submit?f=66c7918f-aa60-4095-8dfb-36b3002b4d47)|[example_calculations_in_data_grid_schema_dates.json](example__calculations_in_data_grid_schema.json){:download="example_calculations_in_data_grid_schema_dates.json"}|
+|[Tabs controlled with Navigation Buttons](https://submit.digital.gov.bc.ca/app/form/submit?f=3fe31d91-a802-44a4-8215-03110af26470)|[example_navigation_buttons_schema.json](examples/example_navigation_buttons_schema.json){:download="example_navigation_buttons_schema.json"}|
 
 ***
 [Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)

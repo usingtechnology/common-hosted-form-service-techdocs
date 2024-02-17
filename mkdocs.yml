@@ -23,8 +23,8 @@ nav:
       - Data Management: Capabilities/Data-Management.md
       - Architecture & State Management: Capabilities/Architecture.md
   - Components:
-      - Form Builder Components: Components/Form-Builder.md
-      - Custom Components: Components/Custom.md
+      - Form Builder: Components/Form-Builder.md
+      - Custom: Components/Custom.md
       - Examples of CHEFS forms and features: Components/Examples.md
   - Developer:
       - Contributors: Developer/Contributors.md

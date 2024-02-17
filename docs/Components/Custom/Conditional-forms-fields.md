@@ -1,4 +1,4 @@
-[Home](index) > [CHEFS Components](Components) > [Custom Components](Custom-components) > **Conditional forms fields**
+[Home](index) > [Components](Components) > [Custom](Custom) > **Conditional forms fields**
 ***
 
 ## Examples
@@ -6,8 +6,8 @@
 > Try a working example<br>
 > [View example](https://submit.digital.gov.bc.ca/app/form/submit?f=8aa2b9dc-9bc9-48bc-95d2-c3246a609b4b)
 
-<!-- > Download this example file and [import](Importing-and-exporting-form-designs) it into your design<br>
-> [example_conditional_logic_schema.json](examples/example_conditional_logic_schema.json) -->
+> Download this example file and [import](Importing-and-exporting-form-designs) it into your design<br>
+> [example_conditional_logic_schema.json](../examples/example_conditional_logic_schema.json){:download="example_conditional_logic_schema.json"}
 
 ***
 

@@ -1,4 +1,4 @@
-[Home](index) > [CHEFS Components](Components) > [Form Builder Components](Form-Builder) > **Basic Fields**
+[Home](index) > [Components](Components) > [Form Builder](Form-Builder) > **Basic Fields**
 ***
 
 | ![image](images/basic-fields.png) | The basic fields in the Form Builder are commonly used in traditional web forms. You'll likely be familiar with these components if you've used a Form Builder before.  |

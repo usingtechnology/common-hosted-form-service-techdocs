@@ -1,4 +1,4 @@
-[Home](index) > [CHEFS Components](Components) > [Form Builder Components](Form-Builder) > **BC Government**
+[Home](index) > [Components](Components) > [Form Builder](Form-Builder) > **BC Government**
 ***
 
 <!-- * [File Upload](#file-upload)
