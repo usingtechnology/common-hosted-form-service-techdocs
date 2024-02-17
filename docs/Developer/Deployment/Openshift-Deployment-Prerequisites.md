@@ -1,4 +1,4 @@
-[Home](index) > [Developer](Developer) > [Deployment](Deployment) > **Pathfinder SSO client**
+[Home](index) > [Developer](Developer) > [Deployment](Deployment) > **Openshift Deployment Prerequisites**
 ***
 
 ![image](images/coming-soon.png)

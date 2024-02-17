@@ -15,7 +15,7 @@
 * [Multiple people filling out a form together](Creating-Submission-Team)
 
 ## Notifications
-* [CHEFS Notifications and Reminders](CHEFS-Notifications-and-Reminders)
+* [CHEFS Notifications and Reminders](Notifications-and-Reminders)
 * [Editing Email Templates](Editing-Email-Templates) (Experimental)
 
 ***

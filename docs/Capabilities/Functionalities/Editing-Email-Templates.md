@@ -3,7 +3,7 @@
 
 > **EXPERIMENTAL**
 
-CHEFS sends [Email Notifications and Reminders](CHEFS-Notifications-and-Reminders) at various points in the life of a submission. To give form owners some control over the content of these emails, the ability to edit the email templates is being added to CHEFS as an *experimental feature*. This feature is being released with minimal capabilities and will be expanded in the future when time allows.
+CHEFS sends [Email Notifications and Reminders](Notifications-and-Reminders) at various points in the life of a submission. To give form owners some control over the content of these emails, the ability to edit the email templates is being added to CHEFS as an *experimental feature*. This feature is being released with minimal capabilities and will be expanded in the future when time allows.
 
 ## Limitations
 
