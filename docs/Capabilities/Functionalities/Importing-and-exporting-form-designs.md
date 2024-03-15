@@ -43,5 +43,6 @@ If for any reason if you would like to create the forms using the JSON Schema in
 |---|---|---|
 |[Basic components with Layouts](https://submit.digital.gov.bc.ca/app/form/submit?f=0da54bf6-2951-4579-8426-76565137f395)|[Minimum Schema JSON file](examples/minimum_schema_JSON_file.json)|[Full Schema JSON file](examples/full_schema_JSON_file.json)|
 
+Once the desired JSON file is ready follow above metioned [guidelines](#import-a-form-design) to import it into the form designer.
 ***
 [Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)
