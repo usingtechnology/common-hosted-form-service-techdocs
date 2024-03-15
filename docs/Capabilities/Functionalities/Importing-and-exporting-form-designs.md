@@ -33,5 +33,15 @@ To export a form:
 
 Exporting forms is a great way to copy an existing design or share it with others.
 
+
+## Creating a form using JSON with minimum fields.
+CHEFS Form.io platform provides a visual form builder that lets you drag and drop form elements, and automatically generates the corresponding JSON schema for you. Every component and layouts in CHEFS are represented as JSON in the background.
+
+If for any reason if you would like to create the forms using the JSON Schema instead of visual form builder, below are some JSON schemas for some components with minimum mandatory variables and full schema.
+
+|Form |Minimum Schema|Full schema|
+|---|---|---|
+|[Basic components with Layouts](https://submit.digital.gov.bc.ca/app/form/submit?f=0da54bf6-2951-4579-8426-76565137f395)|[Minimum Schema JSON file](examples/minimum_schema_JSON_file.json)|[Full Schema JSON file](examples/full_schema_JSON_file.json)|
+
 ***
 [Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)
