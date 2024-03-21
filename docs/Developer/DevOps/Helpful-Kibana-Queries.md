@@ -36,5 +36,13 @@ kubernetes.namespace_labels.environment:prod AND /error|warn/ AND NOT message:"/
 kubernetes.namespace_labels.environment:prod AND kubernetes.container_name.raw:postgresql AND (message:"\"level\":\"error\"" OR message:"\"level\":\"warn\"")
 ```
 
+#### Database Backups:
+
+We have five databases and the backups run every night. So this query should have 10 hits per day (or 70 hits if your Time Range is `Last 7 days`).
+
+```
+message:"Successfully backed up" OR message:"Successfully verified backup"
+```
+
 ***
 [Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)
