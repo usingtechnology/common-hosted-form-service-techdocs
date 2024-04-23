@@ -11,9 +11,11 @@ You can print any CHEFS form straight from your browser. You can go to the "File
 
 If you are reviewing a submission and want to print the results without the notes and status, use the "Print" icon in the upper right.
 
-Then in the "Download Options" window, click on "BROWSER PRINT."
+Then in the "Print Options" window, click on "BROWSER PRINT."
 
 ![Submission Print](images/print_browser.png) 
+
+The **'Expand text fields'** checkbox expands any text input before printing the form. This is useful if the form contains any truncated user input in a Text Field that does not auto-expand. 
 
 ## Printing to a template
 
