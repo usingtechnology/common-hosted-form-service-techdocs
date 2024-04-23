@@ -47,7 +47,9 @@ You may also upload a default template for submitters and reviewers. Once you cr
 
 ![Manage Template](images/manage_template.png)
 
- From here, you will be able to upload a CDOGS that will be available by default on the form viewer page. To access it, simply click on the 'Print' icon and choose the default template option. 
+ From here, you will be able to upload a CDOGS that will be available by default on the form viewer page. Note that we currently only allow one document template per form, so you will need to delete your current template before you can upload a new one. 
+ 
+ To use the template, simply click on the 'Print' icon and choose the default template option from the form view or submission view pages. 
 
  ![Default Template Print](images/default_print.png)
 
