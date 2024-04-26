@@ -12,7 +12,7 @@ By getting data from the Web and creating a new Power Query you can work with th
 ### CHEFS Form Information 
 You will need this information about your form:   
 * The formId. One way to retrieve this is to navigate to your form The URL in the browser window will contain ```.../form?f={formId}```   
-* Your form's [API Key](Generating-API-keys) 
+* Your form's [API Key](../Data-Management/Generating-API-keys) 
 
 ### Query Configuration: Submissions 
 

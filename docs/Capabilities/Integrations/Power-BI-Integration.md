@@ -11,7 +11,7 @@ By creating a new Power BI query you can work with the submission data.
 
 You will need this information about your form:
 - The `formId` and `formVersionId`. One way to retrieve them is to "Manage" your form and in the table at the bottom click "Version 1" (or the version you want). The URL in the new browser window will contain ".../preview?f={formId}&v={formVersionId}"
-- Your form's [API Key](Generating-API-keys)
+- Your form's [API Key](../Data-Management/Generating-API-keys)
 
 ### Query Configuration: Submissions
 

@@ -20,7 +20,7 @@ Always follow these steps:
 * Do not share API keys by email, support tickets or put in plain text in a source code repository  
 * Give third-party users a unique API key (not the one you use)
 * Use two factor authentication
-* Follow instructions for [Generating an API](Generating-API-Keys#how-to-generate-and-regenerate-an-api-key) 
+* Follow instructions for [Generating an API](../Capabilities/Data-Management/Generating-API-keys) 
 
 ***
 [Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)
