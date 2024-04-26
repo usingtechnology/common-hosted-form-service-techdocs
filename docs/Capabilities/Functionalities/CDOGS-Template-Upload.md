@@ -41,5 +41,17 @@ Create a simple template upload that shows how to replace a variable in a .txt t
 
 Learn more about creating complex templates to fit your form's requirements, by [visiting the CDOGS Templating Wiki](https://github.com/bcgov/common-document-generation-service/blob/master/app/USAGE.md#templating).
 
+## Default CDOGS Template
+
+You may also upload a default template for submitters and reviewers. Once you create a form, navigate to the 'Manage Form' screen and click on the CDOGS template dropdown.
+
+![Manage Template](images/manage_template.png)
+
+ From here, you will be able to upload a CDOGS that will be available by default on the form viewer page. Note that we currently only allow one document template per form, so you will need to delete your current template before you can upload a new one. 
+ 
+ To use the template, simply click on the 'Print' icon and choose the default template option from the form view or submission view pages. 
+
+ ![Default Template Print](images/default_print.png)
+
 ***
 [Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)
