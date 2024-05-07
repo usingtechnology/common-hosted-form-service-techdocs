@@ -41,7 +41,7 @@ If for any reason you would like to create the forms using the JSON Schema inste
 
 |Form |Minimum Schema|Full schema|
 |---|---|---|
-|[Basic components with Layouts](https://submit.digital.gov.bc.ca/app/form/submit?f=0da54bf6-2951-4579-8426-76565137f395)|[Minimum Schema JSON file](examples/chefs_example__minimum_schema_template_upload.json)|[Full Schema JSON file](examples/chefs_example__full_schema_template_upload.json)|
+|[Basic components with Layouts](https://submit.digital.gov.bc.ca/app/form/submit?f=0da54bf6-2951-4579-8426-76565137f395)|[Minimum Schema JSON file](examples/chefs_example__minimum_schema_template_upload.json){:download="chefs_example__minimum_schema_template_upload.json"}|[Full Schema JSON file](examples/chefs_example__full_schema_template_upload.json){:download="chefs_example__full_schema_template_upload.json"}|
 
 Once the desired JSON file is ready follow above mentioned [guidelines](#import-a-form-design) to import it into the form designer.
 ***
