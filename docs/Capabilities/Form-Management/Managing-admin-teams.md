@@ -21,8 +21,9 @@ There are 5 roles available. A form must have always at least 1 owner. A team ma
 | Owner    | Can do all of the below, adjust form settings, and delete the form   | IDIR    |
 | Team Manager    | Can add and remove team members, and assign roles    | IDIR, Business BCeID    |
 | Form Designer    | Can edit the form design and save new versions    | IDIR    |
-| Reviewer    | Can review (and export), manage (status updates, and notes), and edit form submissions   | IDIR, Business BCeID    |
+| Reviewer    | Can review (and export), and edit form submissions   | IDIR, Business BCeID    |
 | Submitter    | Can submit a team-protected form     | IDIR, Business BCeID , Basic BCeID    |
+| Approver    | Can manage (status updates, and notes)   | IDIR, Business BCeID    |
 
 
 ***
