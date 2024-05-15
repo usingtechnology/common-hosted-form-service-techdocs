@@ -33,9 +33,16 @@ Create a simple template upload that shows how to replace a variable in a .txt t
 
 2. You can find out the variable names by going to your Form Component's configuration and finding the variable name under the "API" tab for the component you are trying to target
 
+
 ![HTML Tag: div, CSS Class: alert alert-primary](images/simple_setup.png)
 
-3. Once you have your template file set up, you can now upload it to the CDOGS API through the “Print” icon when viewing submissions
+3. Following submission metadata is available for use in the document templates.
+
+    * {d.chefs.submissionId}: the unique identifier for the submission, such as 3cb9acc7-cfd8-4491-b091-1277bc0ec303
+    * {d.chefs.confirmationId}: The uppercased first eight characters of the submissionId, such as 3CB9ACC7
+    * {d.chefs.formVersion}: The numeric version of the form that was used to create the submission, such as 1
+
+4. Once you have your template file set up, you can now upload it to the CDOGS API through the “Print” icon when viewing submissions
 
 ![HTML Tag: div, CSS Class: alert alert-primary](images/simple_upload.png)
 
