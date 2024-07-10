@@ -20,7 +20,7 @@ NATS has been used successfully by many other projects within BC Government. It 
 NATS has official clients in multiple mainstream languages so Form Owners shouldn't have to adopt a new language to write their event consumers.
 
 ### Event Stream
-The CHEFS Event Stream is implemented as a (NATS JetStream)[https://docs.nats.io/nats-concepts/jetstream]. 
+The CHEFS Event Stream is implemented as a [NATS JetStream](https://docs.nats.io/nats-concepts/jetstream). 
 
 JetStream offers many benefits over a traditional publisher / subscriber relationship: replay policies, durability, bulk handling, starting from a specific sequence, and starting from a specific date.
 
