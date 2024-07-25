@@ -22,13 +22,13 @@ NATS has official clients in multiple mainstream languages so Form Owners should
 ### Event Stream
 The CHEFS Event Stream is implemented as a [NATS JetStream](https://docs.nats.io/nats-concepts/jetstream). 
 
-JetStream offers many benefits over a traditional publisher / subscriber relationship: replay policies, durability, bulk handling, starting from a specific sequence, and starting from a specific date.
+JetStream offers many benefits over a traditional publisher/subscriber relationship: replay policies, durability, bulk handling, starting from a specific sequence, and starting from a specific date.
 
-As a stream producer we can set retention limits such as maximum message age, maximum number of messages in the stream.
+As a stream producer we can set retention limits such as maximum message age, and maximum number of messages in the stream.
 
 
 ### Consumers
-NATS allows a variety of consumer types and this is required reading: (JetStream Consumers)[https://docs.nats.io/nats-concepts/jetstream/consumers].
+NATS allows a variety of consumer types and this is required reading: [JetStream Consumers](https://docs.nats.io/nats-concepts/jetstream/consumers).
 
 
 
@@ -37,6 +37,7 @@ NATS allows a variety of consumer types and this is required reading: (JetStream
 CHEFS will publish events to a stream named: `CHEFS`.
 
 Under this stream will be two major subject prefixes: 
+
 1. `PUBLIC.forms`
 2. `PRIVATE.forms`
 
@@ -53,18 +54,19 @@ Consumers specify which subjects they wish to process and often use wildcards. F
 
 As stated, the two major subjects are `PUBLIC.forms` and `PRIVATE.forms`; these will be further specified as follows:
 
-`PUBLIC|PRIVATE.<domain>.<form id>.<class>.<type>`
+`PUBLIC|PRIVATE.<domain>.<class>.<type>.<form id>`
 
 - domain = `forms`
 - class = `schema` or `submission`.
 - type = `created`, `deleted`, `modified` and more
 - form id = the id of the form firing these events
-- 
+
+
 Using wildcards a consumer could listen for events on a specific form id or a specific type (i.e. only listen to submission created events across any form).
+
 
 - `PUBLIC.forms.schema.published.<form id>`
 - `PUBLIC.forms.schema.unpublished.<form id>`
-
 - `PUBLIC.forms.submission.created.<form id>`
 - `PUBLIC.forms.submission.modified.<form id>`
 - `PUBLIC.forms.submission.deleted.<form id>`
@@ -72,6 +74,9 @@ Using wildcards a consumer could listen for events on a specific form id or a sp
 More events to come.
 
 ### Event Metadata
+The event metadata contains data from the subject (domain, class, type, form id) which will allow subject specific processing if the consumer/listener/subscriber is using wildcard subjects.
+
+Other metadata will be provided as needed per type and only if the data is *NOT* considered private.
 
 | Attribute | Notes |
 | --- | --- |
