@@ -2,7 +2,7 @@
 ***  
 # CHEFS Event Stream Service
 
-**NOTE (July 25, 2024) - this is in active development and not yet released. This documentation will be updated as development progresses.**
+**NOTE (September 5, 2024) - this is in beta pull request release. This is running with minimal resources and is not production-ready. Connection protocol is limited to WebSocket and event messages size is limited to 2Mb.**
 
 CHEFS is adding an Event Streaming Service which allows Form Owners to consume and process real-time data about the forms (ex. a new version of the form has been published) and submissions. 
 
@@ -10,12 +10,12 @@ Currently, Form Owners can configure event notifications via webhook (see [Event
 
 Moving forward, CHEFS will fire events (with encrypted payloads) and allow the consumers to define the logic for processing on their end. An Event Streaming Service allows multiple consumers to process the same event. For instance, the Form Owner can process the submission data, while a metrics reporter can add a count to their submissions totals, another service can analyze service loads by sector.
 
-This initial phase will introduce the Event Streaming Service as a component of CHEFS with the intention that this component grows, matures and becomes a Common Component.
+This initial phase will introduce the Event Streaming Service as a component of CHEFS, with the intention that it grows, matures, and becomes a Common Component.
 
 ## nats.io
-[NATS](https://nats.io) is a connective technology built for the ever increasingly hyper-connected world. It is a single technology that enables applications to securely communicate across any combination of cloud vendors, on-premise, edge, web and mobile, and devices. NATS consists of a family of open source products that are tightly integrated but can be deployed easily and independently. NATS is being used globally by thousands of companies, spanning use-cases including microservices, edge computing, mobile, IoT and can be used to augment or replace traditional messaging.
+[NATS](https://nats.io) is a connective technology built for the ever increasingly hyper-connected world. It is a single technology that enables applications to securely communicate across any combination of cloud vendors, on-premise, edge, web and mobile, and devices. NATS consists of a family of open-source products that are tightly integrated but can be deployed easily and independently. NATS is being used globally by thousands of companies, spanning use-cases including microservices, edge computing, mobile, IoT and can be used to augment or replace traditional messaging.
 
-NATS has been used successfully by many other projects within BC Government. It can be scaled horizontally and runs without the need for a paid operator (i.e. [Kafka](https://kafka.apache.org)). 
+NATS has been successfully used by many other projects within the BC Government. It can be scaled horizontally and runs without the need for a paid operator (e.g., [Kafka](https://kafka.apache.org)). 
 
 NATS has official clients in multiple mainstream languages so Form Owners shouldn't have to adopt a new language to write their event consumers.
 
@@ -24,12 +24,15 @@ The CHEFS Event Stream is implemented as a [NATS JetStream](https://docs.nats.io
 
 JetStream offers many benefits over a traditional publisher/subscriber relationship: replay policies, durability, bulk handling, starting from a specific sequence, and starting from a specific date.
 
-As a stream producer we can set retention limits such as maximum message age, and maximum number of messages in the stream.
+As stream producers, we can set retention limits, such as the maximum message age and the maximum number of messages in the stream.
 
 
 ### Consumers
 NATS allows a variety of consumer types and this is required reading: [JetStream Consumers](https://docs.nats.io/nats-concepts/jetstream/consumers).
 
+**IMPORTANT** - currently, access is limited to WebSockets. Please ensure your client can use WebSockets! Some reading: [getting-started-nats-ws](https://nats.io/blog/getting-started-nats-ws/) and [here](https://github.com/nats-io/nats.ws).
+
+**ALSO IMPORTANT** - given the limited resources on our Proof of Concept server, there is a 2Mb limit on the event message size.
 
 
 ## CHEFS Stream
@@ -42,13 +45,14 @@ Under this stream will be two major subject prefixes:
 2. `PRIVATE.forms`
 
 
-Consumers specify which subjects they wish to process and often use wildcards. For example: a consumer can specify `PUBLIC.forms.>` and `PRIVATE.forms.submissions.>`. This would consume ALL public forms events and only private submission events.
+Consumers specify which subjects they wish to process and often use wildcards. For example, a consumer can specify `PUBLIC.forms.>` and `PRIVATE.forms.submissions.>`. This would consume ALL public forms events and only private submission events.
 
 `PUBLIC.forms` can be consumed by any client. These events will contain only metadata and no personal/private information. 
 
-`PRIVATE.forms` can be consumed by any client but not fully understood. The payloads of these events will contain encrypted data. Only known and approved clients will have the key to decrypt the private information (ex. a form submission).
+`PRIVATE.forms` can be consumed by any client but not fully understood. The payloads of these events will contain encrypted data. Only known and approved clients will have the key to decrypt the private information (ex., a form submission).
 
-`PRIVATE.forms` events will generally be a superset of the `PUBLIC.forms` events with the extra encrypted information in the payloads. As the system evolves there may be more types of `PUBLIC.forms` events that contain different types of metadata (ex. for metrics on Ministry or whether form is API enabled, etc.).
+`PRIVATE.forms` events will generally be a superset of the `PUBLIC.forms` events with the extra encrypted information in the payloads. As the system evolves, there may be more types of `PUBLIC.forms` events that contain different types of metadata (e.g., metrics on Ministry, whether the form is API enabled, etc.).
+
 
 ### Events
 
@@ -89,6 +93,8 @@ Other metadata will be provided as needed per type and only if the data is *NOT*
 | `submissionId` | uuid - CHEFS submission id. Only applies for `submission` class events. |
 | `draft` | boolean - For `submission` class events, the submission.draft value |
 
+**IMPORTANT** - Ensure you filter your event messages against your expected `source`. Events from Pull Request and Dev environments will use the same server but will have different `source`: (e.g., `pr-1444` and `chefs-dev`).
+
 An example to show the overall structure of an event message is: 
 
 ```json
@@ -121,10 +127,43 @@ The example will ask for a batch of messages every 5 seconds - illustrating some
 **Do not use this code for your client! Simplified example only!**
 
 ```js
-const { AckPolicy, connect } = require("nats");
+const { AckPolicy, JSONCodec } = require("nats");
+const Cryptr = require("cryptr");
+const falsey = require("falsey");
+/*
+ command line pass in environment variables for:
+ SERVERS - which nats instance to connect to (default is local from docker-compose)
+ WEBSOCKET - connect via nats protocol or websockets. true/false (default false, connect via nats)
+ ENCRYPTION_KEY - what encryption key to decrypt (Cryptr - aes-256-gcm) private payloads
+
+ Example:
+  SERVERS=ess-a191b5-dev.apps.silver.devops.gov.bc.ca WEBSOCKETS=true ENCRYPTION_KEY=ad5520469720325d1694c87511afda28a0432dd974cb77b5b4b9f946a5af6985 node pullConsumer.js
+*/
+
+// different connection libraries if we are using websockerts or nats protocols.
+const WEBSOCKETS = !falsey(process.env.WEBSOCKETS);
+
+let natsConnect;
+if (WEBSOCKETS) {
+  console.log("connect via ws");
+  // shim the websocket library
+  globalThis.WebSocket = require("websocket").w3cwebsocket;
+  const { connect } = require("nats.ws");
+  natsConnect = connect;
+} else {
+  console.log("connect via nats");
+  const { connect } = require("nats");
+  natsConnect = connect;
+}
 
 // connection info
-const servers = ["localhost:4222", "localhost:4223", "localhost:4224"];
+let servers = [];
+if (process.env.SERVERS) {
+  servers = process.env.SERVERS.split(",");
+} else {
+  // running locally
+  servers = "localhost:4222,localhost:4223,localhost:4224".split(",");
+}
 
 let nc = undefined; // nats connection
 let js = undefined; // jet stream
@@ -136,6 +175,7 @@ const STREAM_NAME = "CHEFS";
 const FILTER_SUBJECTS = ["PUBLIC.forms.>", "PRIVATE.forms.>"];
 const MAX_MESSAGES = 2;
 const DURABLE_NAME = "pullConsumer";
+const ENCRYPTION_KEY = process.env.ENCRYPTION_KEY || undefined;
 
 const printMsg = (m) => {
   // illustrate grabbing the sequence and timestamp from the nats message...
@@ -145,7 +185,25 @@ const printMsg = (m) => {
       `msg seq: ${m.seq}, subject: ${m.subject}, timestamp: ${ts}, streamSequence: ${m.info.streamSequence}, deliverySequence: ${m.info.deliverySequence}`
     );
     // illustrate (one way of) grabbing message content as json
-    console.log(JSON.stringify(m.json(), null, 2));
+    const jsonCodec = JSONCodec();
+    const data = jsonCodec.decode(m.data);
+    console.log(data);
+    try {
+      if (
+        data &&
+        data["payload"] &&
+        data["payload"]["data"] &&
+        ENCRYPTION_KEY
+      ) {
+        const cryptr = new Cryptr(ENCRYPTION_KEY);
+        const decryptedData = cryptr.decrypt(data["payload"]["data"]);
+        const jsonData = JSON.parse(decryptedData);
+        console.log("decrypted payload data:");
+        console.log(jsonData);
+      }
+    } catch (err) {
+      console.error("Error decrypting payload.data", err);
+    }
   } catch (e) {
     console.error(`Error printing message: ${e.message}`);
   }
@@ -161,8 +219,9 @@ const init = async () => {
       // no credentials provided.
       // anonymous connections have read access to the stream
       console.log(`connect to nats server(s) ${servers} as 'anonymous'...`);
-      nc = await connect({
+      nc = await natsConnect({
         servers: servers,
+        reconnectTimeWait: 10 * 1000, // 10s
       });
 
       console.log("access jetstream...");
