@@ -56,7 +56,6 @@ Current features supported include:
   - Circles: Single Latitude and Longitude points with an associated radius
   - Polygons: A set of Markers which form a closed shape
 
-![image](images/map-component-1.png)
 
 ### Configuration Options 
 Under the "Data" Tab in the Map Component Settings, there are two subheadings: Default Values, and Submitter Options.
@@ -70,7 +69,6 @@ Under the "Data" Tab in the Map Component Settings, there are two subheadings: D
   - Markers Per Submission: Select how many entries you would like the user to submit.
   - Enable Submitter "My Location" button: This button centers the map on the location provided by the user's browser.
 
-![image](images/map-component-edit.png)
 
 <!-- **[Back to top](#top)** -->
 
