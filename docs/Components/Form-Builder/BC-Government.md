@@ -50,17 +50,25 @@ This is a preconfigured component. Please note that users can only change the 'P
 ## Map Component
 <!-- **[Back to top](#top)** -->
 
-The "Map" component allows for a form designer to show a point or circle on the map for the submitter's reference, or allows for a user to submit one or many points or circles to provide geospatial data for submission. 
+The "Map" component allows for a form designer to show a feature on the map for the submitter's reference, or allows for a user to submit one or many features to provide geospatial data for submission. 
+Current features supported include:
+  - Markers: Single Latitude and Longitude points on the map
+  - Circles: Single Latitude and Longitude points with an associated radius
+  - Polygons: A set of Markers which form a closed shape
 
 ![image](images/map-component-1.png)
 
-### Configuration options 
+### Configuration Options 
+Under the "Data" Tab in the Map Component Settings, there are two subheadings: Default Values, and Submitter Options.
+#### Default Values
   - Default Value: Choose what should be displayed on the map once the user loads the form.
-  - Marker Type: Currently the map component supports only submitting a circle of a user's chosen radius or a point signifying a coordinate.
-  - Markers Per Submission: Select how many entries you would like the user to submit.
   - Zoom Level: Choose how zoomed the map should be initially.
   - Default Center: You can place a point on the displayed map to select where the map should be centered by default for the submitter.
-  - Read Only: This allows for whatever Default Value you choose to be viewable by the user and not allow for user entry.
+#### Submitter Options
+  - Allow submitters to add input on the map: This allows for users to add features to the map.
+  - Marker Type: Currently the map component supports Markers, Circles, and Polygons.  
+  - Markers Per Submission: Select how many entries you would like the user to submit.
+  - Enable Submitter "My Location" button: This button centers the map on the location provided by the user's browser.
 
 ![image](images/map-component-edit.png)
 
