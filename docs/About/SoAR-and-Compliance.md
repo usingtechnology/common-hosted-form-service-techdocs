@@ -38,7 +38,7 @@ The SoAR section "Assessment", subsection "Vulnerability Management" states:
 CHEFS is on a two week sprint schedule, and this review happens before every sprint planning meeting. In [Red Hat ACS](https://acs.developer.gov.bc.ca) ensure that the top item in the `Images most at risk` has a JIRA item created for it. If not, create a JIRA item in the Backlog using the template:
 
 - _Type_: Task
-- _Title_: As a Developer, I need to update **[IMAGE_NAME]**, so that ACS is happier
+- _Title_: ACS Image at risk: **[IMAGE_NAME]**
 - _Description_:<br>The Red Hat Advanced Cluster Security (ACS) application has identified the image **[IMAGE_NAME]** as having vulnerabilities that are fixable. To satisfy the requirements outlined in the Security Threat and Risk Assessment's (STRA) Statement of Acceptable Risks (SoAR), this image must be updated to resolve fixable vulnerabilities (or mitigated in some other way, if updating the image is not possible).
 - _Epic Link_: CHEFS DevOps
 
@@ -55,7 +55,7 @@ The SoAR section "Assessment", subsection "Vulnerability Management" states:
 CHEFS is on a two week sprint schedule, and this review happens before every sprint planning meeting. In the `common-hosted-form-service` GitHub repository check the `Security` > `Dependabot` alerts. Create a JIRA item in the Backlog for new alerts using the template:
 
 - _Type_: Task
-- _Title_: As a Developer, I need to update **[PACKAGE_NAME]** in **[MANIFEST_DIR]**, so that CHEFS is secure 
+- _Title_: Dependabot Vulnerability Alert for **[PACKAGE_NAME]** in **[MANIFEST_DIR]** 
 - _Description_:<br>The GitHub Dependabot process has created an alert for the **[PACKAGE_NAME]** dependency. To satisfy the requirements outlined in the Security Threat and Risk Assessment's (STRA) Statement of Acceptable Risks (SoAR), this vulnerability must be handled by updating the package version (or mitigated in some other way, if updating the package is not possible).<br>
   ht<workaround>tps://gi</workaround>thub.com/bcgov/common-hosted-form-service/security/dependabot/**[DEPENDABOT_ID]**
 - _Epic Link_: CHEFS DevOps
@@ -90,6 +90,7 @@ During sprint planning arrange for the new JIRA item to be included in the sprin
 <!-- NOTE: The log is in reverse order by date (newest at top) -->
 |Date|Access Review|ACS|Dependabot|OWASP Zap Scan|
 |:---:|:---:|:---:|:---:|:---:|
+|2024-09-19|&check;|&check;|&check;|&check;|
 |2024-09-05||&check;|&check;|&check;|
 |2024-08-22|&check;|&check;|&check;|&check;|
 |2024-07-18|&check;|&check;|&check;|&check;|
