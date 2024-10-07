@@ -115,6 +115,8 @@ An example to show the overall structure of an event message is:
 
 ```
 
+See (Custom Form Metadata)[./Form-Metadata.md] for information about form metadata passed in the `meta` section of the event message.
+
 ### NATS Message Metadata
 
 nats messages contain very valuable metadata that consumers should leverage for optimal processing. Each message on the stream will have a [sequence number](https://github.com/nats-io/nats.docs/blob/803d660c33496c9b7ba42360945be58621bbba0b/nats-concepts/seq_num.md) and a timestamp. Consumers can schedule batch consumption based on the sequence or timestamp of their last processed event. 
