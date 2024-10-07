@@ -7,6 +7,7 @@
 * [Event Stream Service](Event-Stream-Service) (Under Development)
 * [Event Subscription](Event-Subscription) (Experimental)
 * [Excel Power Query Integration](Excel-Power-Query-Integration)
+* [Form Metadata](Form-Metadata)
 * [Salesforce Integration](Salesforce-Integration)
 
 ***

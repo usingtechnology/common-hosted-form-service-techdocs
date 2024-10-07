@@ -108,7 +108,7 @@ The component will call the CHEFS proxy `{chefs host}/app/api/v1/proxy/external`
 
 It is expected that the External API endpoint is a `GET`.
 
-See (Custom Form Metadata)[./Form-Metadata.md] for information about form metadata passed as a header.
+See [Custom Form Metadata](./Form-Metadata.md) for information about form metadata passed as a header.
 
 ## HTTP Responses and errors
 

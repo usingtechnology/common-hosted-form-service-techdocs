@@ -115,7 +115,7 @@ An example to show the overall structure of an event message is:
 
 ```
 
-See (Custom Form Metadata)[./Form-Metadata.md] for information about form metadata passed in the `meta` section of the event message.
+See [Custom Form Metadata](./Form-Metadata.md) for information about form metadata passed in the `meta` section of the event message.
 
 ### NATS Message Metadata
 
