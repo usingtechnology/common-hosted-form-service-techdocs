@@ -108,6 +108,8 @@ The component will call the CHEFS proxy `{chefs host}/app/api/v1/proxy/external`
 
 It is expected that the External API endpoint is a `GET`.
 
+See (Custom Form Metadata)[./Form-Metadata.md] for information about form metadata passed as a header.
+
 ## HTTP Responses and errors
 
 Since formio components will make calls during the form design and configuration of the formio components (ie when the Datasource is URL and the URL has been populated), there will be many failed attempts calling the proxy. The most common failures will happen when the headers have not been added to the component configuration, or the `X-CHEFS-EXTERNAL-API-NAME` header has been set but the External API has not been configured.
