@@ -10,7 +10,7 @@ The Custom Form Metadata will be added to [External API](./Calling-External-API.
 
 ## Adding Form Metadata
 
-When Managing a Form, under Form Settings, there is a Form Metadata section. This section requires a JSON object. Note that you must enter the attributes and values using double-quotes \" so the value can be parsed into a valid JSON object.
+When Managing a Form, under Form Settings, there is a Form Metadata section. This section requires a JSON object. Note that you must enter the attributes and values using double-quotes " so the value can be parsed into a valid JSON object.
 
 ## Decoding Header
 
