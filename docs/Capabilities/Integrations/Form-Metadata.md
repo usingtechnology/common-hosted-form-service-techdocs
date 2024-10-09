@@ -41,7 +41,7 @@ Note: the `formMetadata` section will be added if attributes are in the Custom F
     submissionId: <uuid>,
     draft: false,
     formMetadata: {
-      externalId: 'AB-0123456789`,
+      externalId: 'AB-0123456789',
     }
   },
   payload: {
@@ -68,7 +68,7 @@ Form Metadata is returned as part of the form object for Get Form and Get Submis
         "headerName": "X-FORM-METADATA",
         "attributeName": "formMetadata",
         "metadata": {
-            "externalId": "'AB-0123456789"
+            "externalId": "AB-0123456789"
         },
         "createdBy": "JASHERMA@idir",
         "createdAt": "2024-10-07T22:27:40.081Z",
@@ -129,7 +129,7 @@ Note that this is the same as above. The `form.formMetadata` object contains the
             "headerName": "X-FORM-METADATA",
             "attributeName": "formMetadata",
             "metadata": {
-                "externalId": "'AB-0123456789"
+                "externalId": "AB-0123456789"
             },
             "createdBy": "JASHERMA@idir",
             "createdAt": "2024-10-07T22:27:40.081Z",
