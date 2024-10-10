@@ -2,7 +2,7 @@
 ***  
 # Custom Form Metadata
 
-CHEFS has added Custom Form Metadata support for each form to support integration with external systems better. Custom Form Metadata allows the owner/designer to add attributes such as external identifiers, categories, classifications or labels to aid in filtering and mapping between CHEFS and external systems.
+CHEFS has added Custom Form Metadata support for each form to support integration with external systems better. Custom Form Metadata allows the owner to add attributes such as external identifiers, categories, classifications or labels to aid in filtering and mapping between CHEFS and external systems.
 
 The Custom Form Metadata will be added to [External API](./Calling-External-API.md) calls as a base64 encoded header: `X-FORMS-METADATA`. [Event Stream Service](./Event-Stream-Service.md) notifications will include the Custom Form Metadata in the `metadata` payload as `formMetadata`.
 
@@ -65,8 +65,6 @@ Form Metadata is returned as part of the form object for Get Form and Get Submis
     "formMetadata": {
         "id": "eb2554d8-d2d9-4b3d-b0a5-69bde4797dfd",
         "formId": "b0c75fb6-de06-4e2d-a9e6-16b117971d51",
-        "headerName": "X-FORM-METADATA",
-        "attributeName": "formMetadata",
         "metadata": {
             "externalId": "AB-0123456789"
         },
@@ -126,8 +124,6 @@ Note that this is the same as above. The `form.formMetadata` object contains the
         "formMetadata": {
             "id": "eb2554d8-d2d9-4b3d-b0a5-69bde4797dfd",
             "formId": "b0c75fb6-de06-4e2d-a9e6-16b117971d51",
-            "headerName": "X-FORM-METADATA",
-            "attributeName": "formMetadata",
             "metadata": {
                 "externalId": "AB-0123456789"
             },
