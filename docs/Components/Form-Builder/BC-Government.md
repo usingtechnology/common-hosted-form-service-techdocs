@@ -59,19 +59,26 @@ Current features supported include:
 ![image](images/map-component-1.png)
 
 
+
 ### Configuration Options 
 Under the "Data" Tab in the Map Component Settings, there are two subheadings: Default Values, and Submitter Options.
+
+![image](images/map-component-edit.png)
+
 #### Default Values
   - Default Value: Choose what should be displayed on the map once the user loads the form.
   - Zoom Level: Choose how zoomed the map should be initially.
   - Default Center: You can place a point on the displayed map to select where the map should be centered by default for the submitter.
+
+![image](images/map-component-edit2.png)
+
 #### Submitter Options
   - Allow submitters to add input on the map: This allows for users to add features to the map.
   - Marker Type: Currently the map component supports Markers, Circles, and Polygons.  
   - Markers Per Submission: Select how many entries you would like the user to submit.
   - Enable Submitter "My Location" button: This button centers the map on the location provided by the user's browser.
+  - Enable BC Address Autocomplete: This enables a textbox which allows the user to type an address and have similar addresses appear in a dropdown. The user can then select an option and have the map center on the selected location. This dropdown uses the same service as the aforementioned BC Address form component.
 
-![image](images/map-component-edit.png)
 
 <!-- **[Back to top](#top)** -->
 
