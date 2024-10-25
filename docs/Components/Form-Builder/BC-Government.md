@@ -75,7 +75,7 @@ Under the "Data" Tab in the Map Component Settings, there are two subheadings: D
 
 #### Submitter Options
   - Allow submitters to add input on the map: This allows for users to add features to the map.
-  - Marker Type: Currently the map component supports Markers, Circles, and Polygons.  
+  - Marker Type: Currently the map component supports Markers, Circles, Polygons, and Lines.  
   - Markers Per Submission: Select how many entries you would like the user to submit.
   - Enable Submitter "My Location" button: This button centers the map on the location provided by the user's browser.
   - Enable BC Address Autocomplete: This enables a textbox which allows the user to type an address and have similar addresses appear in a dropdown. The user can then select an option and have the map center on the selected location. This dropdown uses the same service as the aforementioned BC Address form component.
