@@ -18,7 +18,7 @@ CHEFS is on a two week sprint schedule, and this review happens every second spr
 - The `pr-external`, `test`, and `prod` Environments in GitHub have `Required reviewers` in the protection rules that must only be current users
 - The `RoleBindings` in the OpenShift `-tools`, `-dev`, `-test`, and `-prod` environments of the `a12c97` and `a191b5` namespaces must only be for current `User` and `ServiceAccount` subjects
 - SysDig access must only be for current team users (`oc -n a12c97-tools get sysdig-team a12c97-sysdigteam -o yaml`)
-- The [SSO CSS app](https://bcgov.github.io/sso-requests-preview) in the `My Teams` tab must only contain current users in the `CoCo Team`
+- The [SSO CSS app](https://bcgov.github.io/sso-requests) in the `My Teams` tab must only contain current users in the `CoCo Team`
 <!--
 #### TODO:
 - api.gov.bc.ca
@@ -90,6 +90,7 @@ During sprint planning arrange for the new JIRA item to be included in the sprin
 <!-- NOTE: The log is in reverse order by date (newest at top) -->
 |Date|Access Review|ACS|Dependabot|OWASP Zap Scan|
 |:---:|:---:|:---:|:---:|:---:|
+|2024-10-17|&check;|&check;|&check;|&check;|
 |2024-09-19|&check;|&check;|&check;|&check;|
 |2024-09-05||&check;|&check;|&check;|
 |2024-08-22|&check;|&check;|&check;|&check;|
