@@ -55,6 +55,7 @@ Current features supported include:
   - Markers: Single Latitude and Longitude points on the map
   - Circles: Single Latitude and Longitude points with an associated radius
   - Polygons: A set of Markers which form a closed shape
+  - Line: A set of markers which do not form a closed shape
 
 ![image](images/map-component-1.png)
 
