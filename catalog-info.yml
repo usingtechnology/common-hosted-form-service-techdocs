@@ -10,4 +10,4 @@ metadata:
 spec:
   type: documentation
   lifecycle: experimental
-  owner: "chefs-team"
+  owner: "bcgov/chefs-team"
