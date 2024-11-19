@@ -285,7 +285,7 @@ To securely facilitate transmission of sensitive data between systems, CHEFS wil
 
 Initially, CHEFS will encrypt the payload using an `aes-256-gcm` that requires a  `sha256` hash as a key (256 bits/32 bytes/64 characters).
 
-CHEFS will use the [cryptr](https://github.com/MauriceButler/cryptr) JavaScript library. External applications are not required to use Node.js/JavaScript but will have to test their own implmentation or library.
+CHEFS will use the [cryptr](https://github.com/MauriceButler/cryptr) JavaScript library. External applications are not required to use Node.js/JavaScript but will have to test their own implementation or library.
 
 The Form Designer will have to `enable` private messages and encryption. CHEFS can generate a key or the Form Designer can provide the key. In either case, only CHEFS and the Form Designer should know the key. The Form Designer should store the key securely and make it accessible to their application/service/system following best practices.
 
