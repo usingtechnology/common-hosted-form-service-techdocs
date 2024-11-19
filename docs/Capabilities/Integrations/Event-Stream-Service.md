@@ -88,7 +88,7 @@ Other metadata will be provided as needed per type and only if the data is *NOT*
 | `domain` | `forms` - top level classification for event |
 | `class` | `submission` or `schema` - secondary classification for event |
 | `type` | `created`, `deleted`, `modified` - tertiary classification for event |
-| `formId` | uuid - CHEFS form id . Form that originates the event |
+| `formId` | uuid - CHEFS form id. Form that originates the event |
 | `formVersionId` | uuid - CHEFS form version id. Only if value exists at time of event. |
 | `submissionId` | uuid - CHEFS submission id. Only applies for `submission` class events. |
 | `draft` | boolean - For `submission` class events, the submission.draft value |
@@ -119,7 +119,7 @@ See [Custom Form Metadata](./Form-Metadata.md) for information about form metada
 
 ### NATS Message Metadata
 
-nats messages contain very valuable metadata that consumers should leverage for optimal processing. Each message on the stream will have a [sequence number](https://github.com/nats-io/nats.docs/blob/803d660c33496c9b7ba42360945be58621bbba0b/nats-concepts/seq_num.md) and a timestamp. Consumers can schedule batch consumption based on the sequence or timestamp of their last processed event. 
+NATS messages contain very valuable metadata that consumers should leverage for optimal processing. Each message on the stream will have a [sequence number](https://github.com/nats-io/nats.docs/blob/803d660c33496c9b7ba42360945be58621bbba0b/nats-concepts/seq_num.md) and a timestamp. Consumers can schedule batch consumption based on the sequence or timestamp of their last processed event. 
 
 ### Example Consumer
 The following is a trivialized example of a [pull consumer](https://docs.nats.io/nats-concepts/jetstream/consumers). It is up to the external application that consumes/listens to the events to decide how to set up their consumer. This is one way in one language (JavaScript). Please review the documentation about [consumers](https://docs.nats.io/nats-concepts/jetstream/consumers) and review the approved [examples](https://natsbyexample.com) for more information.
@@ -142,7 +142,7 @@ const falsey = require("falsey");
   SERVERS=ess-a191b5-dev.apps.silver.devops.gov.bc.ca WEBSOCKETS=true ENCRYPTION_KEY=ad5520469720325d1694c87511afda28a0432dd974cb77b5b4b9f946a5af6985 node pullConsumer.js
 */
 
-// different connection libraries if we are using websockerts or nats protocols.
+// different connection libraries if we are using websockets or nats protocols.
 const WEBSOCKETS = !falsey(process.env.WEBSOCKETS);
 
 let natsConnect;
