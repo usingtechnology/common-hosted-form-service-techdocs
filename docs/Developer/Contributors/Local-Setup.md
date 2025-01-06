@@ -12,18 +12,6 @@ This document will help developers looking to install CHEFS on their local machi
 # Prerequisites
 <!-- **[Back to top](#top)** -->
 
-Node v16. You can't go any higher than this as some of the dependencies rely on an older OpenSSL routine which is only available in Node v16. If you try running it with a higher version of Node (e.g. node 20.x) you will get  
-```    
-Error: error:0308010C:digital envelopes routines::unsupported  
-... //details removed
-opensslErrorStack: [ 'error:03000086:digital envelopes routines::unsupported' ],  
-library: 'digital envelope routines',  
-reason: 'unsupported',  
-code: 'ERR_OSSL_EVP_UNSUPPORTED'
-```  
-> Possible resolution can be achieved by setting the env variable in the developer's shell.    
-The command to run is  ``` export NODE_OPTIONS=--openssl-legacy-provider ```
-
 An IDIR account is required to access CHEFS. 
 
 Request an SSO Integration from the [Common Hosted Single Sign-on (CSS)](https://bcgov.github.io/sso-requests) page in order to obtain a resource and secret that will be used for authentication when building CHEFS. View the [detailed documentation](Pathfinder-SSO-client) about requesting the Pathfinder SSO integration. 
