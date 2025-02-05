@@ -2,6 +2,7 @@
 ***
 
 * [Local Setup](Local-Setup)
+* [CHEFS Development with Dev Container](CHEFS-Development-with-Dev-Container.md)
 * [Forking Repository](Forking-Repository)
 * [Git Branching and Pull Request Workflow](Git-Branching-and-Pull-Request-Workflow)
 * [Keycloak configuration](Keycloak-configuration)
