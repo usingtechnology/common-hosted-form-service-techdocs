@@ -94,6 +94,7 @@ During sprint planning arrange for the new JIRA item to be included in the sprin
 <!-- NOTE: The log is in reverse order by date (newest at top) -->
 |Date|Access Review|ACS|Dependabot|OWASP Zap Scan|
 |:---:|:---:|:---:|:---:|:---:|
+|2025-02-13||&check;|&check;|&check;|
 |2024-10-31||&check;|&check;|&check;|
 |2024-10-17|&check;|&check;|&check;|&check;|
 |2024-09-19|&check;|&check;|&check;|&check;|
