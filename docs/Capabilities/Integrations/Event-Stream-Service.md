@@ -2,8 +2,6 @@
 ***  
 # CHEFS Event Stream Service
 
-**NOTE (September 5, 2024) - this is in beta pull request release. This is running with minimal resources and is not production-ready. Connection protocol is limited to WebSocket and event messages size is limited to 2Mb.**
-
 CHEFS is adding an Event Streaming Service which allows Form Owners to consume and process real-time data about the forms (ex. a new version of the form has been published) and submissions. 
 
 Currently, Form Owners can configure event notifications via webhook (see [Event Subscription](./Event-Subscription.md)). These events are elementary, with metadata providing the IDs and event types. Generally, once the event notification is received the external application/service calls back to CHEFS via the CHEFS API to retrieve the full event data (form schema, submission data). This approach works but unnecessarily loads the CHEFS API service, degrading performance for all forms. More significantly, the logic for when and why an event is fired is directly coded into CHEFS. This is unsustainable as each external application may have different requirements for why an event is fired - a callback to CHEFS API is needed to determine if the event should be processed. 
@@ -12,7 +10,15 @@ Moving forward, CHEFS will fire events (with encrypted payloads) and allow the c
 
 This initial phase will introduce the Event Streaming Service as a component of CHEFS, with the intention that it grows, matures, and becomes a Common Component.
 
+**Table of content:**
+
+- [NATS.io](#natsio)
+- [CHEFS Stream](#chefs-stream)
+- [Encryption](#encryption)
+- [Onboarding](#onboarding)
+
 ## nats.io
+<a id="natsio"></a>
 [NATS](https://nats.io) is a connective technology built for the ever increasingly hyper-connected world. It is a single technology that enables applications to securely communicate across any combination of cloud vendors, on-premise, edge, web and mobile, and devices. NATS consists of a family of open-source products that are tightly integrated but can be deployed easily and independently. NATS is being used globally by thousands of companies, spanning use-cases including microservices, edge computing, mobile, IoT and can be used to augment or replace traditional messaging.
 
 NATS has been successfully used by many other projects within the BC Government. It can be scaled horizontally and runs without the need for a paid operator (e.g., [Kafka](https://kafka.apache.org)). 
@@ -32,11 +38,17 @@ NATS allows a variety of consumer types and this is required reading: [JetStream
 
 **IMPORTANT** - currently, access is limited to WebSockets. Please ensure your client can use WebSockets! Some reading: [getting-started-nats-ws](https://nats.io/blog/getting-started-nats-ws/) and [here](https://github.com/nats-io/nats.ws).
 
-**ALSO IMPORTANT** - given the limited resources on our Proof of Concept server, there is a 2Mb limit on the event message size.
+**ALSO IMPORTANT** - The allowed encrypted message size is < 1 Mb. Encryption dramatically adds to the message size, meaning raw json included in the payload (ie. submission data) should be under 50kb. You will receive an error attribute in your event payload if the overall message is too large.
 
+### Credentials
+Consumers will use connect using [NKeys](https://docs.nats.io/running-a-nats-service/configuration/securing_nats/auth_intro/nkey_auth). 
+
+> With NKeys the server can verify identities without ever storing or ever seeing private keys. The authentication system works by requiring a connecting client to provide its public key and digitally sign a challenge with its private key. The server generates a random challenge with every connection request, making it immune to playback attacks. The generated signature is validated against the provided public key, thus proving the identity of the client. If the public key is known to the server, authentication succeeds.
+
+CHEFS will **not** store the private key (seed). Once it is delivered to you and your team, it is up to you to store it securely.
 
 ## CHEFS Stream
-
+<a id="chefs-stream"></a>
 CHEFS will publish events to a stream named: `CHEFS`.
 
 Under this stream will be two major subject prefixes: 
@@ -122,172 +134,35 @@ See [Custom Form Metadata](./Form-Metadata.md) for information about form metada
 NATS messages contain very valuable metadata that consumers should leverage for optimal processing. Each message on the stream will have a [sequence number](https://github.com/nats-io/nats.docs/blob/803d660c33496c9b7ba42360945be58621bbba0b/nats-concepts/seq_num.md) and a timestamp. Consumers can schedule batch consumption based on the sequence or timestamp of their last processed event. 
 
 ### Example Consumer
-The following is a trivialized example of a [pull consumer](https://docs.nats.io/nats-concepts/jetstream/consumers). It is up to the external application that consumes/listens to the events to decide how to set up their consumer. This is one way in one language (JavaScript). Please review the documentation about [consumers](https://docs.nats.io/nats-concepts/jetstream/consumers) and review the approved [examples](https://natsbyexample.com) for more information.
+Please review our [demo code](https://github.com/bcgov/common-hosted-form-service/blob/main/event-stream-service/pullConsumer.js) trivialized example of a [pull consumer](https://docs.nats.io/nats-concepts/jetstream/consumers). It is up to the external application that consumes/listens to the events to decide how to set up their consumer. This is one way in one language (JavaScript). Please review the documentation about [consumers](https://docs.nats.io/nats-concepts/jetstream/consumers) and review the approved [examples](https://natsbyexample.com) for more information.
 
 The example will ask for a batch of messages every 5 seconds - illustrating some basic pull behaviour. We can see as it processes the messages that there is a sequence number (`m.seq`) and a timestamp (`m.info.timestampNanos`) which we could leverage for different [delivery policies](https://docs.nats.io/nats-concepts/jetstream/consumers#deliverpolicy) such as get all messages since X sequence number.
 
-**Do not use this code for your client! Simplified example only!**
+Of note is checking for errors when processing the event messages. As noted above, if CHEFS attempts to put too large of a message in the Event Stream, an error will be sent instead. You should track the IDs and use the appropriate CHEFS API to download the data directly.
 
-```js
-const { AckPolicy, JSONCodec } = require("nats");
-const Cryptr = require("cryptr");
-const falsey = require("falsey");
-/*
- command line pass in environment variables for:
- SERVERS - which nats instance to connect to (default is local from docker-compose)
- WEBSOCKET - connect via nats protocol or websockets. true/false (default false, connect via nats)
- ENCRYPTION_KEY - what encryption key to decrypt (Cryptr - aes-256-gcm) private payloads
-
- Example:
-  SERVERS=ess-a191b5-dev.apps.silver.devops.gov.bc.ca WEBSOCKETS=true ENCRYPTION_KEY=ad5520469720325d1694c87511afda28a0432dd974cb77b5b4b9f946a5af6985 node pullConsumer.js
-*/
-
-// different connection libraries if we are using websockets or nats protocols.
-const WEBSOCKETS = !falsey(process.env.WEBSOCKETS);
-
-let natsConnect;
-if (WEBSOCKETS) {
-  console.log("connect via ws");
-  // shim the websocket library
-  globalThis.WebSocket = require("websocket").w3cwebsocket;
-  const { connect } = require("nats.ws");
-  natsConnect = connect;
-} else {
-  console.log("connect via nats");
-  const { connect } = require("nats");
-  natsConnect = connect;
-}
-
-// connection info
-let servers = [];
-if (process.env.SERVERS) {
-  servers = process.env.SERVERS.split(",");
-} else {
-  // running locally
-  servers = "localhost:4222,localhost:4223,localhost:4224".split(",");
-}
-
-let nc = undefined; // nats connection
-let js = undefined; // jet stream
-let jsm = undefined; // jet stream manager
-let consumer = undefined; // pull consumer (ordered, ephemeral)
-
-// stream info
-const STREAM_NAME = "CHEFS";
-const FILTER_SUBJECTS = ["PUBLIC.forms.>", "PRIVATE.forms.>"];
-const MAX_MESSAGES = 2;
-const DURABLE_NAME = "pullConsumer";
-const ENCRYPTION_KEY = process.env.ENCRYPTION_KEY || undefined;
-
-const printMsg = (m) => {
-  // illustrate grabbing the sequence and timestamp from the nats message...
-  try {
-    const ts = new Date(m.info.timestampNanos / 1000000).toISOString();
-    console.log(
-      `msg seq: ${m.seq}, subject: ${m.subject}, timestamp: ${ts}, streamSequence: ${m.info.streamSequence}, deliverySequence: ${m.info.deliverySequence}`
-    );
-    // illustrate (one way of) grabbing message content as json
-    const jsonCodec = JSONCodec();
-    const data = jsonCodec.decode(m.data);
-    console.log(data);
-    try {
-      if (
-        data &&
-        data["payload"] &&
-        data["payload"]["data"] &&
-        ENCRYPTION_KEY
-      ) {
-        const cryptr = new Cryptr(ENCRYPTION_KEY);
-        const decryptedData = cryptr.decrypt(data["payload"]["data"]);
-        const jsonData = JSON.parse(decryptedData);
-        console.log("decrypted payload data:");
-        console.log(jsonData);
-      }
-    } catch (err) {
-      console.error("Error decrypting payload.data", err);
-    }
-  } catch (e) {
-    console.error(`Error printing message: ${e.message}`);
-  }
-};
-
-const init = async () => {
-  if (nc && nc.info != undefined) {
-    // already connected.
-    return;
-  } else {
-    // open a connection...
-    try {
-      // no credentials provided.
-      // anonymous connections have read access to the stream
-      console.log(`connect to nats server(s) ${servers} as 'anonymous'...`);
-      nc = await natsConnect({
-        servers: servers,
-        reconnectTimeWait: 10 * 1000, // 10s
-      });
-
-      console.log("access jetstream...");
-      js = nc.jetstream();
-      console.log("get jetstream manager...");
-      jsm = await js.jetstreamManager();
-      await jsm.consumers.add(STREAM_NAME, {
-        ack_policy: AckPolicy.Explicit,
-        durable_name: DURABLE_NAME,
-      });
-      consumer = await js.consumers.get(STREAM_NAME, DURABLE_NAME);
-    } catch (e) {
-      console.error(e);
-      process.exit(0);
-    }
-  }
-};
-
-const pull = async () => {
-  console.log("fetch...");
-  let iter = await consumer.fetch({
-    filterSubjects: FILTER_SUBJECTS,
-    max_messages: MAX_MESSAGES,
-  });
-  for await (const m of iter) {
-    printMsg(m);
-    m.ack();
-  }
-};
-
-const main = async () => {
-  await init();
-  await pull();
-  setTimeout(main, 5000); // process a batch every 5 seconds
-};
-
-main();
-
-const shutdown = async () => {
-  console.log("\nshutdown...");
-  console.log("drain connection...");
-  await nc.drain();
-  process.exit(0);
-};
-
-process.on("SIGTERM", shutdown);
-process.on("SIGINT", shutdown);
-process.on("SIGUSR1", shutdown);
-process.on("SIGUSR2", shutdown);
-process.on("exit", () => {
-  console.log("exit.");
-});
-
-```
+**Do not use our demo code for your client! Simplified example only!**
 
 ## Encryption
+<a id="encryption"></a>
 
-To securely facilitate transmission of sensitive data between systems, CHEFS will encrypt the payloads for `PRIVATE.forms` events. 
+To securely facilitate the transmission of sensitive data between systems, CHEFS will encrypt the payloads for `PRIVATE.forms` events. 
 
 Initially, CHEFS will encrypt the payload using an `aes-256-gcm` that requires a  `sha256` hash as a key (256 bits/32 bytes/64 characters).
 
-CHEFS will use the [cryptr](https://github.com/MauriceButler/cryptr) JavaScript library. External applications are not required to use Node.js/JavaScript but will have to test their own implementation or library.
+CHEFS will use the [cryptr](https://github.com/MauriceButler/cryptr) JavaScript library. External applications are not required to use Node.js/JavaScript but must test their implementation or library.
 
-The Form Designer will have to `enable` private messages and encryption. CHEFS can generate a key or the Form Designer can provide the key. In either case, only CHEFS and the Form Designer should know the key. The Form Designer should store the key securely and make it accessible to their application/service/system following best practices.
+The Form Designer will have to `enable` private messages and encryption. CHEFS can generate a key, or the Form Designer can provide it. In either case, only CHEFS and the Form Designer should know the key. The Form Designer should store the key securely and make it accessible to their application/service/system following best practices.
 
-Since the Form Designer can specify the key they can use the same key for all of their forms. This will simplify processing in their systems. Plans for CHEFS include grouping of forms which also alleviates the complexity of mapping 1-to-1 key-to-form.
+Since the Form Designer can specify the key, they can use the same key for all of their forms. This will simplify processing in their systems. Plans for CHEFS include a grouping of forms, which also alleviates the complexity of mapping 1-to-1 key-to-form.
+
+## Onboarding
+<a id="onboarding"></a>
+If you are interested in leveraging the Event Stream Service, please fill out the [Event Stream Service request form](https://submit.digital.gov.bc.ca/app/form/submit?f=9c85b764-291a-459e-8b81-a0583d5ea7bc).
+
+Enter your Ministry, Organization or Initiative and add contact emails for yourself and your technical team, as well as an estimated date for promotion to our Production environment (submit.digital.gov.bc.ca). 
+
+The CHEFS team will create an account in our Development and Test environments so you can test your consumer client and workflows. The credentials will be emailed to you and your technical team. The CHEFS team will **not** retain your password; please follow your privacy and security policies to save your password.
+
+
+
 
