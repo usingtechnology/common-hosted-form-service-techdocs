@@ -7,48 +7,82 @@
 
 ## Form schedule 
 
-This feature allows the form designer to schedule form submissions. By enabling this feature form designer can Limit the submissions to a form by selecting Open and Close submission dates or a specific period. The schedule feature can be enabled by clicking on the "Form Submission Schedule" checkbox under the Form schedule settings on form settings. 
+This feature allows the form designer to schedule form submissions. By enabling this feature, form designers can limit the submissions to a form by selecting Open and Close submission dates or a specific period. The schedule feature can be enabled by clicking on the "Form Submission Schedule" checkbox under the Form schedule settings on form settings.
 
-One thing to remember is that this feature can only be available to the forms that have at least one version published. Three scenarios can schedule a form submission.
+One thing to remember is that this feature can only be available to forms that have at least one version published. Forms can be scheduled using two scheduling options.
 
-By enabling this radio box **"Keep open until manually unpublished**" the form submission will normally work, the only limit a form designer can use is to select an "Open submissions date," so basically form will be open on a specific date and will be available until the form get unpublished manually.
+### Timezone Selection
+
+Form designers can now select a specific timezone for their form schedule. The system defaults to the user's local timezone but allows explicit selection from available Canadian timezones. This ensures that all scheduling operations (open dates, close dates, and reminders) work consistently across different user locations.
 
 ![image](images/sr1.png)
 
+### Schedule Options
 
-**"Schedule a closing date"** is another option where the form designer can select a specific closing date for a form submission. Selecting the Open and Close date form will open submissions for a specific selected period only. Plus, the form designer can allow end users to submit the form with a Grace period. To do so, the Form designer can use the "Allow late submissions" option and choose a specific interval.
-Upon closing a form, the Form designer can set a custom message for the end user as well. That can be seen on the front end once the form gets closed for a specific period. This feature can be used by clicking on the "Set custom closing message" checkbox.
+By enabling the radio option **"Keep open until manually unpublished"**, the form submission will operate normally. The only limit a form designer can use is to select an "Open submissions date," so basically the form will be open on a specific date and time, and will remain available until the form gets unpublished manually.
+
+**"Schedule a closing date"** is the other option where the form designer can select a specific closing date and time for form submissions. Selecting the Open and Close date/time makes the form available for submissions only during that specific selected period. Additionally, the form designer can allow end users to submit the form with a Grace period. To do so, the Form designer can use the "Allow late submissions" option and choose a specific interval.
+
+Upon closing a form, the Form designer can set a custom message for the end user as well. This message will be displayed on the frontend once the form gets closed for the specific period. This feature can be used by clicking on the "Set custom closing message" checkbox.
 
 ![image](images/sr2.png)
 
+### Form Schedule Time Settings
 
+Each schedule option now includes precise time selection in addition to date selection:
+- Open submissions time: Sets the exact time when the form will become available on the open date
+- Close submissions time: Sets the exact time when the form will close on the close date (defaults to 23:59 if not specified)
 
-Last option"**Set up submission period**" will act similarly to the previous one but setting up this option is a bit different. Here Form designer has to choose a period and interval to close the form submission. The first input accepts a Positive integer/number and the next one accepts a period that could be Days, Weeks, Months, etc. So form will be open from the Open submission date to the Period selected by the form designer. Again form designers can allow end users to give a grace period for submission by enabling allow late submission option.
-One advanced feature here is to set up a Repeat period, Where a Form Designer can set up a form availability repeatedly. By means, the form designer can select a particular repetition to occur for the current form by inputting a positive number in the very first input box that says "Every" as a placeholder, then using the second drop box to select a period, and the last thing using an End date when the repetition should end.
-Upon closing a form, the Form designer can set a custom message for the end user as well. That can be seen on the frontend once the form gets close for a specific period. This feature can be used by clicking on the "Set custom closing message" checkbox.
+The system displays a helpful summary of the scheduled dates and times, formatted according to the selected timezone, to help form designers confirm their settings.
+
+### Late Submissions
+
+For forms with a closing date, form designers can enable a grace period for late submissions:
+- Enable "Allow late submissions" 
+- Specify the length of the grace period (number + interval type: days, weeks, months, quarters, or years)
+- During this grace period, submitters will still be able to access and submit the form, but it will be marked as a late submission
 
 ![image](images/sr3.png)
 
 ## Reminder Notifications
 <!-- **[Back to top](#top)** -->
 
-Reminder notifications is a service of chefs that allows the system to send reminder emails to the submitter of a specific form during the open submission period. Generally, it sends three emails, one on the first day of opening, the second in the middle, and the last one day before the end of the period.
+Reminder notifications is a service of CHEFS that allows the system to send reminder emails to the submitter of a specific form during the open submission period. The reminder system is designed to increase form completion rates by notifying users at strategic times.
 
-We have three types of form schedules that trigger reminder emails:
+### Reminder Eligibility
 
-1. form without an End Date
-1. form with a Start and End Date
-1. form with a Repeat Section
+Reminder emails are only available for:
+- Forms created by teams (not individual forms)
+- Forms with a future opening date (reminders cannot be enabled for forms that have already opened)
+- Forms with a schedule enabled
 
-When the form has no end date, we send only one the first email, but if the date is after the current date.
+### Reminder Email Schedule
 
-When the form has a start and end date or a repeat period, we send three emails, but according to the length of the period. For example, if the date is less than three days, we send only one email the first. If it is between 4-6 days, we send two emails, the first and the last. If the period is more than six days, we send three emails, one at the start, one in the middle and the day before the end of the period. 
+The system automatically determines when to send reminder emails based on the form's schedule:
 
-**What is a period?**
+1. **Forms without an End Date (Keep open until manually unpublished)**:
+   - Only one reminder email is sent on the first day the form opens
+   - The form must have a future opening date for this reminder to be sent
 
-It is a moment when a form is open for submission, containing a start date and an end date. There are two types of periods. A simple one includes only a start and end date. The second one also has a start and end date but repeats according to an interval. 
+2. **Forms with a Start and End Date (Schedule a closing date)**:
+   - The number of reminders sent depends on the length of the submission period:
+     - Less than 3 days: One reminder on the opening day only
+     - 4-6 days: Two reminders (opening day and one day before closing)
+     - More than 6 days: Three reminders (opening day, middle of the period, and one day before closing)
 
-![image](images/sr4)
+### How Reminders Work
+
+- **Opening day reminder**: Sent to all form submitters when the form opens
+- **Middle of period reminder**: Only sent to users who haven't submitted the form yet
+- **Day before closing reminder**: Only sent to users who haven't submitted the form yet
+
+All reminders include a link to the form and information about the submission deadline.
+
+### What is a Period?
+
+A period is a timeframe when a form is open for submission, containing a start date/time and an end date/time. All dates and times in periods are timezone-aware based on the timezone selected in the form schedule settings.
+
+![image](images/sr4.png)
 
 <!-- **[Back to top](#top)** -->
 
