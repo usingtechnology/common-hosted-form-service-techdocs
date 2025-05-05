@@ -25,7 +25,7 @@ Some of the limitations when choosing Public as your access level are:
 
 **Log-in required**
 
-Requiring a submitter to log in limits your form to anyone with a **Basic BCeID**, **Business BCeID** or **IDIR** username and password. 
+Requiring a submitter to log in limits your form to anyone with a **BC Services Card**, **Basic BCeID**, **Business BCeID** or **IDIR** username and password. 
 
 Requiring a log in enables several features for submitters. 
 Submitters can:
@@ -35,7 +35,7 @@ Submitters can:
 * Review all their previous submissions. 
 
 Requiring a login has some limitations:
-* You can only select one of the BCeIDs or IDIR; you cannot allow both.
+* You can only select one of: BC Services Card, Basic BCeID, Business BCeID or IDIR; you cannot allow multiple.
 * Users often find getting a BCeID confusing.
 
 **Specific Team Members**
@@ -92,10 +92,31 @@ There are a few steps that IDIM will follow up and work with you on including a 
 * Submission of your project’s communications / invitations to the Public (that mention BCeID) submitted to IDIM.Consulting@gov.bc.ca for review and sign-off (Client responsibility) 
 * Notify IDIM Consulting what your target Production Go-Live | BCeID account First Users date is - (please notify them if previously disclosed dates are moved or changed) (Client responsibility) 
 * Provide estimates of BCeID end user account volumes (by BCeID account type) a) at launch and b) after the first year of operation - (please notify them if previously disclosed end user BCeID account volumes change) (Client responsibility) 
-
-Additional forms created for a similar purpose and similar customer base may not have to go past the self-assessment step but IDIM Consulting will advise you on that. 
  
 * [Learn more about BCeID](https://www.bceid.ca/)
+
+Additional forms created for a similar purpose and similar customer base may not have to go past the self-assessment step but IDIM Consulting will advise you on that. 
+
+## To use Log in Required with BC Services Card¶
+
+If your form is needing to trust that the name information provided is authentic, using an MFA protected, privacy protecting, and zero cost BC Government digital identity service without needing a username and password, look to the BC Services Card Account. To use BC Services Card Account for your form access, you must notify the Identity Information Management (IDIM) team by email ([IDIM.Consulting@gov.bc.ca](mailto:IDIM.Consulting@gov.bc.ca)). They need to know which forms use the BC Services Card Account and allocate appropriate resources. You should provide them the following in your notification:
+
+* Program area or initiative that owns the CHEFS form
+* Contact Email address
+* Estimate of how many submissions the form may receive per year
+
+There are a few steps that IDIM will follow up and work with you on:
+
+* Participation in Client and BC Services Card Account onboarding kickoff meeting 
+* Privacy Impact Assessment Update and checklist
+* Submission of your project’s communications and/or invitations to the Public (that mention BC Services Card) submitted to [IDIM.Consulting@gov.bc.ca](mailto:IDIM.Consulting@gov.bc.ca) for review and sign-off
+* Notify IDIM Consulting what your target Production Go-Live date and First Users date is with expected volumes - (please notify them if previously disclosed dates are moved or changed) 
+* Additional forms created for a similar purpose and similar customer base may not have to go past the kickoff step but IDIM Consulting will advise you on that.
+
+Learn more about [BC Services Card Account](https://id.gov.bc.ca/account/) 
+
+Note: BC Services Card Account users cannot be added to your form as an administrator. See [Managing admin teams](https://developer.gov.bc.ca/docs/default/component/chefs-techdocs/Capabilities/Form-Management/Managing-admin-teams/) for more details on how to add administrators to your form.
+
 
 > **Note:** BCeID users cannot be added to your form as an administrator. See [Managing admin teams](Managing-admin-teams) for more details on how to add administrators to you form.
 
