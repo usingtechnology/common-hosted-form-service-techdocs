@@ -93,11 +93,9 @@ There are a few steps that IDIM will follow up and work with you on including a 
 * Notify IDIM Consulting what your target Production Go-Live | BCeID account First Users date is - (please notify them if previously disclosed dates are moved or changed) (Client responsibility) 
 * Provide estimates of BCeID end user account volumes (by BCeID account type) a) at launch and b) after the first year of operation - (please notify them if previously disclosed end user BCeID account volumes change) (Client responsibility) 
  
-* [Learn more about BCeID](https://www.bceid.ca/)
+[Learn more about BCeID](https://www.bceid.ca/)
 
-Additional forms created for a similar purpose and similar customer base may not have to go past the self-assessment step but IDIM Consulting will advise you on that. 
-
-## To use Log in Required with BC Services Card¶
+## To use Log in Required with BC Services Card
 
 If your form is needing to trust that the name information provided is authentic, using an MFA protected, privacy protecting, and zero cost BC Government digital identity service without needing a username and password, look to the BC Services Card Account. To use BC Services Card Account for your form access, you must notify the Identity Information Management (IDIM) team by email ([IDIM.Consulting@gov.bc.ca](mailto:IDIM.Consulting@gov.bc.ca)). They need to know which forms use the BC Services Card Account and allocate appropriate resources. You should provide them the following in your notification:
 
@@ -115,10 +113,9 @@ There are a few steps that IDIM will follow up and work with you on:
 
 Learn more about [BC Services Card Account](https://id.gov.bc.ca/account/) 
 
-Note: BC Services Card Account users cannot be added to your form as an administrator. See [Managing admin teams](https://developer.gov.bc.ca/docs/default/component/chefs-techdocs/Capabilities/Form-Management/Managing-admin-teams/) for more details on how to add administrators to your form.
+Additional forms created for a similar purpose and similar customer base may not have to go past the self-assessment step but IDIM Consulting will advise you on that. 
 
-
-> **Note:** BCeID users cannot be added to your form as an administrator. See [Managing admin teams](Managing-admin-teams) for more details on how to add administrators to you form.
+> **Note:** BCeID and BC Services Card Account users cannot be added to your form as an administrator. See [Managing admin teams](Managing-admin-teams) for more details on how to add administrators to your form.
 
 <!-- **[Back to top](#top)** -->
 ***
