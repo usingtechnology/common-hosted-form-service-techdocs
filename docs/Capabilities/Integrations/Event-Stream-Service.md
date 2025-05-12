@@ -2,13 +2,13 @@
 ***  
 # CHEFS Event Stream Service
 
-CHEFS is adding an Event Streaming Service which allows Form Owners to consume and process real-time data about the forms (ex. a new version of the form has been published) and submissions. 
+CHEFS has added an Event Stream Service which allows Form Owners to consume and process real-time data about the forms (ex. a new version of the form has been published) and submissions. 
 
-Currently, Form Owners can configure event notifications via webhook (see [Event Subscription](./Event-Subscription.md)). These events are elementary, with metadata providing the IDs and event types. Generally, once the event notification is received the external application/service calls back to CHEFS via the CHEFS API to retrieve the full event data (form schema, submission data). This approach works but unnecessarily loads the CHEFS API service, degrading performance for all forms. More significantly, the logic for when and why an event is fired is directly coded into CHEFS. This is unsustainable as each external application may have different requirements for why an event is fired - a callback to CHEFS API is needed to determine if the event should be processed. 
+Previously, Form Owners could (and still can) configure event notifications via webhook (see [Event Subscription](./Event-Subscription.md)). These events are elementary, with metadata providing the IDs and event types. Generally, once the event notification is received the external application/service calls back to CHEFS via the CHEFS API to retrieve the full event data (form schema, submission data). This approach works but unnecessarily loads the CHEFS API service, degrading performance for all forms. More significantly, the logic for when and why an event is fired is directly coded into CHEFS. This is unsustainable as each external application may have different requirements for why an event is fired - a callback to CHEFS API is needed to determine if the event should be processed. 
 
-Moving forward, CHEFS will fire events (with encrypted payloads) and allow the consumers to define the logic for processing on their end. An Event Streaming Service allows multiple consumers to process the same event. For instance, the Form Owner can process the submission data, while a metrics reporter can add a count to their submissions totals, another service can analyze service loads by sector.
+Moving forward, CHEFS will fire events (with encrypted payloads) and allow the consumers to define the logic for processing on their end. An Event Stream Service allows multiple consumers to process the same event. For instance, the Form Owner can process the submission data, while a metrics reporter can add a count to their submissions totals, another service can analyze service loads by sector.
 
-This initial phase will introduce the Event Streaming Service as a component of CHEFS, with the intention that it grows, matures, and becomes a Common Component.
+This initial phase will introduce the Event Stream Service as a component of CHEFS, with the intention that it grows, matures, and becomes a Common Component.
 
 **Table of content:**
 
@@ -134,7 +134,7 @@ See [Custom Form Metadata](./Form-Metadata.md) for information about form metada
 NATS messages contain very valuable metadata that consumers should leverage for optimal processing. Each message on the stream will have a [sequence number](https://github.com/nats-io/nats.docs/blob/803d660c33496c9b7ba42360945be58621bbba0b/nats-concepts/seq_num.md) and a timestamp. Consumers can schedule batch consumption based on the sequence or timestamp of their last processed event. 
 
 ### Example Consumer
-Please review our [demo code](https://github.com/bcgov/common-hosted-form-service/blob/main/event-stream-service/pullConsumer.js) trivialized example of a [pull consumer](https://docs.nats.io/nats-concepts/jetstream/consumers). It is up to the external application that consumes/listens to the events to decide how to set up their consumer. This is one way in one language (JavaScript). Please review the documentation about [consumers](https://docs.nats.io/nats-concepts/jetstream/consumers) and review the approved [examples](https://natsbyexample.com) for more information.
+Please review our [demo code](https://github.com/bcgov/event-stream-service/blob/main/tools/pullConsumer.js) trivialized example of a [pull consumer](https://docs.nats.io/nats-concepts/jetstream/consumers). It is up to the external application that consumes/listens to the events to decide how to set up their consumer. This is one way in one language (JavaScript). Please review the documentation about [consumers](https://docs.nats.io/nats-concepts/jetstream/consumers) and review the approved [examples](https://natsbyexample.com) for more information.
 
 The example will ask for a batch of messages every 5 seconds - illustrating some basic pull behaviour. We can see as it processes the messages that there is a sequence number (`m.seq`) and a timestamp (`m.info.timestampNanos`) which we could leverage for different [delivery policies](https://docs.nats.io/nats-concepts/jetstream/consumers#deliverpolicy) such as get all messages since X sequence number.
 
