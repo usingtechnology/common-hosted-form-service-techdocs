@@ -76,7 +76,9 @@ Current features supported include:
 
 ![image](images/map-component-1.png)
 
+Additionally, base layers can be used to provide context to the map. These are background layers (e.g., OpenStreetMap, Light, Dark, Topographic) that can be customized or selected for display.
 
+![Custom Base Layer on Map](images/map-component-custom-layer-mapview.png)
 
 ### Configuration Options 
 Under the "Data" Tab in the Map Component Settings, there are two subheadings: Default Values, and Submitter Options.
@@ -84,9 +86,11 @@ Under the "Data" Tab in the Map Component Settings, there are two subheadings: D
 ![image](images/map-component-edit.png)
 
 #### Default Values
-  - Default Value: Choose what should be displayed on the map once the user loads the form.
+  - Default Value: Choose what should be displayed on the map once the user loads the form. You can also specify the default base layer via selectedBaseLayer.
   - Zoom Level: Choose how zoomed the map should be initially.
   - Default Center: You can place a point on the displayed map to select where the map should be centered by default for the submitter.
+  - Default Base Layer: The base map shown when the map is first loaded (e.g., OpenStreetMap, Light, Dark, Topographic).
+
 
 ![image](images/map-component-edit2.png)
 
@@ -94,6 +98,11 @@ Under the "Data" Tab in the Map Component Settings, there are two subheadings: D
   - Allow submitters to add input on the map: This allows for users to add features to the map.
   - Marker Type: Currently the map component supports Markers, Circles, Polygons, and Lines.  
   - Markers Per Submission: Select how many entries you would like the user to submit.
+  - Allow Submitters to Switch Base Layers: When enabled, users can toggle between predefined and custom base layers during form interaction.
+  - Available Base Layers for Submitters: Choose which base layers are available to users (OpenStreetMap, Light, Dark, Topographic).
+    ![Base Layer Options](images/map-component-base-layer-options.png)
+  - Custom Base Layers: Designers can add their own tile layers with label, tile URL (must include {z}, {x}, {y}), and attribution. These can be toggled on/off and included in the map display. 
+    ![Custom Base Layer Settings](images/map-component-custom-base-layer.png)
   - Enable Submitter "My Location" button: This button centers the map on the location provided by the user's browser.
   - Enable BC Address Autocomplete: This enables a textbox which allows the user to type an address and have similar addresses appear in a dropdown. The user can then select an option and have the map center on the selected location. This dropdown uses the same service as the aforementioned BC Address form component.
 
