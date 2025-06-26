@@ -1,5 +1,6 @@
 [Home](index) > [Capabilities](Capabilities) > [Form Management](Form-Management) > **Workflows and Statuses**
-***
+
+---
 
 Workflows and statuses allow you to communicate with your clients and administrative team to complete a CHEFS submissions.
 
@@ -10,44 +11,69 @@ Workflows and statuses allow you to communicate with your clients and administra
 ## How to enable workflows
 
 ### Enabling the "Assigned" status
+
 To turn on the "Assigned" workflow, you need to:
-* Go to the "Forms Settings" area of your "Manage Form"
-* Click on the "Reviewers can update the status of this form" option under "Form Functionality." 
- 
-Having reviewers will allow you to change a form's status between two states: assigned and completed. 
- 
+
+- Go to the "Forms Settings" area of your "Manage Form"
+- Click on the "Reviewers can update the status of this form" option under "Form Functionality."
+
+Having reviewers will allow you to change a form's status between two states: assigned and completed.
+
 ### Enabling the "Revising" status
+
 To enable this feature on your "Manage Form" page, you must:
+
 1. Turn on "Log-in required" under "Form access have to require users to log in with their IDIR or BCeID
 2. Check the "Submitters can Save and Edit Drafts" under "Form Functionality"
 
 This will now allow you access to all three states: revising, assigned, and completed.
 
+### Enabling the assignee column
+
+Once you have enabled the "Assigned" workflow status, you can also choose to display an assignee column for your reviewers:
+
+- After checking "Reviewers can update the status of this form," a new option will appear
+- Check the "Display assignee column for reviewers" option to enable this feature
+
+This will allow your reviewers to see who each submission is assigned to and filter submissions by assignee.
+
 ![](images/status-workflow-settings.png)
 
 ## Using workflows
+
 <!-- **[Back to top](#top)** -->
 
 To access the workflow features, you need to:
 
-1. Click on the "View Submissions" icon to view all the submissions for your form on the "Manage Form" page 
-![](images/status-workflow-1.png)
+1. Click on the "View Submissions" icon to view all the submissions for your form on the "Manage Form" page
+   ![](images/status-workflow-1.png)
 
-2. Then click on the "View Submission" icon under "Actions" at the end of any submission row to view those results 
-![](images/status-workflow-2.png)
+2. Then click on the "View Submission" icon under "Actions" at the end of any submission row to view those results
+   ![](images/status-workflow-2.png)
+
+3. If you have enabled the assignee column feature, you will also see:
+   - An **"Assignee"** column showing who each submission is assigned to (or empty if not yet assigned)
+   - A **"Assigned to me"** checkbox above the submissions table to filter and show only submissions assigned to you
+
+![](images/status-workflow-4.png)
+
+![](images/status-workflow-5.png)
+
+When you check the "Assigned to me" checkbox, the table will update to show only the submissions that have been assigned to you, making it easier to focus on your assigned work.
 
 You can also access your submissions from your "My Forms" page and click the "Submissions" link for that form.
 
-In the "Status Panel" for that submission, there is a drop-down menu with three options: 
-* Assigned
-* Completed
-* Revising
+In the "Status Panel" for that submission, there is a drop-down menu with three options:
+
+- Assigned
+- Completed
+- Revising
 
 ![](images/status-workflow-3.png)
 
 ### Setting a submission to "Assigned"
 
-As a CHEFS administrator, you can send a submission to one of your team members for their review by choosing "Assigned" from the drop-down. 
+As a CHEFS administrator, you can send a submission to one of your team members for their review by choosing "Assigned" from the drop-down.
 
 ![](images/status-assigned.png)
 
@@ -60,6 +86,7 @@ When you click on the "Assign" button, the assignee will receive an email notifi
 Any attached messages will appear in the "Notes" section, so you have a log of all communications.
 
 ## Setting a submission to "Revising"
+
 <!-- **[Back to top](#top)** -->
 
 Setting a form to "Revising" allows you to send it back to the submitter to make changes before finalizing their submission.
@@ -75,11 +102,12 @@ When you click on the "Revising" button, the reviewer will receive an email noti
 Any attached messages will appear in the "Notes" section, so you have a log of all communications.
 
 ### Setting a submission to "Completed"
-If you have reviewed and want to close a submission, you can mark it as "Completed."  
+
+If you have reviewed and want to close a submission, you can mark it as "Completed."
 
 ![](images/status-completed.png)
 
-If you choose "Completed" from the drop-down, you will notify to the submitter who owns the submission that their submission is now closed. 
+If you choose "Completed" from the drop-down, you will notify to the submitter who owns the submission that their submission is now closed.
 
 You also can send the submitter a message by clicking the "Attach Comment to Email" box and using the message text field.
 
@@ -89,5 +117,6 @@ Any attached messages will appear in the "Notes" section, so you have a log of a
 
 <!-- **[Back to top](#top)** -->
 
-***
+---
+
 [Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)
