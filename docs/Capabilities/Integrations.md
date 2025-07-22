@@ -3,7 +3,7 @@
 
 * [Power BI Integration](Power-BI-Integration)
 * [MS Teams Channel Integration](MS-Teams-Channel-Integration)
-* [Calling External APIs](Calling-External-API)
+* [Getting Live Data in Your Forms](Getting-Live-Data-in-Your-Forms)
 * [Event Stream Service](Event-Stream-Service)
 * [Event Subscription](Event-Subscription) (Experimental)
 * [Excel Power Query Integration](Excel-Power-Query-Integration)
