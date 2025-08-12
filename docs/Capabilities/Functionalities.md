@@ -14,6 +14,7 @@
 * [Allow multiple draft upload](Allow-multiple-draft-upload)
 * [Multiple people filling out a form together](Creating-Submission-Team)
 * [Wide form layout](Wide-Form-Layout)
+* [Recall a submission](Recall-Submission)
 
 ## Notifications
 * [CHEFS Notifications and Reminders](Notifications-and-Reminders)
