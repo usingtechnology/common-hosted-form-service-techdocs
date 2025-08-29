@@ -19,6 +19,7 @@
 - [Using Signature Component with CDOGS HTML Templates](Signature-outside-form)
 
 ## Look and Feel
+- [Adding new base layers to map component](Adding-new-base-layers-to-map-component)
 - [Tooltip for Text Images Component (experimental)](Tooltip-for-Text-Images-Component)  
 - [Styles (experimental)](Styles)
 - [Link behaviour and style](Link-Behaviour-and-Style)
