@@ -194,8 +194,20 @@ Before you can embed a CHEFS form, you need to complete these essential setup st
 3. **Design your form** with the fields and logic you need
 4. **Publish the form** to make it available for embedding
 
+
+<details>
+<summary>📷 View screenshot: Create new form</summary>
+
 ![Screenshot: Create CHEFS Form](images/embed-createform.png)
+
+</details>
+
+<details>
+<summary>📷 View screenshot: Design form</summary>
+
 ![Screenshot: Design CHEFS Form](images/embed-designform.png)
+
+</details>
 
 > **Important**: Currently, embedded forms must be set to `Public` Form access. We are working to change this to allow protected forms to be embedded. When a form is embedded, the host application is 100% responsible for user authentication and authorization, regardless of the form's access setting in CHEFS.
 
@@ -206,7 +218,12 @@ Before you can embed a CHEFS form, you need to complete these essential setup st
 3. **Generate a new API key** for your form
 4. **Copy and securely store** the API key (you'll need this for authentication)
 
+<details>
+<summary>📷 View screenshot: Generate an API Key</summary>
+
 ![Screenshot: CHEFS API Key generation interface](images/embed-apikey.png)
+
+</details>
 
 > **Important**: Keep your API key secure and never expose it in client-side code. The recommended approach is to store the `formId` and `apiKey` securely on your backend server, then have your backend fetch auth tokens server-to-server and provide the `auth-token` and `form-id` to your frontend.
 
@@ -215,7 +232,12 @@ Before you can embed a CHEFS form, you need to complete these essential setup st
 1. **Copy the Form ID** from the form settings or URL
 2. **Note the Form ID format** - it should be a UUID like `11111111-1111-1111-1111-111111111111`
 
+<details>
+<summary>📷 View screenshot: Get Your Form ID</summary>
+
 ![Screenshot: CHEFS form showing Form ID location](images/embed-sharelink.png)
+
+</details>
 
 ## Quick Start Guides
 
