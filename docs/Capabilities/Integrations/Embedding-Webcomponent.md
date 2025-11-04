@@ -194,7 +194,6 @@ Before you can embed a CHEFS form, you need to complete these essential setup st
 3. **Design your form** with the fields and logic you need
 4. **Publish the form** to make it available for embedding
 
-
 <details>
 <summary>📷 View screenshot: Create new form</summary>
 
@@ -209,7 +208,7 @@ Before you can embed a CHEFS form, you need to complete these essential setup st
 
 </details>
 
-> **Important**: Currently, embedded forms must be set to `Public` Form access. We are working to change this to allow protected forms to be embedded. When a form is embedded, the host application is 100% responsible for user authentication and authorization, regardless of the form's access setting in CHEFS.
+> **Important**: When a form is embedded (whether it requires a login when accessed through CHEFS directly or whether it is `Public`), the host application is 100% responsible for user authentication and authorization, regardless of the form's access setting in CHEFS.
 
 #### 2. Generate an API Key
 
@@ -226,6 +225,8 @@ Before you can embed a CHEFS form, you need to complete these essential setup st
 </details>
 
 > **Important**: Keep your API key secure and never expose it in client-side code. The recommended approach is to store the `formId` and `apiKey` securely on your backend server, then have your backend fetch auth tokens server-to-server and provide the `auth-token` and `form-id` to your frontend.
+
+> **Important**: If you are adding file upload support, you must select "Allow this API key to access submitted files" for your API Key. This does not have to be done when you create the key, only when you add file upload. See [SimpleFile Integration](#simplefile-integration).
 
 #### 3. Get Your Form ID
 
@@ -335,6 +336,7 @@ For a complete interactive demo with all available parameters, see: [`/app/embed
 - `theme-css`: Custom theme CSS URL
 - `token`: URL-encoded JSON JWT token object
 - `user`: URL-encoded JSON user object
+- `auto-reload-on-submit`: Automatically reload form as read-only after successful submission (true/false, default: true)
 
 ### Attributes (Configuration)
 
@@ -353,6 +355,7 @@ For a complete interactive demo with all available parameters, see: [`/app/embed
 - `no-icons` (boolean): do not load Font Awesome (Form.io icon classes won't render).
 - `token` (string): JSON string containing a **parsed token object** for Form.io evalContext (custom JavaScript access). **Warning**: Use parsed token payload only, never raw JWT strings.
 - `user` (string): JSON string containing a user object for Form.io evalContext (custom JavaScript access).
+- `auto-reload-on-submit` (boolean): When `true` (default), automatically reloads the form as read-only after successful submission, displaying the submitted data. This provides a CHEFS-like confirmation experience. Only applies to final submissions, not draft saves. Set to `false` to disable and handle post-submission behavior manually.
 
 Boolean attribute semantics: presence, `"true"`, empty string, or `"1"` are treated as true.
 
@@ -393,7 +396,8 @@ For production applications, follow this secure pattern:
    - Your frontend receives only the `auth-token` and `form-id` from your backend
    - No sensitive credentials are exposed to the client
    - Tokens can be refreshed by your backend as needed
-   - Tokens are automatically refreshed within the web component (up to a 10 hour session)
+   - Tokens are automatically refreshed within the web component for the lifetime of the component instance
+   - The refresh cycle continues as long as the backend refresh endpoint successfully returns new tokens
 
 **Example Backend Implementation:**
 
@@ -404,17 +408,14 @@ app.get('/api/chefs-token/:formId', async (req, res) => {
     const { formId } = req.params;
     const apiKey = process.env.CHEFS_API_KEY; // Stored securely
 
-    const response = await fetch(
-      `${CHEFS_SERVER_URL}/gateway/v1/auth/token/forms/${formId}`,
-      {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          Authorization: 'Basic ' + btoa(`${formId}:${apiKey}`),
-        },
-        body: JSON.stringify({ formId }),
-      }
-    );
+    const response = await fetch(`${CHEFS_SERVER_URL}/gateway/v1/auth/token/forms/${formId}`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: 'Basic ' + btoa(`${formId}:${apiKey}`),
+      },
+      body: JSON.stringify({ formId }),
+    });
 
     const data = await response.json();
     res.json({
@@ -458,17 +459,14 @@ The component supports these authentication approaches:
 
 ```javascript
 // POST to the token endpoint with Basic auth
-const response = await fetch(
-  'CHEFS_SERVER_URL/gateway/v1/auth/token/forms/YOUR_FORM_ID',
-  {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      Authorization: 'Basic ' + btoa('YOUR_FORM_ID:YOUR_API_KEY'),
-    },
-    body: JSON.stringify({ formId: 'YOUR_FORM_ID' }),
-  }
-);
+const response = await fetch('CHEFS_SERVER_URL/gateway/v1/auth/token/forms/YOUR_FORM_ID', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+    Authorization: 'Basic ' + btoa('YOUR_FORM_ID:YOUR_API_KEY'),
+  },
+  body: JSON.stringify({ formId: 'YOUR_FORM_ID' }),
+});
 
 const data = await response.json();
 const authToken = data.token; // Use this as the auth-token attribute
@@ -492,13 +490,123 @@ The component automatically chooses the best available method:
 
 #### Automatic Token Refresh
 
-When using Bearer tokens, the component automatically:
+When using Bearer tokens, the component automatically manages token refresh to maintain authentication throughout the form session.
 
-- **Parses JWT expiry** from the token payload
-- **Schedules refresh** 60 seconds before expiry (minimum 10 seconds)
-- **Refreshes token** by calling `/gateway/v1/auth/refresh` endpoint
-- **Updates all requests** with the new token without re-registering plugins
+**Initialization:**
+
+- Automatic refresh is initialized when `load()` is called and an `auth-token` is present
+- The refresh cycle begins immediately after the component loads the form
+
+**Refresh Process:**
+
+- **Parses JWT expiry** from the token payload to determine when the token will expire
+- **Schedules refresh** 60 seconds before expiry (minimum 10 seconds from now)
+- **Refreshes token** by calling the refresh endpoint (see [Token Refresh Mechanics](#token-refresh-mechanics) for details)
+- **Updates all requests** with the new token automatically without re-registering plugins
 - **Emits events** when tokens are refreshed (`formio:authTokenRefreshed`)
+- **Continues the cycle** by scheduling the next refresh based on the new token's expiry time
+
+The refresh cycle continues automatically until the component is destroyed or the token can no longer be refreshed.
+
+#### Token Refresh Mechanics
+
+**Refresh Endpoint:**
+
+The component calls the refresh endpoint at: `${baseUrl}/gateway/v1/auth/refresh`
+
+Where `baseUrl` is the component's base URL (auto-detected from `window.location` or set via `base-url` attribute).
+
+**Request Format:**
+
+```javascript
+POST /gateway/v1/auth/refresh
+Content-Type: application/json
+Authorization: Bearer <current-token>
+
+{
+  "refreshToken": "<current-token>"
+}
+```
+
+**Response Format:**
+
+```javascript
+{
+  "token": "<new-jwt-token>"
+}
+```
+
+**Refresh Cycle Lifecycle:**
+
+1. **Initial Setup**: When `load()` is called with an `auth-token`, the component:
+
+   - Extracts the JWT expiry time from the token payload
+   - Calculates time until refresh (60 seconds before expiry, minimum 10 seconds)
+   - Schedules the first refresh timer
+
+2. **Automatic Refresh**: When the timer triggers:
+
+   - Calls `refreshAuthToken()` which POSTs to the refresh endpoint
+   - On success: Updates `authToken` property, emits `formio:authTokenRefreshed` event
+   - Schedules the next refresh based on the new token's expiry time
+   - The cycle repeats indefinitely
+
+3. **Cleanup**: When the component is destroyed:
+   - All refresh timers are cleared
+   - No further refresh attempts are made
+
+**Manual Refresh:**
+
+You can manually trigger a token refresh using the `refreshAuthToken()` method:
+
+```javascript
+const viewer = document.querySelector('chefs-form-viewer');
+await viewer.refreshAuthToken();
+```
+
+Manual refresh follows the same process as automatic refresh:
+
+- Calls the refresh endpoint
+- Updates the token on success
+- Automatically schedules the next refresh based on the new token's expiry
+- Emits events for success or failure
+
+**Failure Handling:**
+
+When token refresh fails (network error, server error, invalid response):
+
+- **No automatic retry**: The component does not automatically retry failed refresh attempts
+- **Error event**: `formio:error` event is emitted with error details
+- **Token remains unchanged**: The current token is kept (may be expired or invalid)
+- **Refresh cycle stops**: No further automatic refreshes are scheduled
+- **Manual recovery**: You must handle the error and either:
+  - Obtain a new token from your backend and update `authToken` property
+  - Manually call `refreshAuthToken()` to retry
+  - Reload the component with a fresh token
+
+**Edge Cases:**
+
+**Token Expiring Soon (< 10 seconds):**
+
+- If a token expires in less than 10 seconds, the refresh is scheduled for 10 seconds from now
+- This ensures there's always a minimum window for the refresh request
+
+**Already Expired Token:**
+
+- If a token is already expired when the component loads, refresh is scheduled for 10 seconds
+- The component will attempt to refresh immediately when the timer fires
+- If refresh fails, see Failure Handling above
+
+**Missing Expiry Claim:**
+
+- If the JWT doesn't contain an `exp` (expiry) claim, automatic refresh is not scheduled
+- You'll need to manually refresh tokens or provide tokens with expiry claims
+
+**Token Refresh During Active Use:**
+
+- Refresh happens transparently in the background
+- Form operations continue normally during refresh
+- New token is immediately available for all subsequent requests via dynamic header resolution
 
 #### Custom Authentication
 
@@ -518,8 +626,16 @@ viewer.onBuildAuthHeader = (url) => {
 #### Authentication Events
 
 - `formio:authTokenRefreshed` - Fired when token is successfully refreshed
+
   - Detail: `{ authToken: 'new-token', oldToken: 'previous-token' }`
+  - Fired after: Token is updated and next refresh is scheduled
+  - Use case: Update your application's token storage, log refresh events, or trigger UI updates
+
 - `formio:error` - Fired when token refresh fails
+  - Detail: `{ error: 'error message' }`
+  - Fired when: Network errors, server errors (non-200 responses), invalid response format, or missing token in response
+  - Important: After this event, automatic refresh stops. You must handle the error and recover manually (see [Failure Handling](#token-refresh-mechanics) above)
+  - Use case: Show error messages to users, attempt manual recovery, or redirect to re-authentication
 
 #### Security Notes
 
@@ -567,6 +683,12 @@ The component provides a comprehensive event system for integration with support
 - `formio:submit` (detail: `{ submission }`) - When submission starts
 - `formio:submitDone` (detail: `{ submission }`) - When submission succeeds
 - `formio:error` (detail: `{ error }`) - When any error occurs
+
+**Auto-Reload Events** (only for final submissions, not drafts):
+
+- `formio:beforeAutoReload` (cancelable, supports `waitUntil(promise)`, detail: `{ submission, submissionId }`) - Before auto-reload starts (after successful submission)
+- `formio:autoReload` (detail: `{ submission, submissionId }`) - When auto-reload begins
+- `formio:autoReloadComplete` (detail: `{ submission, submissionId }`) - When auto-reload completes successfully
 
 **Navigation Events:**
 
@@ -687,7 +809,85 @@ viewer.addEventListener('formio:beforeFileUpload', (e) => {
 // Handle token refresh
 viewer.addEventListener('formio:authTokenRefreshed', (e) => {
   console.log('Auth token refreshed:', e.detail.authToken);
+  console.log('Previous token:', e.detail.oldToken);
   // Update your application's token storage if needed
+  // Example: Update your backend's token cache
+  updateTokenInBackend(e.detail.authToken);
+});
+
+// Handle token refresh failures with recovery
+viewer.addEventListener('formio:error', (e) => {
+  // Check if this is a token refresh error
+  if (e.detail.error && e.detail.error.includes('refresh')) {
+    console.error('Token refresh failed:', e.detail.error);
+
+    // Option 1: Attempt manual refresh retry
+    setTimeout(async () => {
+      try {
+        await viewer.refreshAuthToken();
+      } catch (err) {
+        // If retry fails, get a new token from backend
+        await recoverTokenFromBackend();
+      }
+    }, 2000);
+
+    // Option 2: Get a fresh token from your backend
+    // recoverTokenFromBackend();
+
+    // Option 3: Show error to user and allow manual re-authentication
+    // showTokenErrorToUser();
+  }
+});
+
+// Manual token refresh example
+async function refreshTokenManually() {
+  const viewer = document.querySelector('chefs-form-viewer');
+  try {
+    await viewer.refreshAuthToken();
+    console.log('Manual refresh successful');
+  } catch (error) {
+    console.error('Manual refresh failed:', error);
+    // Handle error - get new token from backend, show error, etc.
+  }
+}
+
+// Recovery function: Get new token from backend and update component
+async function recoverTokenFromBackend() {
+  try {
+    const response = await fetch('/api/chefs-token/your-form-id');
+    const { authToken, formId } = await response.json();
+
+    const viewer = document.querySelector('chefs-form-viewer');
+    viewer.authToken = authToken;
+    // Component will automatically resume refresh cycle
+    console.log('Token recovered from backend');
+  } catch (error) {
+    console.error('Failed to recover token:', error);
+    // Show error to user, redirect to login, etc.
+  }
+}
+
+// Handle auto-reload after submission (only for final submissions, not drafts)
+viewer.addEventListener('formio:beforeAutoReload', (e) => {
+  console.log('About to auto-reload form as read-only:', e.detail.submissionId);
+  // You can cancel auto-reload if needed
+  // e.preventDefault();
+});
+
+viewer.addEventListener('formio:autoReload', (e) => {
+  console.log('Auto-reloading form as read-only...');
+});
+
+viewer.addEventListener('formio:autoReloadComplete', (e) => {
+  console.log('Form reloaded as read-only:', e.detail.submissionId);
+  // Form is now read-only with submitted data
+});
+
+// Disable auto-reload and handle post-submission manually
+viewer.setAttribute('auto-reload-on-submit', 'false');
+viewer.addEventListener('formio:submitDone', (e) => {
+  // Handle submission yourself (redirect, show message, etc.)
+  window.location = `/thank-you?submission=${e.detail.submission.id}`;
 });
 ```
 
@@ -775,6 +975,8 @@ if (token.roles.includes('manager') && user.department === 'HR') {
 ### SimpleFile Integration
 
 The SimpleFile component provides secure file upload, download, and delete operations with event-based security controls.
+
+> **Important**: Your API Key must have enabled File Access by selecting the "Allow this API key to access submitted files" when you generate your API Key. This can be selected at any point, it does not require a new key. The allows the webcomponent to call the file APIs, but the host application is 100% responsible for enforcing any user permissions by leveraging the events.
 
 **Available Events:**
 
@@ -883,8 +1085,7 @@ viewer.endpoints = {
   // API endpoints
   schema: 'https://api.example.com/forms/:formId/schema',
   submit: 'https://api.example.com/forms/:formId/submit',
-  readSubmission:
-    'https://api.example.com/forms/:formId/submissions/:submissionId',
+  readSubmission: 'https://api.example.com/forms/:formId/submissions/:submissionId',
 
   // File operation endpoints
   files: 'https://api.example.com/files',
@@ -938,6 +1139,35 @@ Although this allows complete customization, the most likely overrides will be f
 
 - Set `submission-id` to prefill. The component prefetches the submission and applies data immediately, on the next tick, and once after first render to reduce races with Form.io internals.
 - Set `read-only` to render without allowing edits.
+
+### Auto-Reload After Submission
+
+By default, the component automatically reloads the form as read-only after successful submission, displaying the submitted data. This provides a CHEFS-like confirmation experience.
+
+**Behavior:**
+
+- Only occurs for final submissions (not draft saves)
+- Automatically sets `read-only="true"` and `submission-id` to the submitted ID
+- Waits 1 second after submission before reloading
+- Can be cancelled via the `formio:beforeAutoReload` event
+
+**Disable Auto-Reload:**
+
+```html
+<chefs-form-viewer form-id="your-form-id" auth-token="your-token" auto-reload-on-submit="false"></chefs-form-viewer>
+```
+
+**Customize Auto-Reload:**
+
+```javascript
+viewer.addEventListener('formio:beforeAutoReload', (e) => {
+  // Cancel auto-reload and handle manually
+  e.preventDefault();
+
+  // Redirect to custom success page
+  window.location = `/success?submission=${e.detail.submissionId}`;
+});
+```
 
 ### Code Generator and Demos
 
@@ -1078,7 +1308,7 @@ Standard HTTP status codes:
 - `413` - File too large
 - `415` - Unsupported file type
 
-> **IMPORTANT**: Currently, embedded forms are `Public` and file uploads will act accordingly, so API permissions only. No user specific permissions can be enforced. See [SimpleFile Integration](#simplefile-integration) for an example leveraging events to secure file interactions.
+> **IMPORTANT**: Currently, embedded forms require an API Key. API Keys have a setting to determine if File Access is allowed. When adding a File Upload component to your form, you must select "Allow this API key to access submitted files". It is up to your developers to enforce user level permissions. See [SimpleFile Integration](#simplefile-integration) for an example leveraging events to secure file interactions.
 
 **Security Notes:**
 
@@ -1090,4 +1320,3 @@ Standard HTTP status codes:
 - **Code Generator**: Use the interactive tool at [`/app/embed/chefs-form-viewer-generator.html`](https://submit.digital.gov.bc.ca/app/embed/chefs-form-viewer-generator.html)
 - **Demo Pages**: Test your configuration with [`/app/embed/chefs-form-viewer-embed-demo.html`](https://submit.digital.gov.bc.ca/app/embed/chefs-form-viewer-embed-demo.html)
 - **CHEFS Support**: Contact the CHEFS development team for implementation assistance
-
