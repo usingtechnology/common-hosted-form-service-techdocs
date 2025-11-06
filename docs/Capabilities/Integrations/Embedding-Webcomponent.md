@@ -244,24 +244,26 @@ Before you can embed a CHEFS form, you need to complete these essential setup st
 
 Once you have your form published and API key generated, the CHEFS Form Viewer web component offers multiple integration approaches to fit different development needs and complexity levels.
 
+> **Note**: `https://submit.digital.gov.bc.ca/app` is the CHEFS production webcomponents Base URL; if running any demos locally or in other environments, adjust your Base URL accordingly.
+
 #### Simplified One-Line Embedding
 
 The easiest way to embed a CHEFS form, inspired by Form.io's approach:
 
 ```html
-<script src="/app/embed/chefs-form-viewer-embed.min.js?form-id=11111111-1111-1111-1111-111111111111&auth-token=YOUR_JWT_TOKEN"></script>
+<script src="https://submit.digital.gov.bc.ca/app/embed/chefs-form-viewer-embed.min.js?form-id=11111111-1111-1111-1111-111111111111&auth-token=YOUR_JWT_TOKEN"></script>
 ```
 
 That's it! The embed script automatically loads the component, creates the element, applies your parameters, and calls `.load()`.
 
-For a complete interactive demo with all available parameters, see: [`/app/embed/chefs-form-viewer-embed-demo.html`](./chefs-form-viewer-embed-demo.html)
+For a complete interactive demo with all available parameters, see: [`chefs-form-viewer-embed-demo.html`](https://submit.digital.gov.bc.ca/app/embed/chefs-form-viewer-embed-demo.html)
 
 #### Traditional Component Approach
 
 1. Include the component script (minified) on your page:
 
 ```html
-<script src="/app/embed/chefs-form-viewer.min.js"></script>
+<script src="https://submit.digital.gov.bc.ca/app/embed/chefs-form-viewer.min.js"></script>
 ```
 
 2. Add the element and call `load()`:
@@ -329,7 +331,7 @@ For a complete interactive demo with all available parameters, see: [`/app/embed
 - `submission-id`: Load specific submission (for editing/viewing)
 - `read-only`: Render form as read-only (true/false)
 - `language`: Form language (en, fr, etc.)
-- `base-url`: Override API base URL
+- `base-url`: Override API base URL (Production is `https://submit.digital.gov.bc.ca/app`)
 - `debug`: Enable debug logging (true/false)
 - `isolate-styles`: Use Shadow DOM isolation (true/false)
 - `no-icons`: Disable Font Awesome icons (true/false)
@@ -346,16 +348,16 @@ For a complete interactive demo with all available parameters, see: [`/app/embed
 - `submission-id` (string): prefill the form using an existing submission.
 - `read-only` (boolean): render as read-only.
 - `language` (string): i18n code (default `en`).
-- `base-url` (string): override the autodetected base. This should be where your CHEFS form is hosted: ex. [`https://submit.digital.gov.bc.ca/app/`](https://submit.digital.gov.bc.ca/app)
+- `base-url` (string): override the autodetected base. This should be where your CHEFS form is hosted: ex. [`https://submit.digital.gov.bc.ca/app`](https://submit.digital.gov.bc.ca/app)
 - `debug` (boolean): enable verbose console logging; can also set `window.CHEFS_VIEWER_DEBUG = true`.
-- `no-shadow` (boolean): render in light DOM (global page CSS may apply). In this mode styles are injected into `document.head`.
+- `no-shadow` (boolean): render in light DOM (global page CSS may apply). In this mode, styles are injected into `document.head`.
 - `submit-button-key` (string): data key used to distinguish submit vs draft (default `submit`).
 - `theme-css` (string): absolute URL to a theme stylesheet loaded after base styles.
 - `isolate-styles` (boolean): when in Shadow DOM, adds minimal isolation (`:host { all: initial }`) and a normalized container baseline.
 - `no-icons` (boolean): do not load Font Awesome (Form.io icon classes won't render).
 - `token` (string): JSON string containing a **parsed token object** for Form.io evalContext (custom JavaScript access). **Warning**: Use parsed token payload only, never raw JWT strings.
 - `user` (string): JSON string containing a user object for Form.io evalContext (custom JavaScript access).
-- `auto-reload-on-submit` (boolean): When `true` (default), automatically reloads the form as read-only after successful submission, displaying the submitted data. This provides a CHEFS-like confirmation experience. Only applies to final submissions, not draft saves. Set to `false` to disable and handle post-submission behavior manually.
+- `auto-reload-on-submit` (boolean): When `true` (default), automatically reloads the form as read-only after successful submission, displaying the submitted data. This provides a CHEFS-like confirmation experience. Only applies to final submissions, not draft saves. Set to `false` to disable and handle post-submission behaviour manually.
 
 Boolean attribute semantics: presence, `"true"`, empty string, or `"1"` are treated as true.
 
@@ -917,7 +919,7 @@ When using the simplified embed script, you can provide advanced configuration v
     },
   };
 </script>
-<script src="/app/embed/chefs-form-viewer-embed.min.js?form-id=YOUR_FORM_ID&api-key=YOUR_API_KEY"></script>
+<script src="https://submit.digital.gov.bc.ca/app/embed/chefs-form-viewer-embed.min.js?form-id=YOUR_FORM_ID&api-key=YOUR_API_KEY"></script>
 ```
 
 #### Using Token and User in Form.io JavaScript
@@ -1098,7 +1100,7 @@ viewer.endpoints = {
 };
 ```
 
-Although this allows complete customization, the most likely overrides will be for `themeCss` and `iconsCss` allowing overrides to the look and feel to better match your hosting application.
+Although this allows complete customization, the most likely overrides will be for `themeCss` and `iconsCss`, allowing overrides to the look and feel to better match your hosting application.
 
 **Endpoint Categories:**
 
@@ -1173,7 +1175,7 @@ viewer.addEventListener('formio:beforeAutoReload', (e) => {
 
 **Embed Code Generator**
 
-Use the interactive code generator at [`/app/embed/chefs-form-viewer-generator.html`](https://submit.digital.gov.bc.ca/app/embed/chefs-form-viewer-generator.html) to:
+Use the interactive code generator at [`chefs-form-viewer-generator.html`](https://submit.digital.gov.bc.ca/app/embed/chefs-form-viewer-generator.html) to:
 
 - Configure all available parameters via a visual form
 - Generate embed code for all three methods (embed script, component HTML, programmatic)
@@ -1183,7 +1185,7 @@ Use the interactive code generator at [`/app/embed/chefs-form-viewer-generator.h
 
 **Demo Pages**
 
-- **Interactive Embed Demo**: [`/app/embed/chefs-form-viewer-embed-demo.html`](https://submit.digital.gov.bc.ca/app/embed/chefs-form-viewer-embed-demo.html) - One-line embedding with URL parameters
+- **Interactive Embed Demo**: [`chefs-form-viewer-embed-demo.html`](https://submit.digital.gov.bc.ca/app/embed/chefs-form-viewer-embed-demo.html) - One-line embedding with URL parameters
 
 ### Form Metadata Access
 
@@ -1308,7 +1310,7 @@ Standard HTTP status codes:
 - `413` - File too large
 - `415` - Unsupported file type
 
-> **IMPORTANT**: Currently, embedded forms require an API Key. API Keys have a setting to determine if File Access is allowed. When adding a File Upload component to your form, you must select "Allow this API key to access submitted files". It is up to your developers to enforce user level permissions. See [SimpleFile Integration](#simplefile-integration) for an example leveraging events to secure file interactions.
+> **IMPORTANT**: Currently, embedded forms require an API Key. API Keys have a setting that determines whether File Access is allowed. When adding a File Upload component to your form, you must select "Allow this API key to access submitted files". It is up to your developers to enforce user-level permissions. See [SimpleFile Integration](#simplefile-integration) for an example leveraging events to secure file interactions.
 
 **Security Notes:**
 
@@ -1317,6 +1319,6 @@ Standard HTTP status codes:
 
 ### Getting Help
 
-- **Code Generator**: Use the interactive tool at [`/app/embed/chefs-form-viewer-generator.html`](https://submit.digital.gov.bc.ca/app/embed/chefs-form-viewer-generator.html)
-- **Demo Pages**: Test your configuration with [`/app/embed/chefs-form-viewer-embed-demo.html`](https://submit.digital.gov.bc.ca/app/embed/chefs-form-viewer-embed-demo.html)
+- **Code Generator**: Use the interactive tool at [`https://submit.digital.gov.bc.ca/app/embed/chefs-form-viewer-generator.html`](https://submit.digital.gov.bc.ca/app/embed/chefs-form-viewer-generator.html)
+- **Demo Pages**: Test your configuration with [`https://submit.digital.gov.bc.ca/app/embed/chefs-form-viewer-embed-demo.html`](https://submit.digital.gov.bc.ca/app/embed/chefs-form-viewer-embed-demo.html)
 - **CHEFS Support**: Contact the CHEFS development team for implementation assistance
