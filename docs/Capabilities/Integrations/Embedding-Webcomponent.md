@@ -279,10 +279,10 @@ For a complete interactive demo with all available parameters, see: [`chefs-form
 ></chefs-form-viewer>
 
 <script>
-  const el = document.querySelector('chefs-form-viewer');
+  const el = document.querySelector("chefs-form-viewer");
   el.load();
   // Optional: listen to lifecycle
-  el.addEventListener('formio:ready', (e) => console.log('ready', e.detail));
+  el.addEventListener("formio:ready", (e) => console.log("ready", e.detail));
 </script>
 ```
 
@@ -292,25 +292,25 @@ For a complete interactive demo with all available parameters, see: [`chefs-form
 <chefs-form-viewer id="my-form"></chefs-form-viewer>
 
 <script>
-  const el = document.getElementById('my-form');
-  el.formId = '11111111-1111-1111-1111-111111111111';
-  el.authToken = 'YOUR_JWT_TOKEN';
+  const el = document.getElementById("my-form");
+  el.formId = "11111111-1111-1111-1111-111111111111";
+  el.authToken = "YOUR_JWT_TOKEN";
   el.token = {
-    sub: '123456789',
+    sub: "123456789",
     roles: [],
-    email: 'nicholas.cognito@gov.bc.ca',
+    email: "nicholas.cognito@gov.bc.ca",
   };
   el.user = {
-    idpUserId: '123456789',
-    username: 'NCOGNITO',
-    firstName: 'Nicholas',
-    lastName: 'Cognito',
-    fullName: 'Nicholas Cognito',
-    email: 'nicholas.cognito@gov.bc.ca',
+    idpUserId: "123456789",
+    username: "NCOGNITO",
+    firstName: "Nicholas",
+    lastName: "Cognito",
+    fullName: "Nicholas Cognito",
+    email: "nicholas.cognito@gov.bc.ca",
     idp: {
-      code: 'idir',
-      display: 'IDIR',
-      hint: 'idir',
+      code: "idir",
+      display: "IDIR",
+      hint: "idir",
     },
     public: false,
   };
@@ -376,6 +376,10 @@ Boolean attribute semantics: presence, `"true"`, empty string, or `"1"` are trea
 
 The component supports two authentication methods with automatic token refresh capabilities. However, for production applications, we strongly recommend a secure server-to-server approach.
 
+#### Why a Custom Header?
+
+CHEFS uses the custom header `X-Chefs-Gateway-Token` instead of the standard `Authorization: Bearer` header for gateway authentication. This design decision allows host applications to use the `Authorization` header for their own authentication purposes (e.g., authenticating users with their own identity provider), while CHEFS authentication is handled separately via the custom header. This separation enables seamless integration where both the host application's authentication and CHEFS form authentication can coexist without conflicts.
+
 #### Recommended Architecture (Production)
 
 **Best Practice: Server-to-Server Authentication**
@@ -405,19 +409,22 @@ For production applications, follow this secure pattern:
 
 ```javascript
 // Backend endpoint to get auth token for frontend
-app.get('/api/chefs-token/:formId', async (req, res) => {
+app.get("/api/chefs-token/:formId", async (req, res) => {
   try {
     const { formId } = req.params;
     const apiKey = process.env.CHEFS_API_KEY; // Stored securely
 
-    const response = await fetch(`${CHEFS_SERVER_URL}/gateway/v1/auth/token/forms/${formId}`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        Authorization: 'Basic ' + btoa(`${formId}:${apiKey}`),
-      },
-      body: JSON.stringify({ formId }),
-    });
+    const response = await fetch(
+      `${CHEFS_SERVER_URL}/gateway/v1/auth/token/forms/${formId}`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: "Basic " + btoa(`${formId}:${apiKey}`),
+        },
+        body: JSON.stringify({ formId }),
+      }
+    );
 
     const data = await response.json();
     res.json({
@@ -425,7 +432,7 @@ app.get('/api/chefs-token/:formId', async (req, res) => {
       formId: formId,
     });
   } catch (error) {
-    res.status(500).json({ error: 'Failed to get auth token' });
+    res.status(500).json({ error: "Failed to get auth token" });
   }
 });
 ```
@@ -435,11 +442,11 @@ app.get('/api/chefs-token/:formId', async (req, res) => {
 ```javascript
 // Frontend fetches token from your backend
 async function loadChefsForm() {
-  const response = await fetch('/api/chefs-token/your-form-id');
+  const response = await fetch("/api/chefs-token/your-form-id");
   const { authToken, formId } = await response.json();
 
   // Use the token with the web component
-  const viewer = document.querySelector('chefs-form-viewer');
+  const viewer = document.querySelector("chefs-form-viewer");
   viewer.formId = formId;
   viewer.authToken = authToken;
   viewer.load();
@@ -456,19 +463,23 @@ The component supports these authentication approaches:
 - Short-lived JWT token obtained from CHEFS backend (see [Getting an Auth Token](#getting-an-auth-token) below)
 - Automatically refreshes 60 seconds before expiry
 - More secure as tokens expire and are refreshed
+- **Important**: CHEFS uses the custom header `X-Chefs-Gateway-Token` instead of `Authorization: Bearer` to allow host applications to use the `Authorization` header for their own authentication needs
 
 **Getting an Auth Token:**
 
 ```javascript
 // POST to the token endpoint with Basic auth
-const response = await fetch('CHEFS_SERVER_URL/gateway/v1/auth/token/forms/YOUR_FORM_ID', {
-  method: 'POST',
-  headers: {
-    'Content-Type': 'application/json',
-    Authorization: 'Basic ' + btoa('YOUR_FORM_ID:YOUR_API_KEY'),
-  },
-  body: JSON.stringify({ formId: 'YOUR_FORM_ID' }),
-});
+const response = await fetch(
+  "CHEFS_SERVER_URL/gateway/v1/auth/token/forms/YOUR_FORM_ID",
+  {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: "Basic " + btoa("YOUR_FORM_ID:YOUR_API_KEY"),
+    },
+    body: JSON.stringify({ formId: "YOUR_FORM_ID" }),
+  }
+);
 
 const data = await response.json();
 const authToken = data.token; // Use this as the auth-token attribute
@@ -485,14 +496,14 @@ const authToken = data.token; // Use this as the auth-token attribute
 
 The component automatically chooses the best available method:
 
-1. **Bearer Token** - If `auth-token` is provided, uses `Authorization: Bearer <token>`
+1. **Gateway Token** - If `auth-token` is provided, uses `X-Chefs-Gateway-Token: <token>` header
 2. **Basic Auth** - If only `api-key` is provided, uses `Authorization: Basic <base64(formId:apiKey)>`
 3. **Custom Hook** - If `onBuildAuthHeader` is set, uses custom header function
 4. **No Auth** - If neither is provided, requests are sent without authentication
 
 #### Automatic Token Refresh
 
-When using Bearer tokens, the component automatically manages token refresh to maintain authentication throughout the form session.
+When using gateway tokens (via `auth-token`), the component automatically manages token refresh to maintain authentication throughout the form session.
 
 **Initialization:**
 
@@ -523,12 +534,14 @@ Where `baseUrl` is the component's base URL (auto-detected from `window.location
 ```javascript
 POST /gateway/v1/auth/refresh
 Content-Type: application/json
-Authorization: Bearer <current-token>
+X-Chefs-Gateway-Token: <current-token>  // Optional: endpoint validates token from request body
 
 {
   "refreshToken": "<current-token>"
 }
 ```
+
+> **Note**: The refresh endpoint validates the token from the request body (`refreshToken` field). The `X-Chefs-Gateway-Token` header is optional but may be included for consistency with other CHEFS endpoints.
 
 **Response Format:**
 
@@ -562,7 +575,7 @@ Authorization: Bearer <current-token>
 You can manually trigger a token refresh using the `refreshAuthToken()` method:
 
 ```javascript
-const viewer = document.querySelector('chefs-form-viewer');
+const viewer = document.querySelector("chefs-form-viewer");
 await viewer.refreshAuthToken();
 ```
 
@@ -615,11 +628,12 @@ When token refresh fails (network error, server error, invalid response):
 For advanced scenarios, you can provide a custom authentication function:
 
 ```javascript
-const viewer = document.querySelector('chefs-form-viewer');
+const viewer = document.querySelector("chefs-form-viewer");
 viewer.onBuildAuthHeader = (url) => {
   // Custom logic to determine auth headers
-  if (url.includes('/api/')) {
-    return { Authorization: 'Bearer custom-token' };
+  // Return headers object with X-Chefs-Gateway-Token for CHEFS endpoints
+  if (url.includes("/api/")) {
+    return { "X-Chefs-Gateway-Token": "custom-token" };
   }
   return {};
 };
@@ -717,10 +731,10 @@ The component provides a comprehensive event system for integration with support
 Prevents the default action from occurring. Use with cancelable events:
 
 ```javascript
-viewer.addEventListener('formio:beforeSubmit', (e) => {
+viewer.addEventListener("formio:beforeSubmit", (e) => {
   if (!validateSubmission(e.detail.submission)) {
     e.preventDefault(); // Cancel the submission
-    showError('Please fix the errors before submitting');
+    showError("Please fix the errors before submitting");
   }
 });
 ```
@@ -729,13 +743,13 @@ viewer.addEventListener('formio:beforeSubmit', (e) => {
 Allows async operations to complete before the event proceeds. If any promise resolves to `false` or rejects, the action is blocked:
 
 ```javascript
-viewer.addEventListener('formio:beforeSubmit', (e) => {
+viewer.addEventListener("formio:beforeSubmit", (e) => {
   // Async validation
   e.detail.waitUntil(
     validateWithServer(e.detail.submission)
       .then((isValid) => {
         if (!isValid) {
-          showError('Server validation failed');
+          showError("Server validation failed");
           return false; // Block submission
         }
         return true; // Allow submission
@@ -748,21 +762,21 @@ viewer.addEventListener('formio:beforeSubmit', (e) => {
 **Example Event Usage:**
 
 ```javascript
-const viewer = document.querySelector('chefs-form-viewer');
+const viewer = document.querySelector("chefs-form-viewer");
 
 // Listen for form ready
-viewer.addEventListener('formio:ready', (e) => {
-  console.log('Form is ready for interaction');
+viewer.addEventListener("formio:ready", (e) => {
+  console.log("Form is ready for interaction");
 });
 
 // Handle form submission with validation
-viewer.addEventListener('formio:beforeSubmit', (e) => {
+viewer.addEventListener("formio:beforeSubmit", (e) => {
   const submission = e.detail.submission;
 
   // Client-side validation
   if (!validateSubmission(submission)) {
     e.preventDefault();
-    showError('Please fix the errors before submitting');
+    showError("Please fix the errors before submitting");
     return;
   }
 
@@ -775,28 +789,28 @@ viewer.addEventListener('formio:beforeSubmit', (e) => {
 });
 
 // Handle successful submission
-viewer.addEventListener('formio:submitDone', (e) => {
-  console.log('Form submitted successfully:', e.detail.submission);
+viewer.addEventListener("formio:submitDone", (e) => {
+  console.log("Form submitted successfully:", e.detail.submission);
   // Redirect or show success message
-  window.location = '/thank-you';
+  window.location = "/thank-you";
 });
 
 // Handle errors
-viewer.addEventListener('formio:error', (e) => {
-  console.error('Form error:', e.detail.error);
-  showError('An error occurred. Please try again.');
+viewer.addEventListener("formio:error", (e) => {
+  console.error("Form error:", e.detail.error);
+  showError("An error occurred. Please try again.");
 });
 
 // Handle file upload with security checks
-viewer.addEventListener('formio:beforeFileUpload', (e) => {
+viewer.addEventListener("formio:beforeFileUpload", (e) => {
   const { formData, config } = e.detail;
-  const file = formData.get('files');
+  const file = formData.get("files");
 
   // File size check
   if (file.size > 10 * 1024 * 1024) {
     // 10MB limit
     e.preventDefault();
-    showError('File too large');
+    showError("File too large");
     return;
   }
 
@@ -809,19 +823,19 @@ viewer.addEventListener('formio:beforeFileUpload', (e) => {
 });
 
 // Handle token refresh
-viewer.addEventListener('formio:authTokenRefreshed', (e) => {
-  console.log('Auth token refreshed:', e.detail.authToken);
-  console.log('Previous token:', e.detail.oldToken);
+viewer.addEventListener("formio:authTokenRefreshed", (e) => {
+  console.log("Auth token refreshed:", e.detail.authToken);
+  console.log("Previous token:", e.detail.oldToken);
   // Update your application's token storage if needed
   // Example: Update your backend's token cache
   updateTokenInBackend(e.detail.authToken);
 });
 
 // Handle token refresh failures with recovery
-viewer.addEventListener('formio:error', (e) => {
+viewer.addEventListener("formio:error", (e) => {
   // Check if this is a token refresh error
-  if (e.detail.error && e.detail.error.includes('refresh')) {
-    console.error('Token refresh failed:', e.detail.error);
+  if (e.detail.error && e.detail.error.includes("refresh")) {
+    console.error("Token refresh failed:", e.detail.error);
 
     // Option 1: Attempt manual refresh retry
     setTimeout(async () => {
@@ -843,12 +857,12 @@ viewer.addEventListener('formio:error', (e) => {
 
 // Manual token refresh example
 async function refreshTokenManually() {
-  const viewer = document.querySelector('chefs-form-viewer');
+  const viewer = document.querySelector("chefs-form-viewer");
   try {
     await viewer.refreshAuthToken();
-    console.log('Manual refresh successful');
+    console.log("Manual refresh successful");
   } catch (error) {
-    console.error('Manual refresh failed:', error);
+    console.error("Manual refresh failed:", error);
     // Handle error - get new token from backend, show error, etc.
   }
 }
@@ -856,38 +870,38 @@ async function refreshTokenManually() {
 // Recovery function: Get new token from backend and update component
 async function recoverTokenFromBackend() {
   try {
-    const response = await fetch('/api/chefs-token/your-form-id');
+    const response = await fetch("/api/chefs-token/your-form-id");
     const { authToken, formId } = await response.json();
 
-    const viewer = document.querySelector('chefs-form-viewer');
+    const viewer = document.querySelector("chefs-form-viewer");
     viewer.authToken = authToken;
     // Component will automatically resume refresh cycle
-    console.log('Token recovered from backend');
+    console.log("Token recovered from backend");
   } catch (error) {
-    console.error('Failed to recover token:', error);
+    console.error("Failed to recover token:", error);
     // Show error to user, redirect to login, etc.
   }
 }
 
 // Handle auto-reload after submission (only for final submissions, not drafts)
-viewer.addEventListener('formio:beforeAutoReload', (e) => {
-  console.log('About to auto-reload form as read-only:', e.detail.submissionId);
+viewer.addEventListener("formio:beforeAutoReload", (e) => {
+  console.log("About to auto-reload form as read-only:", e.detail.submissionId);
   // You can cancel auto-reload if needed
   // e.preventDefault();
 });
 
-viewer.addEventListener('formio:autoReload', (e) => {
-  console.log('Auto-reloading form as read-only...');
+viewer.addEventListener("formio:autoReload", (e) => {
+  console.log("Auto-reloading form as read-only...");
 });
 
-viewer.addEventListener('formio:autoReloadComplete', (e) => {
-  console.log('Form reloaded as read-only:', e.detail.submissionId);
+viewer.addEventListener("formio:autoReloadComplete", (e) => {
+  console.log("Form reloaded as read-only:", e.detail.submissionId);
   // Form is now read-only with submitted data
 });
 
 // Disable auto-reload and handle post-submission manually
-viewer.setAttribute('auto-reload-on-submit', 'false');
-viewer.addEventListener('formio:submitDone', (e) => {
+viewer.setAttribute("auto-reload-on-submit", "false");
+viewer.addEventListener("formio:submitDone", (e) => {
   // Handle submission yourself (redirect, show message, etc.)
   window.location = `/thank-you?submission=${e.detail.submission.id}`;
 });
@@ -901,20 +915,20 @@ When using the simplified embed script, you can provide advanced configuration v
 <script>
   window.ChefsViewerConfig = {
     // Set token and user objects
-    token: { sub: 'user123', roles: ['admin'], email: 'user@example.com' },
-    user: { name: 'John Doe', department: 'IT' },
+    token: { sub: "user123", roles: ["admin"], email: "user@example.com" },
+    user: { name: "John Doe", department: "IT" },
 
     // Before hook - modify configuration before loading
     before: function (element, params) {
-      console.log('About to load form:', params);
+      console.log("About to load form:", params);
       element.isolateStyles = true;
     },
 
     // After hook - add event listeners after form loads
     after: function (element, formioInstance) {
-      element.addEventListener('formio:submitDone', function (e) {
-        alert('Form submitted successfully!');
-        window.location = '/thank-you';
+      element.addEventListener("formio:submitDone", function (e) {
+        alert("Form submitted successfully!");
+        window.location = "/thank-you";
       });
     },
   };
@@ -939,19 +953,19 @@ The `token` and `user` objects you provide are made available in Form.io's evalC
 
 ```javascript
 // Conditional display based on user role
-show = token.roles && token.roles.includes('my-important-role');
+show = token.roles && token.roles.includes("my-important-role");
 
 // Pre-fill a field with user email
-value = token.email || '';
+value = token.email || "";
 
 // Show component only for specific department
-show = user.department === 'IT';
+show = user.department === "IT";
 
 // Complex logic combining token and user data
-if (token.roles.includes('manager') && user.department === 'HR') {
-  value = 'Manager Access Granted';
+if (token.roles.includes("manager") && user.department === "HR") {
+  value = "Manager Access Granted";
 } else {
-  value = 'Standard Access';
+  value = "Standard Access";
 }
 
 // INCORRECT: Never pass raw JWT strings
@@ -992,31 +1006,31 @@ The SimpleFile component automatically uses the component's authentication via t
 **Security Example:**
 
 ```javascript
-const viewer = document.querySelector('chefs-form-viewer');
+const viewer = document.querySelector("chefs-form-viewer");
 
 // Example 1: Security check before upload
-viewer.addEventListener('formio:beforeFileUpload', (event) => {
+viewer.addEventListener("formio:beforeFileUpload", (event) => {
   const { formData, config } = event.detail;
 
   // Security check: file size limit
-  const file = formData.get('files');
+  const file = formData.get("files");
   if (file.size > 10 * 1024 * 1024) {
     // 10MB limit
     event.preventDefault(); // Cancel the upload
-    alert('File too large');
+    alert("File too large");
     return;
   }
 
   // Async security check
   event.detail.waitUntil(
-    fetch('/api/security/check-upload-permission')
+    fetch("/api/security/check-upload-permission")
       .then((res) => res.ok)
       .catch(() => false)
   );
 });
 
 // Example 2: Authorization check before download
-viewer.addEventListener('formio:beforeFileDownload', (event) => {
+viewer.addEventListener("formio:beforeFileDownload", (event) => {
   const { fileId } = event.detail;
 
   // Check user permissions
@@ -1030,11 +1044,11 @@ viewer.addEventListener('formio:beforeFileDownload', (event) => {
 });
 
 // Example 3: Confirmation before delete
-viewer.addEventListener('formio:beforeFileDelete', (event) => {
+viewer.addEventListener("formio:beforeFileDelete", (event) => {
   const { fileId } = event.detail;
 
   // Show confirmation dialog
-  const confirmed = confirm('Are you sure you want to delete this file?');
+  const confirmed = confirm("Are you sure you want to delete this file?");
   if (!confirmed) {
     event.preventDefault();
   }
@@ -1075,28 +1089,29 @@ The component automatically generates endpoint URLs using this pattern:
 You can override any endpoint by setting the `endpoints` property:
 
 ```javascript
-const viewer = document.querySelector('chefs-form-viewer');
+const viewer = document.querySelector("chefs-form-viewer");
 viewer.endpoints = {
   // Asset endpoints
-  mainCss: 'https://mycdn.com/custom-chefs-styles.css',
-  formioJs: 'https://mycdn.com/formio.js',
-  componentsJs: 'https://mycdn.com/components.js',
-  themeCss: 'https://mycdn.com/theme.css',
-  iconsCss: 'https://mycdn.com/font-awesome.css',
+  mainCss: "https://mycdn.com/custom-chefs-styles.css",
+  formioJs: "https://mycdn.com/formio.js",
+  componentsJs: "https://mycdn.com/components.js",
+  themeCss: "https://mycdn.com/theme.css",
+  iconsCss: "https://mycdn.com/font-awesome.css",
 
   // API endpoints
-  schema: 'https://api.example.com/forms/:formId/schema',
-  submit: 'https://api.example.com/forms/:formId/submit',
-  readSubmission: 'https://api.example.com/forms/:formId/submissions/:submissionId',
+  schema: "https://api.example.com/forms/:formId/schema",
+  submit: "https://api.example.com/forms/:formId/submit",
+  readSubmission:
+    "https://api.example.com/forms/:formId/submissions/:submissionId",
 
   // File operation endpoints
-  files: 'https://api.example.com/files',
-  uploadFile: 'https://api.example.com/files/upload',
-  getFile: 'https://api.example.com/files/:fileId',
-  deleteFile: 'https://api.example.com/files/:fileId',
+  files: "https://api.example.com/files",
+  uploadFile: "https://api.example.com/files/upload",
+  getFile: "https://api.example.com/files/:fileId",
+  deleteFile: "https://api.example.com/files/:fileId",
 
   // Component-specific endpoints
-  bcgeoaddress: 'https://api.example.com/geocoder/address',
+  bcgeoaddress: "https://api.example.com/geocoder/address",
 };
 ```
 
@@ -1156,13 +1171,17 @@ By default, the component automatically reloads the form as read-only after succ
 **Disable Auto-Reload:**
 
 ```html
-<chefs-form-viewer form-id="your-form-id" auth-token="your-token" auto-reload-on-submit="false"></chefs-form-viewer>
+<chefs-form-viewer
+  form-id="your-form-id"
+  auth-token="your-token"
+  auto-reload-on-submit="false"
+></chefs-form-viewer>
 ```
 
 **Customize Auto-Reload:**
 
 ```javascript
-viewer.addEventListener('formio:beforeAutoReload', (e) => {
+viewer.addEventListener("formio:beforeAutoReload", (e) => {
   // Cancel auto-reload and handle manually
   e.preventDefault();
 
@@ -1194,7 +1213,7 @@ The component provides three ways to access form metadata:
 **Method 1: Element Properties**
 
 ```javascript
-const element = document.querySelector('chefs-form-viewer');
+const element = document.querySelector("chefs-form-viewer");
 console.log(element.formName); // "Contact Form"
 console.log(element.formDescription); // "Submit your inquiry"
 console.log(element.formMetadata); // { name: "Contact Form", ... }
@@ -1203,7 +1222,7 @@ console.log(element.formMetadata); // { name: "Contact Form", ... }
 **Method 2: Global Event**
 
 ```javascript
-globalThis.addEventListener('chefs-form-viewer:metadata-loaded', function (e) {
+globalThis.addEventListener("chefs-form-viewer:metadata-loaded", function (e) {
   console.log(e.detail.formName); // "Contact Form"
   console.log(e.detail.formDescription); // "Submit your inquiry"
   console.log(e.detail.form); // Full form object
@@ -1293,8 +1312,8 @@ window.CHEFS_VIEWER_DEBUG = true;
 
 All endpoints require proper authentication:
 
-- **Bearer Token**: Preferred method using `auth-token` attribute
-- **Basic Auth**: Fallback using `form-id:api-key` combination
+- **Gateway Token**: Preferred method using `auth-token` attribute, sent via `X-Chefs-Gateway-Token` header
+- **Basic Auth**: Fallback using `form-id:api-key` combination, sent via `Authorization: Basic` header
 - **CORS**: All routes support cross-origin requests with proper headers
 - **File Security**: Upload endpoints include virus scanning and validation
 - **Permissions**: File operations validate against form submission permissions
